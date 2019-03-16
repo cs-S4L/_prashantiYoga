@@ -1,0 +1,74 @@
+/**
+	Fonts
+**/
+@font-face { 
+	font-family: 'onelove';
+	// src: url('pfad/zu/meinerschrift.ttf') format('truetype'); 
+	src: url('../fonts/onelove/onelove.ttf') format('truetype'); 
+}
+
+/**
+	Breakpoints
+**/
+$sm 					: 420px;
+$md						: 720px;
+$lg						: 960px;
+$xlg					: 1200px;
+
+/**
+	Abstände
+**/
+$page-side-padding		: 10px;
+$padding-big			: 40px;
+$padding-small			: 20px;
+
+$padding-col			: 5px;
+
+
+/**
+	Colors
+**/
+
+$color-default			: #000000;
+
+$color-brand-1			: #6e322a; // Rot
+$color-brand-2			: #fde492; // Gold
+$color-brand-3			: #fcedb4; // Gold-Light
+
+$color-link				: #E80C38; // Rötlich Rosa
+
+$color-white			: #ffffff;
+
+
+/**
+	Font-families
+**/
+$font-family-brand		: 'onelove', 'sans-serif';
+$font-family-default	: 'Open Sans', sans-serif;
+
+/**
+	Font-sizes
+**/
+$font-size-heading-1	: 52px; // h1
+$font-size-heading-2	: 34px;	// h2
+$font-size-heading-3	: 20px; // h3
+
+$font-size-navi			: 24px; // h3
+
+$font-size-text--big	: 16px;
+$font-size-text : 14px;
+$font-size-text--small	: 12px;
+
+/**
+	Line-Heights
+**/
+$line-height-text			: 27px;
+
+
+
+/**
+	Mixins
+**/
+@mixin respond-to($media) {
+    @media only screen and (min-width: $media) { @content; }
+}
