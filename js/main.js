@@ -5,7 +5,7 @@ var navAnimationDuration = 300;
 function scrollTo(element) {
 	$('html, body').animate(
 		{
-			scrollTop: element.offset().top,
+			scrollTop: element.offset().top-navElement.height(),
 		},
 		500,
 		'linear'
