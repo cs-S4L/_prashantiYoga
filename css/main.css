@@ -1715,7 +1715,12 @@ section {
   border: 1px solid #6e322a;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  position: relative; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 500;
+  display: none; }
   .navi .logo {
     height: 40px;
     position: absolute;
@@ -1756,6 +1761,9 @@ section {
       padding: 15px 0;
       font-size: 24px;
       color: #6e322a; }
+
+section.first {
+  margin: 90px 0; }
 
 section.text {
   background: url("../img/shiva_yellow_transparent.png");
@@ -1817,7 +1825,8 @@ section.impressionen .thumb2, section.impressionen .thumb3, section.impressionen
 section.impressionen .thumb1 {
   width: 50%;
   background-image: url("../img/gallery/thumbs/thumb1.jpg");
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   section.impressionen .thumb1 i {
     position: absolute;
     top: 50%;
@@ -1895,6 +1904,26 @@ figure {
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: 100; }
+  .gallery .slick-arrow, .gallery .slick-prev:before, .gallery .slick-next:before {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    z-index: 250; }
+  .gallery .slick-prev {
+    left: 25px; }
+  .gallery .slick-next {
+    right: 25px; }
+  .gallery .slick-prev:before {
+    content: "\f0a8"; }
+  .gallery .slick-next:before {
+    content: "\f0a9"; }
+  .gallery .slick-track {
+    z-index: 200; }
   .gallery .large {
     padding: 5%;
     height: 70%; }
@@ -1921,6 +1950,13 @@ figure {
       height: 100%; }
     .gallery .thumbs .galleryImg {
       margin: 10px; }
+  .gallery .close {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 50px;
+    z-index: 300;
+    color: #ffffff; }
 
 footer {
   width: 100%;

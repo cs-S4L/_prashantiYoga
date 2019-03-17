@@ -1,3 +1,7 @@
+var navShowDistance = $('.heroimage').offset().top + $('.heroimage').height();
+var navElement = $('.navi');
+var navAnimationDuration = 300;
+
 function scrollTo(element) {
 	$('html, body').animate(
 		{
@@ -8,6 +12,18 @@ function scrollTo(element) {
 	)
 }
 
+function hideShowNavi() {
+	if ($(window).scrollTop() > navShowDistance) {
+		navElement.slideDown(navAnimationDuration);
+	}
+	else {
+		navElement.slideUp(navAnimationDuration);
+	}
+}
+
+hideShowNavi();
+
+// Navi Code
 $('.hamburger').click(function() {
 	$(this).toggleClass('is-active');
 	$('.navi ul').slideToggle();
@@ -21,6 +37,13 @@ $('.navi ul li').click(function() {
 	$('.hamburger').toggleClass('is-active');
 });
 
+$(window).bind('scroll', function() {
+	hideShowNavi();
+});
+
+
+
+// Gallery Code
 $('#openGallery').click(function() {
 	let gallery = $('.gallery');
 	let large = $('.large', gallery);
@@ -32,6 +55,8 @@ $('#openGallery').click(function() {
 	thumbs.append(innerHtml);
 
 	gallery.fadeIn();
+
+	navElement.slideUp(navAnimationDuration);
 
 	large.slick({
 		slidesToShow: 1,
@@ -61,6 +86,13 @@ $('#openGallery').click(function() {
 		}
 		]
 	});
+});
+
+$('.gallery .close').click(function () {
+	let gallery = $('.gallery');
+
+	gallery.fadeOut();
+	hideShowNavi();
 });
 
 $('#datenschutz').click(function() {

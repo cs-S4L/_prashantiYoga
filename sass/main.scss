@@ -131,7 +131,12 @@ section {
 	border : 1px solid $color-brand-1;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: $color-white;
+	z-index: 500;
+	display: none;
 
 	.logo {
 		height: 40px;
@@ -189,6 +194,10 @@ section {
 } //Navi
 
 section {
+	&.first {
+		margin: $padding-big+50px 0;
+	}
+
 	&.text {
 		background: url("../img/shiva_yellow_transparent.png");
 		background-position: center;
@@ -280,6 +289,7 @@ section {
 			width: 50%;
 			background-image:  url('../img/gallery/thumbs/thumb1.jpg');
 			position: relative;
+			cursor: pointer;
 
 			i {
 				position: absolute;
@@ -379,6 +389,38 @@ figure {
 	background: rgba(0,0,0, 0.7);
 	z-index: 100;
 
+	.slick-arrow, .slick-prev:before, .slick-next:before {
+		font-weight: 900;
+		font-family: "Font Awesome 5 Free";
+		-webkit-font-smoothing: antialiased;
+		display: inline-block;
+		font-style: normal;
+		font-variant: normal;
+		text-rendering: auto;
+		line-height: 1;
+		z-index: 250;
+	}
+
+	.slick-prev {
+		left: 25px;
+	}
+
+	.slick-next {
+		right: 25px;
+	}
+
+	.slick-prev:before {
+		content: "\f0a8";
+	}
+
+	.slick-next:before {
+		content: "\f0a9";
+	}
+
+	.slick-track {
+		z-index: 200;
+	}
+
 	.large {
 		padding: 5%;
 		height: 70%;
@@ -410,6 +452,15 @@ figure {
 			margin: 10px;
 		}
 
+	}
+
+	.close {
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		font-size: 50px;
+		z-index: 300;
+		color: $color-white;
 	}
 }
 
