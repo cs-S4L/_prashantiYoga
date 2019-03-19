@@ -1,11 +1,17 @@
-var navShowDistance = $('.heroimage').offset().top + $('.heroimage').height();
 var navElement = $('.navi');
 var navAnimationDuration = 300;
+let topPosition = $('.heroimage').offset().top;
+let offset = $('.heroimage').height() - navElement.height();
 
-function scrollTo(element) {
+var navShowDistance = topPosition + offset;
+
+console.log(topPosition);
+console.log(offset)
+
+function scrollTo(element, offset = 0) {
 	$('html, body').animate(
 		{
-			scrollTop: element.offset().top-navElement.height(),
+			scrollTop: (element.offset().top-navElement.height()) -offset,
 		},
 		500,
 		'linear'
@@ -14,7 +20,14 @@ function scrollTo(element) {
 
 function hideShowNavi() {
 	if ($(window).scrollTop() > navShowDistance) {
-		navElement.slideDown(navAnimationDuration);
+		navElement.slideDown({
+			start: function () {
+				$(this).css({
+					display: "flex"
+				})
+			},
+			duration: navAnimationDuration
+		});
 	}
 	else {
 		navElement.slideUp(navAnimationDuration);
@@ -31,10 +44,15 @@ $('.hamburger').click(function() {
 
 $('.navi ul li').click(function() {
 	let target = $('#' + $(this).attr('data-target'));
+	let offset = $(this).attr('data-offset');
+	let hamburger = $('.hamburger');
 
-	scrollTo(target);
-	$('.navi ul').slideToggle();
-	$('.hamburger').toggleClass('is-active');
+	scrollTo(target, offset);
+
+	if (hamburger.is(":visible")) {
+		$('.navi ul').slideToggle();
+	}
+	hamburger.toggleClass('is-active');
 });
 
 $(window).bind('scroll', function() {
@@ -50,13 +68,12 @@ $('#openGallery').click(function() {
 	let thumbs = $('.thumbs', gallery);
 	let innerHtml = large.html();
 
-	console.log('fade In');
-
 	thumbs.append(innerHtml);
 
 	gallery.fadeIn();
 
 	navElement.slideUp(navAnimationDuration);
+	navElement.removeClass('active')
 
 	large.slick({
 		slidesToShow: 1,

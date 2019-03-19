@@ -1651,8 +1651,8 @@ a {
 
 section {
   width: 100%;
-  padding: 0 10px;
-  margin: 40px 0; }
+  padding: 40px 10px;
+  margin: 0; }
 
 .row {
   width: 100%;
@@ -1690,10 +1690,13 @@ section {
   overflow: hidden; }
   .heroimage .img {
     height: 100%; }
+    @media only screen and (min-width: 940px) {
+      .heroimage .img {
+        width: 100%; } }
   .heroimage h1 {
     position: absolute;
     left: 50%;
-    bottom: 25%;
+    bottom: 30%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -1720,12 +1723,31 @@ section {
   left: 0;
   background: #ffffff;
   z-index: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: none; }
+  .navi .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1200px; }
   .navi .logo {
     height: 40px;
-    position: absolute;
-    left: 5px;
-    top: 5px; }
+    position: relative; }
   .navi .hamburger {
     position: absolute;
     top: 1px;
@@ -1734,6 +1756,9 @@ section {
     height: 40px;
     padding: 0;
     outline: none; }
+    @media only screen and (min-width: 720px) {
+      .navi .hamburger {
+        display: none; } }
     .navi .hamburger .hamburger-box {
       width: 35px;
       height: 30px; }
@@ -1757,26 +1782,59 @@ section {
     width: 96%;
     margin: 2%;
     background: #ffffff; }
+    @media only screen and (min-width: 720px) {
+      .navi ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        border: none;
+        background: transparent;
+        margin: 0;
+        padding: 0 15px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        max-width: 1200px; } }
     .navi ul li {
       padding: 15px 0;
       font-size: 24px;
       color: #6e322a; }
-
-section.first {
-  margin: 90px 0; }
+      @media only screen and (min-width: 720px) {
+        .navi ul li {
+          display: inline-block;
+          padding: 0; } }
 
 section.text {
-  background: url("../img/shiva_yellow_transparent.png");
+  background: url("../img/shiva_yellow_transparent_small.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%; }
+  position: relative;
+  margin: 0;
+  min-height: 400px;
+  background-size: 320px auto;
+  min-height: 381px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  section.text .inner {
+    max-width: 1200px; }
   section.text h2, section.text figure figcaption, figure section.text figcaption {
     width: 100%;
     text-align: center; }
   section.text p {
     padding-top: 20px;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    z-index: 50; }
 
 section.info .row.preise, section.info .row.kursort {
   padding-top: 20px; }
@@ -1894,6 +1952,8 @@ figure {
     text-align: center;
     color: #fde492;
     z-index: 10; }
+  figure.wasIstPY figcaption {
+    top: 55%; }
 
 .gallery {
   display: none;

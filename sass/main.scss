@@ -55,8 +55,8 @@ a {
 
 section {
 	width: 100%;
-	padding: 0 $page-side-padding;
-	margin: $padding-big 0;
+	padding: $padding-big $page-side-padding;
+	margin: 0;
 }
 
 .row {
@@ -100,12 +100,16 @@ section {
     .img {
     	height: 100%;
 
+    	@include respond-to('940px') {
+    		width: 100%;
+    		// transform: scale(1.4);
+    	}
     }
 
 	h1 {
 		position: absolute;
 		left: 50%;
-		bottom: 25%;
+		bottom: 30%;
 		transform: translateX(-50%);
 		color: $color-brand-2;
 		width: 100%;
@@ -136,13 +140,22 @@ section {
 	left: 0;
 	background: $color-white;
 	z-index: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	display: none;
+
+	.inner {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+		max-width: $xlg;
+	}
 
 	.logo {
 		height: 40px;
-		position: absolute;
-		left: 5px;
-		top: 5px;
+		position: relative;
 	}
 
 	.hamburger {
@@ -153,6 +166,10 @@ section {
 		height: 40px;
 		padding: 0;
 		outline: none;
+
+		@include respond-to($md) {
+			display: none;
+		}
 
 		.hamburger-box {
 			width: 35px;
@@ -171,7 +188,9 @@ section {
 				background-color: $color-brand-1;
 			}
 		}
-	}
+	} //hamburger
+
+
 
 	ul {
 		display: none;
@@ -183,26 +202,51 @@ section {
 		border-radius: 5px;
 		width: 96%;
 		margin: 2%;
-		background: $color-white;		
+		background: $color-white;	
+
+		@include respond-to($md) {
+			position: relative;
+			top: 0;
+			left: 0;
+			border: none;
+			background: transparent;
+			margin: 0;
+			padding: 0 15px;
+			display: flex;
+			justify-content: space-between;
+			max-width: 1200px;
+		}
 
 		li {
 			padding: 15px 0;
 			font-size: $font-size-navi;
 			color: $color-brand-1;
+
+			@include respond-to($md) {
+				display: inline-block;
+				padding: 0;
+			}
 		}		
-	}
+	} //ul
 } //Navi
 
 section {
-	&.first {
-		margin: $padding-big+50px 0;
-	}
-
 	&.text {
-		background: url("../img/shiva_yellow_transparent.png");
+		background: url("../img/shiva_yellow_transparent_small.png");
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
+		position: relative;
+		margin: 0;
+		min-height: 400px;
+		background-size: 320px auto; //381px;
+		min-height: 381px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.inner {
+			max-width: $xlg;
+		}
 		
 		h2 {
 			width: 100%;
@@ -213,8 +257,11 @@ section {
 			padding-top: $padding-small;
 			width: 100%;
 			text-align: center;
+			z-index: 50;
 		}
 	} // text
+	
+
 
 	&.info {
 		.row {
@@ -273,6 +320,8 @@ section {
 			
 		}
 	} // info
+
+
 
 	&.impressionen {
 		.thumb1, .thumb2, .thumb3, .thumb4, .thumb5 {
@@ -338,11 +387,17 @@ section {
 		}
 	} //impressionen
 
+
+
 	&.datenschutz, &.impressum {
 		display: none;
 	}
 
 } // section
+
+
+
+
 
 figure {
 	width: 100%;
@@ -377,7 +432,15 @@ figure {
 
 		@extend h2;
 	}
+
+	&.wasIstPY figcaption {
+		top: 55%;
+	}
 }
+
+
+
+
 
 .gallery {
 	display: none;
@@ -463,6 +526,10 @@ figure {
 		color: $color-white;
 	}
 }
+
+
+
+
 
 footer {
 	width: 100%;
