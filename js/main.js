@@ -1,12 +1,6 @@
 var navElement = $('.navi');
 var navAnimationDuration = 300;
-let topPosition = $('.heroimage').offset().top;
 let offset = $('.heroimage').height() - navElement.height();
-
-var navShowDistance = topPosition + offset;
-
-console.log(topPosition);
-console.log(offset)
 
 function scrollTo(element, offset = 0) {
 	$('html, body').animate(
@@ -19,6 +13,9 @@ function scrollTo(element, offset = 0) {
 }
 
 function hideShowNavi() {
+	let topPosition = $('.heroimage').offset().top;
+	let navShowDistance = topPosition + offset;
+
 	if ($(window).scrollTop() > navShowDistance) {
 		navElement.slideDown({
 			start: function () {
