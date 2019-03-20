@@ -29,16 +29,15 @@
 <body>
 
 <div class="heroimage">
-	<img src="img/img_heroimage_large.png" alt="logo" class="img">
-
 	<div class="socialMedia">
 		<a href="https://www.instagram.com/prashanti_yoga_/" target="_blank">
-			<img src="img/icon_instagram.png" alt="instagram">
+			<!-- <img src="img/icon_instagram.png" alt="instagram"> -->
+			<i class="fab fa-instagram"></i>
 		</a>
 		<a href="https://www.facebook.com/PrashantiYogaMitPaulina/" target="_blank">
-			<img src="img/icon_facebook.png" alt="instagram">
+			<!-- <img src="img/icon_facebook.png" alt="instagram"> -->
+			<i class="fab fa-facebook-square"></i>
 		</a>
-
 	</div>
 	
 	<h1>
@@ -49,6 +48,7 @@
 <div class="navi">
 	<div class="inner">
 		<img src="img/logo_transparent.png" alt="Logo" class="logo">
+		
 		<button class="hamburger hamburger--collapse" type="button">
 			<span class="hamburger-box">
 				<span class="hamburger-inner"></span>
@@ -66,7 +66,7 @@
 </div>
 
 <section id="uberMich" class="text uberMich first">
-	<div class="inner">
+	<div class="section__inner">
 		<h2>Uber mich</h2>
 
 		<p>Im Jahr 2015 durfte ich die 1-jährige Yogalehrerausbildung basierend auf der Tradition des Hathayoga in Aschaffenburg bei Andrea Brehm absolvieren. 
@@ -88,7 +88,7 @@
 </figure>
 
 <section class="text wasIstPY">
-	<div class="inner">
+	<div class="section__inner">
 		<p>Sanskrit: Para = höchst, shanti = Frieden. 
 
 			Der Begriff Prashanti steht für den ungetrübten, höchsten inneren Frieden, welcher durch nichts aus dem Gleichgewicht gebracht werden kann. Dabei sind alle Dualitäten aufgelöst: hell/dunkel, positiv/negativ, Freude/Leid, männlich/weiblich...
@@ -108,73 +108,87 @@
 	<figcaption>Kurse</figcaption>
 </figure>
 
-<section class="info row">
-	<div class="col-1 col-2-md kurszeiten">
-		<h3>Kurszeiten</h3>
-		<div class="text-wrapper">
-			<p>Donnerstags:</p>
-			<p>16:30 - 18:00 Uhr
-			18:30 - 20:00 Uhr</p>
+<section class="info">
+	<div class="section__inner row">
+		<div class="col-1 col-2-md kurszeiten">
+			<div class="inner">
+				<h3>Kurszeiten</h3>
+				<div class="text-wrapper">
+					<p>Donnerstags*:</p>
+					<p>16:30 - 18:00 Uhr
+					18:30 - 20:00 Uhr</p>
+				</div>
+				<p>*Kurse geeignet für Anfänger und Fortgeschrittene</p>
+				<p>*Kurse ab 01. April 2019, Maximale Teilnehmerzahl 6-8 Personen</p>
+				
+			</div>
 		</div>
-	</div>
 
-	<div class="col-1 col-2-md preise">
-		<h3>Preise</h3>
-		<div class="text-wrapper">
-			<p>Monatlich 
-			<span>(Laufzeit 3 Monate, 4 Einheiten monatlich):</span></p>
-			<p>72€ / Monat</p>
-		</div>
-		<div class="divider"></div>
-		<div class="text-wrapper">
-			<p>Schnupperkurs
-			<span>(Einmalig)</span></p>
-			<p>12€</p>
-		</div>
-		<div class="divider"></div>
-		<div class="text-wrapper">
-			<p>Einzel-/ Privatstunden</p>
-			<p>Nach Absprache</p>
-		</div>
-	</div>
+		<div class="col-1 col-2-md preise">
+			<div class="inner">
+				<h3>Preise</h3>
 
-	<div class="col-1 kursort">
-		<h3>Kursort</h3>
-
-		<div class="row col-1">
-			<div class="col-1 col-2-md">
-				<div class="iframeWrapper">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10262.899053936188!2d9.11421!3d49.97902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x223f9921a0298abb!2sMonkey+Cage+GmbH+-+Boulderhalle+Aschaffenburg!5e0!3m2!1sde!2sde!4v1552729896251" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div class="text-wrapper">
+					<p>Monatlich 
+					<span>(Laufzeit 3 Monate, 4 Einheiten monatlich):</span></p>
+					<p>72€ / Monat</p>
+				</div>
+				<div class="divider"></div>
+				<div class="text-wrapper">
+					<p>Schnupperkurs
+					<span>(Einmalig)</span></p>
+					<p>12€</p>
+				</div>
+				<div class="divider"></div>
+				<div class="text-wrapper">
+					<p>Einzel-/ Privatstunden</p>
+					<p>Nach Absprache</p>
 				</div>
 			</div>
-			<div class="col-1 col-2-md">
-				<p>Monkey Cage GmbH
-					Mainaschaffer Straße 113
-				63741 Aschaffenburg</p>
+		</div>
+
+		<div class="col-1 kursort">
+			<div class="inner">
+				<h3>Kursort</h3>
+
+				<div class="row col-1">
+					<div class="col-1">
+						<p>Monkey Cage GmbH
+							Mainaschaffer Straße 113
+						63741 Aschaffenburg</p>
+					</div>
+					<div class="col-1">
+						<div class="iframeWrapper">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10262.899053936188!2d9.11421!3d49.97902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x223f9921a0298abb!2sMonkey+Cage+GmbH+-+Boulderhalle+Aschaffenburg!5e0!3m2!1sde!2sde!4v1552729896251" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div id="kontakt" class="row kontakt">
-		<div class="col-1">
-			<h3>Kontakt</h3>
+		<div id="kontakt" class="kontakt col-1">
+			<div class="inner row ">
+				<div class="col-1">
+					<h3>Kontakt</h3>
 
-			<p class="col-1">Paulina Thomas</p>
-		</div>
+					<p class="col-1">Paulina Thomas</p>
+				</div>
 
-		<div class="col-1 col-md-2 kontaktArt">
-			<a href="mailto:prashantiyoga@gmx.de"><i class=" fas fa-envelope"></i>
+				<div class="col-1 col-2-md kontaktArt">
+					<a href="mailto:prashantiyoga@gmx.de"><i class=" fas fa-envelope"></i>
 
-				prashantiyoga@gmx.de
-			</a>
-		</div>
+						prashantiyoga@gmx.de
+					</a>
+				</div>
 
-		
-		<div class="col-1 col-md-2 kontaktArt">
-			<a href="tel:+491708216900" class="col-1"><i class="fas fa-phone"></i>
 
-				+49 170 8216900
-			</a>
+				<div class="col-1 col-2-md kontaktArt">
+					<a href="tel:+491708216900" class="col-1"><i class="fas fa-phone"></i>
+
+						+49 170 8216900
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -188,21 +202,23 @@
 </figure>
 
 <section class="impressionen">
-	<div class="row">
-		<div id="openGallery" class="thumb1">
-			<i class="far fa-plus-square"></i>
-		</div>
+	<div class="section__inner">
+		<div class="row">
+			<div id="openGallery" class="thumb1">
+				<i class="far fa-plus-square"></i>
+			</div>
 
-		<div class="col-4">
-			<div class="thumb2"></div>
-			<div class="thumb3"></div>
-		</div>
-		<div class="col-4">
-			<div class="thumb4"></div>
-			<div class="thumb5"></div>
-		</div>
+			<div class="col-4">
+				<div class="thumb2"></div>
+				<div class="thumb3"></div>
+			</div>
+			<div class="col-4">
+				<div class="thumb4"></div>
+				<div class="thumb5"></div>
+			</div>
 
-		<p class="col-1">mehr...</p>
+			<p class="col-1">mehr...</p>
+		</div>
 	</div>
 
 	<div class="gallery">
@@ -256,41 +272,46 @@
 </section>
 
 
-<footer class="row">
-	<span id="impressum" class="col-2">Impressum</span>
-	<span id="datenschutz" class="col-2">Datenschutz</span>
-
+<footer>
+	<div class="footer__inner row">
+		<span id="impressum" class="col-2">Impressum</span>
+		<span id="datenschutz" class="col-2">Datenschutz</span>
+	</div>
 </footer>
 
 <section id="section_impressum" class="impressum">
-	<div class="row">
-		<h3 class="col-1">Impressum</h3>
-		<p class="col-1">sjdflsjdf
-			lkasjdflk
-			lkjasfj
-			lkdjasöldfj
-			sldfjalösdfj
-			lkasjdfl
-			lasjdföls
+	<div class="inner">
+		<div class="row">
+			<h3 class="col-1">Impressum</h3>
+			<p class="col-1">sjdflsjdf
+				lkasjdflk
+				lkjasfj
+				lkdjasöldfj
+				sldfjalösdfj
+				lkasjdfl
+				lasjdföls
 
-			sjdföasdjflksjdflkasjdfljasdlfkjsdfkjsalfj
-		lksjafjsdfölasjdflkjslfkjasdlfkjsdf</p>
+				sjdföasdjflksjdflkasjdfljasdlfkjsdfkjsalfj
+			lksjafjsdfölasjdflkjslfkjasdlfkjsdf</p>
+		</div>
 	</div>
 </section>
 
 <section id="section_datenschutz" class="datenschutz">
-	<div class="row">
-		<h3 class="col-1">Datenschutz</h3>
-		<p class="col-1">sjdflsjdf
-			lkasjdflk
-			lkjasfj
-			lkdjasöldfj
-			sldfjalösdfj
-			lkasjdfl
-			lasjdföls
+	<div class="inner">
+		<div class="row">
+			<h3 class="col-1">Datenschutz</h3>
+			<p class="col-1">sjdflsjdf
+				lkasjdflk
+				lkjasfj
+				lkdjasöldfj
+				sldfjalösdfj
+				lkasjdfl
+				lasjdföls
 
-			sjdföasdjflksjdflkasjdfljasdlfkjsdfkjsalfj
-		lksjafjsdfölasjdflkjslfkjasdlfkjsdf</p>
+				sjdföasdjflksjdflkasjdfljasdlfkjsdfkjsalfj
+			lksjafjsdfölasjdflkjslfkjasdlfkjsdf</p>
+		</div>
 	</div>
 </section>
 

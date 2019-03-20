@@ -5,7 +5,7 @@ let offset = $('.heroimage').height() - navElement.height();
 function scrollTo(element, offset = 0) {
 	$('html, body').animate(
 		{
-			scrollTop: (element.offset().top-navElement.height()) -offset,
+			scrollTop: (element.offset().top-navElement.height()),
 		},
 		500,
 		'linear'
@@ -41,10 +41,9 @@ $('.hamburger').click(function() {
 
 $('.navi ul li').click(function() {
 	let target = $('#' + $(this).attr('data-target'));
-	let offset = $(this).attr('data-offset');
 	let hamburger = $('.hamburger');
 
-	scrollTo(target, offset);
+	scrollTo(target);
 
 	if (hamburger.is(":visible")) {
 		$('.navi ul').slideToggle();
@@ -70,7 +69,8 @@ $('#openGallery').click(function() {
 	gallery.fadeIn();
 
 	navElement.slideUp(navAnimationDuration);
-	navElement.removeClass('active')
+	navElement.removeClass('active');
+	$(window).unbind("scroll")
 
 	large.slick({
 		slidesToShow: 1,
@@ -107,6 +107,9 @@ $('.gallery .close').click(function () {
 
 	gallery.fadeOut();
 	hideShowNavi();
+	$(window).bind('scroll', function() {
+		hideShowNavi();
+	});
 });
 
 $('#datenschutz').click(function() {

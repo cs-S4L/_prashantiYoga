@@ -1633,7 +1633,14 @@ h1 {
 
 h2, figure figcaption {
   font-size: 34px;
-  font-family: "onelove", "sans-serif"; }
+  font-family: "onelove", "sans-serif";
+  font-size: 3em; }
+  @media only screen and (min-width: 420px) {
+    h2, figure figcaption {
+      font-size: 3.7em; } }
+  @media only screen and (min-width: 720px) {
+    h2, figure figcaption {
+      font-size: 5em; } }
 
 h3 {
   font-size: 20px;
@@ -1652,7 +1659,14 @@ a {
 section {
   width: 100%;
   padding: 40px 10px;
-  margin: 0; }
+  margin: 40px auto; }
+  @media only screen and (min-width: 720px) {
+    section {
+      margin: 60px auto; } }
+  section .section__inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; }
 
 .row {
   width: 100%;
@@ -1700,13 +1714,13 @@ section {
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/img_heroimage_small.jpg"); }
+  background-image: url("../img/img_heroimage_small_test.jpg"); }
   @media only screen and (min-width: 720px) {
     .heroimage {
-      background-image: url("../img/img_heroimage_small.jpg"); } }
+      background-image: url("../img/img_heroimage.jpg"); } }
   @media only screen and (min-width: 1920px) {
     .heroimage {
       background-image: url("../img/img_heroimage_large.jpg"); } }
@@ -1723,13 +1737,19 @@ section {
     color: #fde492;
     width: 100%;
     text-align: center; }
+    @media only screen and (min-width: 720px) {
+      .heroimage h1 {
+        font-size: 98px;
+        bottom: 20%; } }
   .heroimage .socialMedia {
     position: absolute;
     right: 10px;
     bottom: 10px; }
-    .heroimage .socialMedia img {
-      width: 45px;
-      height: 45px; }
+    .heroimage .socialMedia .fab {
+      font-size: 45px;
+      color: #6e322a; }
+    .heroimage .socialMedia .fa-instagram {
+      margin-right: 15px; }
 
 .navi {
   width: 100%;
@@ -1832,7 +1852,6 @@ section.text {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  margin: 0;
   min-height: 400px;
   background-size: 320px auto;
   min-height: 381px;
@@ -1845,8 +1864,6 @@ section.text {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  section.text .inner {
-    max-width: 1200px; }
   section.text h2, section.text figure figcaption, figure section.text figcaption {
     width: 100%;
     text-align: center; }
@@ -1884,16 +1901,34 @@ section.info .divider {
   height: 2px;
   margin: 0 auto; }
 
-section.info .kursort p {
-  text-align: center;
-  padding-top: 20px; }
+section.info .kurszeiten, section.info .preise, section.info .kursort, section.info .kontakt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  section.info .kurszeiten .inner, section.info .preise .inner, section.info .kursort .inner, section.info .kontakt .inner {
+    width: 100%; }
 
-section.info .kursort .iframeWrapper {
-  padding-top: 10px;
-  width: 100%; }
+section.info .kursort {
+  margin: 30px 0; }
+  section.info .kursort p {
+    text-align: center;
+    padding-top: 20px; }
+  section.info .kursort .iframeWrapper {
+    padding-top: 10px;
+    width: 100%; }
+    @media only screen and (min-width: 720px) {
+      section.info .kursort .iframeWrapper {
+        width: 50%;
+        margin: 0 auto; } }
 
 section.info .kontakt h3, section.info .kontakt p, section.info .kontakt i, section.info .kontakt a {
   text-align: center; }
+
+section.info .kontakt p {
+  padding: 15px 0 0; }
 
 section.info .kontakt a {
   white-space: pre-line; }
@@ -1902,7 +1937,8 @@ section.info .kontakt a {
     color: #000000; }
 
 section.info .kontakt .kontaktArt {
-  text-align: center; }
+  text-align: center;
+  padding-top: 25px; }
 
 section.impressionen .thumb1, section.impressionen .thumb2, section.impressionen .thumb3, section.impressionen .thumb4, section.impressionen .thumb5 {
   background-position: center;
@@ -2056,10 +2092,15 @@ footer {
   background: #6e322a;
   border: none;
   color: #ffffff; }
+  footer__inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; }
   footer span {
     font-size: 24px;
     line-height: 38px;
     text-align: center;
-    font-family: "onelove", "sans-serif"; }
+    font-family: "onelove", "sans-serif";
+    cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
