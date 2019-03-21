@@ -1,7 +1,13 @@
+// Vars
 var navElement = $('.navi');
 var navAnimationDuration = 300;
-let offset = $('.heroimage').height() - navElement.height();
+let gallery = $('.gallery');
+let galleryImageLarge = $('.large', gallery);
+let galleryImageThumbs = $('.thumbs', gallery);
 
+
+
+// Functions
 function scrollTo(element, offset = 0) {
 	$('html, body').animate(
 		{
@@ -14,6 +20,7 @@ function scrollTo(element, offset = 0) {
 
 function hideShowNavi() {
 	let topPosition = $('.heroimage').offset().top;
+	let offset = $('.heroimage').height() - 50;
 	let navShowDistance = topPosition + offset;
 
 	if ($(window).scrollTop() > navShowDistance) {
@@ -31,9 +38,86 @@ function hideShowNavi() {
 	}
 }
 
-hideShowNavi();
+function initGallery() {
+	let innerHtml = galleryImageLarge.html();
+
+	galleryImageThumbs.append(innerHtml);
+
+	galleryImageLarge.slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		fade: false,
+		asNavFor: galleryImageThumbs,
+		adaptiveHeight: true,
+		infinite: false,
+		speed: 400,
+		prevArrow: $('.wrapper-large .prev', gallery),
+		nextArrow: $('.wrapper-large .next', gallery)
+	});
+	
+	galleryImageThumbs.slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		swipeToSlide: true,
+		// asNavFor: large,
+		arrows: true,
+		dots: false,
+		centerMode: true,
+		focusOnSelect: true,
+		adaptiveHeight: false,
+		infinite: false,
+		speed: 100,
+		mobileFirst: true,
+		prevArrow: $('.wrapper-thumbs .prev', gallery),
+		nextArrow: $('.wrapper-thumbs .next', gallery),
+
+		responsive: [
+		{
+			breakpoint: 720,
+			settings: {
+				slidesToShow: 4,
+				arrows: true,
+			}
+		},
+		]
+	});
+
+	$('li', galleryImageThumbs).click(function() {
+		let index = $(this).attr('data-slick-index');
+
+		console.log('click: ' + index);
+		galleryImageLarge.slick('slickGoTo', index);
+	});
+} // initGallery
+
+function openGallery() {
+	gallery.fadeIn();
+
+	initGallery();
+
+	navElement.slideUp(navAnimationDuration);
+	navElement.removeClass('active');
+	$(window).unbind("scroll");
+}
+
+function closeGallery() {
+	let gallery = $('.gallery');
+
+	gallery.fadeOut();
+	hideShowNavi();
+	$(window).bind('scroll', function() {
+		hideShowNavi();
+	});
+}
+
+
+
+
 
 // Navi Code
+hideShowNavi();
+
 $('.hamburger').click(function() {
 	$(this).toggleClass('is-active');
 	$('.navi ul').slideToggle();
@@ -51,67 +135,32 @@ $('.navi ul li').click(function() {
 	hamburger.toggleClass('is-active');
 });
 
+$('.logo') .click(function() {
+	scrollTo($('.heroimage'));
+});
+
 $(window).bind('scroll', function() {
 	hideShowNavi();
 });
 
 
 
+
+
 // Gallery Code
-$('#openGallery').click(function() {
-	let gallery = $('.gallery');
-	let large = $('.large', gallery);
-	let thumbs = $('.thumbs', gallery);
-	let innerHtml = large.html();
-
-	thumbs.append(innerHtml);
-
-	gallery.fadeIn();
-
-	navElement.slideUp(navAnimationDuration);
-	navElement.removeClass('active');
-	$(window).unbind("scroll")
-
-	large.slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: true,
-		fade: false,
-		asNavFor: thumbs,
-		adaptiveHeight: false,
-	});
-	
-	thumbs.slick({
-		slidesToShow: 2,
-		slidesToScroll: 1,
-		asNavFor: large,
-		arrows: true,
-		dots: false,
-		centerMode: true,
-		focusOnSelect: true,
-		adaptiveHeight: false,
-		centerPadding: 0,
-		responsive: [
-		{
-			breakpoint: 720,
-			settings: {
-				slidesToShow: 3
-			}
-		}
-		]
-	});
+$('.openGallery').click(function() {
+	openGallery();
 });
 
 $('.gallery .close').click(function () {
-	let gallery = $('.gallery');
-
-	gallery.fadeOut();
-	hideShowNavi();
-	$(window).bind('scroll', function() {
-		hideShowNavi();
-	});
+	closeGallery();
 });
 
+
+
+
+
+// Datenschutz + Impressum Code
 $('#datenschutz').click(function() {
 	let datenschutz = $('#section_datenschutz');
 
