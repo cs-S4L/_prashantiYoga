@@ -11,7 +11,7 @@ let galleryImageThumbs = $('.thumbs', gallery);
 function scrollTo(element, offset = 0) {
 	$('html, body').animate(
 		{
-			scrollTop: (element.offset().top-navElement.height()),
+			scrollTop: (element.offset().top-navElement.height() -20),
 		},
 		500,
 		'linear'
@@ -43,7 +43,7 @@ function initGallery() {
 
 	galleryImageThumbs.append(innerHtml);
 
-	galleryImageLarge.slick({
+	galleryImageLarge.not('.slick-initialized').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true,
@@ -56,7 +56,7 @@ function initGallery() {
 		nextArrow: $('.wrapper-large .next', gallery)
 	});
 	
-	galleryImageThumbs.slick({
+	galleryImageThumbs.not('.slick-initialized').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		swipeToSlide: true,
