@@ -59,6 +59,10 @@ p {
 	font-size: $font-size-text--big;
 	white-space: pre-line;
 	line-height: 27px;
+
+	.highlight {
+		font-size: $font-size-text--big+4;
+	}
 }
 
 a {
@@ -140,7 +144,7 @@ section {
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url("../img/img_heroimage_small_test.jpg");
+	background-image: url("../img/img_heroimage_small.jpg");
 
 	@include respond-to($md) {
 		background-image: url("../img/img_heroimage.jpg");
@@ -437,7 +441,7 @@ section {
 
 		.thumb1 {
 			width: 50%;
-			background-image:  url('../img/gallery/thumbs/thumb1.jpg');
+			background-image:  url('../img/gallery/thumbs/thumb1_.jpg');
 			position: relative;
 			cursor: pointer;
 
@@ -452,19 +456,19 @@ section {
 		}
 
 		.thumb2 {
-			background-image: url('../img/gallery/thumbs/thumb2.jpg');
+			background-image: url('../img/gallery/thumbs/thumb2_.jpg');
 		}
 
 		.thumb3 {
-			background-image: url('../img/gallery/thumbs/thumb3.jpg');
+			background-image: url('../img/gallery/thumbs/thumb3_.jpg');
 		}
 
 		.thumb4 {
-			background-image: url('../img/gallery/thumbs/thumb4.jpg');
+			background-image: url('../img/gallery/thumbs/thumb4_.jpg');
 		}
 
 		.thumb5 {
-			background-image: url('../img/gallery/thumbs/thumb5.jpg');
+			background-image: url('../img/gallery/thumbs/thumb5_.jpg');
 		}
 
 		.thumb1:after,
@@ -486,6 +490,11 @@ section {
 			color: $color-link;
 			font-weight: light;
 		}
+
+		.openGallery {
+			cursor: pointer;
+		}
+
 	} //impressionen
 
 

@@ -1656,6 +1656,8 @@ p {
   font-size: 16px;
   white-space: pre-line;
   line-height: 27px; }
+  p .highlight {
+    font-size: 20px; }
 
 a {
   font-size: 16px;
@@ -1723,7 +1725,7 @@ section {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/img_heroimage_small_test.jpg"); }
+  background-image: url("../img/img_heroimage_small.jpg"); }
   @media only screen and (min-width: 720px) {
     .heroimage {
       background-image: url("../img/img_heroimage.jpg"); } }
@@ -1958,7 +1960,7 @@ section.impressionen .thumb2, section.impressionen .thumb3, section.impressionen
 
 section.impressionen .thumb1 {
   width: 50%;
-  background-image: url("../img/gallery/thumbs/thumb1.jpg");
+  background-image: url("../img/gallery/thumbs/thumb1_.jpg");
   position: relative;
   cursor: pointer; }
   section.impressionen .thumb1 i {
@@ -1972,16 +1974,16 @@ section.impressionen .thumb1 {
     color: #ffffff; }
 
 section.impressionen .thumb2 {
-  background-image: url("../img/gallery/thumbs/thumb2.jpg"); }
+  background-image: url("../img/gallery/thumbs/thumb2_.jpg"); }
 
 section.impressionen .thumb3 {
-  background-image: url("../img/gallery/thumbs/thumb3.jpg"); }
+  background-image: url("../img/gallery/thumbs/thumb3_.jpg"); }
 
 section.impressionen .thumb4 {
-  background-image: url("../img/gallery/thumbs/thumb4.jpg"); }
+  background-image: url("../img/gallery/thumbs/thumb4_.jpg"); }
 
 section.impressionen .thumb5 {
-  background-image: url("../img/gallery/thumbs/thumb5.jpg"); }
+  background-image: url("../img/gallery/thumbs/thumb5_.jpg"); }
 
 section.impressionen .thumb1:after,
 section.impressionen .thumb2:after,
@@ -1999,6 +2001,9 @@ section.impressionen p {
   text-align: right;
   color: #E80C38;
   font-weight: light; }
+
+section.impressionen .openGallery {
+  cursor: pointer; }
 
 section.datenschutz, section.impressum {
   display: none; }

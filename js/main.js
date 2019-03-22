@@ -44,6 +44,7 @@ function initGallery() {
 	galleryImageThumbs.append(innerHtml);
 
 	galleryImageLarge.not('.slick-initialized').slick({
+		lazyLoad: 'ondemand',
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: true,
@@ -86,7 +87,6 @@ function initGallery() {
 	$('li', galleryImageThumbs).click(function() {
 		let index = $(this).attr('data-slick-index');
 
-		console.log('click: ' + index);
 		galleryImageLarge.slick('slickGoTo', index);
 	});
 } // initGallery
