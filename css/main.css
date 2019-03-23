@@ -1961,17 +1961,7 @@ section.impressionen .thumb2, section.impressionen .thumb3, section.impressionen
 section.impressionen .thumb1 {
   width: 50%;
   background-image: url("../img/gallery/thumbs/thumb1_.jpg");
-  position: relative;
-  cursor: pointer; }
-  section.impressionen .thumb1 i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-size: 70px;
-    color: #ffffff; }
+  position: relative; }
 
 section.impressionen .thumb2 {
   background-image: url("../img/gallery/thumbs/thumb2_.jpg"); }

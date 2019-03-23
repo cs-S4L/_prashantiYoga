@@ -443,16 +443,6 @@ section {
 			width: 50%;
 			background-image:  url('../img/gallery/thumbs/thumb1_.jpg');
 			position: relative;
-			cursor: pointer;
-
-			i {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				font-size: 70px;
-				color: $color-white;
-			}
 		}
 
 		.thumb2 {
