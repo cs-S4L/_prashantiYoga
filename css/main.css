@@ -1733,9 +1733,6 @@ section {
   @media only screen and (min-width: 720px) {
     .heroimage {
       background-image: url("../img/img_heroimage.jpg"); } }
-  @media only screen and (min-width: 1920px) {
-    .heroimage {
-      background-image: url("../img/img_heroimage_large.jpg"); } }
   .heroimage .img {
     display: none;
     height: 100%; }

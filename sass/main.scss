@@ -150,9 +150,9 @@ section {
 		background-image: url("../img/img_heroimage.jpg");
 	}
 
-	@include respond-to('1920px') {
-		background-image: url("../img/img_heroimage_large.jpg");
-	}
+	// @include respond-to('1920px') {
+	// 	background-image: url("../img/img_heroimage_large.jpg");
+	// }
 
     .img {
     	display: none;
