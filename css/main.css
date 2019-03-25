@@ -56,6 +56,9 @@ table {
 	Font-families
 **/
 /**
+	Font-weights
+**/
+/**
 	Font-sizes
 **/
 /**
@@ -1618,13 +1621,13 @@ table {
   box-sizing: border-box; }
 
 html, body {
-  width: 100%; }
+  width: 100%;
+  color: #555555; }
 
 body {
-  margin: 0 auto; }
-
-body {
+  margin: 0 auto;
   font-family: "Open Sans", sans-serif;
+  font-weight: normal;
   font-size: 14px; }
 
 h1 {
@@ -1657,7 +1660,8 @@ p {
   white-space: pre-line;
   line-height: 27px; }
   p .highlight {
-    font-size: 20px; }
+    font-weight: bold;
+    color: #000000; }
 
 a {
   font-size: 16px;

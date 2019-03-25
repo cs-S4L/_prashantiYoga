@@ -14,16 +14,14 @@
 
 html, body {
 	width: 100%;
+	color: $color-text-default;
 }
 
 body {
 	margin: 0 auto;
-}
-
-body {
 	font-family: $font-family-default;
+	font-weight: $font-weight-normal;
 	font-size: $font-size-text;
-
 }
 
 h1 {
@@ -61,7 +59,9 @@ p {
 	line-height: 27px;
 
 	.highlight {
-		font-size: $font-size-text--big+4;
+		// font-size: $font-size-text--big+4;
+		font-weight: $font-weight-bold;
+		color: $color-black;
 	}
 }
 
@@ -415,7 +415,7 @@ section {
 				white-space: pre-line;
 				i {
 					font-size: 50px;
-					color: $color-default;
+					color: $color-black;
 				}
 			}
 
@@ -478,7 +478,7 @@ section {
 		p {
 			text-align: right;
 			color: $color-link;
-			font-weight: light;
+			font-weight: $font-weight-light;
 		}
 
 		.openGallery {
@@ -720,7 +720,7 @@ footer {
 
 	h1, h2, h3, p {
 		font-family: $font-family-default;
-		color: $color-default;
+		color: $color-black;
 		width: 100%;
 	}
 
