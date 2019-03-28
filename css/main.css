@@ -1700,7 +1700,7 @@ section {
   .row .col-2 {
     width: 50%; }
   .row .col-3 {
-    width: 33,3%; }
+    width: 33.3%; }
   .row .col-4 {
     width: 25%; }
   @media only screen and (min-width: 720px) {
@@ -1991,7 +1991,7 @@ section.impressionen .col-4 {
 section.impressionen p {
   text-align: right;
   color: #E80C38;
-  font-weight: light; }
+  font-weight: lighter; }
 
 section.impressionen .openGallery {
   cursor: pointer; }
