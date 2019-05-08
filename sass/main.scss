@@ -8,6 +8,8 @@
 
 @import 'slick-theme.scss';
 
+@import 'font-awesome';
+
 * {
 	box-sizing: border-box;
 }
@@ -685,6 +687,7 @@ figure {
 		font-size: 50px;
 		z-index: 300;
 		color: $color-white;
+		cursor: pointer;
 
 		@include respond-to($md) {
 			top: 25px;
