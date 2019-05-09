@@ -4,6 +4,7 @@ var navAnimationDuration = 300;
 let gallery = $('.gallery');
 let galleryImageLarge = $('.large', gallery);
 let galleryImageThumbs = $('.thumbs', gallery);
+let disclaimerCookie;
 
 
 
@@ -111,6 +112,29 @@ function closeGallery() {
 	});
 }
 
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
 
 
 
@@ -145,8 +169,6 @@ $(window).bind('scroll', function() {
 
 
 
-
-
 // Gallery Code
 $('.openGallery').click(function() {
 	openGallery();
@@ -155,8 +177,6 @@ $('.openGallery').click(function() {
 $('.gallery .close').click(function () {
 	closeGallery();
 });
-
-
 
 
 
@@ -180,9 +200,23 @@ $('#impressum').click(function() {
 });
 
 
-// $('.heroimage').backstretch();
 
-// $('.heroimage').backstretch([
-// 	{ width: 720, url: "img/img_heroimage.png" },
-// 	{ width: 0, url: "img/img_heroimageSmall_.png" },
-// ]);
+
+//Cookie Disclaimer
+disclaimerCookie = getCookie('cookieDisclaimer');
+
+if (disclaimerCookie) {
+	$('.cookieDisclaimer').removeClass('active');
+}
+
+$('#cookieDisclaimer').click(function() {
+	setCookie('cookieDisclaimer', 'true', 365);
+
+	$('.cookieDisclaimer').removeClass('active');
+});
+
+
+
+
+
+
