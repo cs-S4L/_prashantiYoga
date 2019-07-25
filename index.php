@@ -27,8 +27,6 @@
 
 	<meta name="Keywords" content="Prashanti Yoga, Hatha Yoga, Paulina Thomas, Aschaffenburg, Monkey Cage">
 
-
-
 	<!-- Fav Icon Stuff -->
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
@@ -37,26 +35,11 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 	
-
 	<!-- Open Sans Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-	<!-- Icon Font -->
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
-
 	<!-- Main -->
-	<link rel="stylesheet" href="css/main.css">
-				
-
-	<!-- Jquery -->
-	<script src="js/jquery.js"></script>
-
-	<!-- Backstretch -->
-	<script src="js/jquery.backstretch.min.js"></script>
-
-	<!-- Slick Slider -->
-	<script src="js/slick.min.js"></script>
-
+	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
@@ -450,7 +433,7 @@
 	</div>
 </div>
 
-<script src="js/main.js"></script>
+<script src="js/index.js"></script>
 
 </body>
 </html>
