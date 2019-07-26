@@ -1,11 +1,17 @@
 <?php  
-	include "php/helperFunctions.php";
+	require "init.php";
+	$_SEO = [
+		'metaTitle' => 'Prashanti Yoga | Hatha Yoga mit Paulina Thomas in Aschaffenburg',
+		'metaDescription' => 'Hatha Yoga in Aschaffenburg mit Paulina Thomas, Yogalehrerin und Physiotherapeutin. Arbeite in kleinen Gruppen (6-8) an deinem inneren und äußeren Gleichgewicht.',
+		'metaKeywords' => 'Prashanti Yoga, Hatha Yoga, Paulina Thomas, Aschaffenburg, Monkey Cage'
+	];
 ?>
 
 <!DOCTYPE html>
 <html lang="de">
 <head>
 	<meta charset="UTF-8">
+
 	<title>Prashanti Yoga | Hatha Yoga mit Paulina Thomas in Aschaffenburg</title>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -18,28 +24,17 @@
 		gtag('config', 'UA-137016236-1');
 	</script>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<?php include(DIR__PARTIALS . 'head/metaViewport.php') ?>
+	
+	<?php include(DIR__PARTIALS . 'head/metaFavicon.php') ?>
 
-	<!-- SEO Stuff -->
-	<meta name="title" content="Prashanti Yoga | Hatha Yoga mit Paulina Thomas in Aschaffenburg">
-
-	<meta name="Description" content="Hatha Yoga in Aschaffenburg mit Paulina Thomas, Yogalehrerin und Physiotherapeutin. Arbeite in kleinen Gruppen (6-8) an deinem inneren und äußeren Gleichgewicht.">
-
-	<meta name="Keywords" content="Prashanti Yoga, Hatha Yoga, Paulina Thomas, Aschaffenburg, Monkey Cage">
-
-	<!-- Fav Icon Stuff -->
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="favicon.png" sizes="96x96">
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<?php include(DIR__PARTIALS . 'head/metaSeo.php') ?>
 	
 	<!-- Open Sans Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 	<!-- Main -->
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="<?=BASE_URL?>css/index.css">
 </head>
 <body>
 
@@ -433,7 +428,7 @@
 	</div>
 </div>
 
-<script src="js/index.js"></script>
+<script src="<?=BASE_URL?>js/index.js"></script>
 
 </body>
 </html>
