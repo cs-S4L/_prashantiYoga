@@ -34,7 +34,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 	<!-- Main -->
-	<link rel="stylesheet" href="<?=BASE_URL?>css/index.css">
+	<link rel="stylesheet" href="<?=BASE_URL?>_css/index.css">
 </head>
 <body>
 
@@ -55,7 +55,7 @@
 
 <div class="navi">
 	<div class="inner">
-		<img src="img/logo_transparent.png" alt="Logo" class="logo">
+		<img src="_img/logo_transparent.png" alt="Logo" class="logo">
 
 		<button class="hamburger hamburger--collapse" type="button">
 			<span class="hamburger-box">
@@ -98,7 +98,7 @@
 
 <figure id="wasIstPY" class="sectionHeading wasIstPY">
 	<div class="overlay">
-		<img src="img/img_Section_WasIstPY.jpg" alt="Was ist PY">
+		<img src="_img/img_Section_WasIstPY.jpg" alt="Was ist PY">
 	</div>
 
 	<figcaption>Was ist Prashanti Yoga</figcaption>
@@ -127,7 +127,7 @@
 
 <figure id="kurse" class="sectionHeading kurse">
 	<div class="overlay">
-		<img src="img/img_Section_Kurse.jpg" alt="kurse">
+		<img src="_img/img_Section_Kurse.jpg" alt="kurse">
 	</div>
 
 	<figcaption>Kurse</figcaption>
@@ -220,7 +220,7 @@
 
 <figure id="impressionen" class="sectionHeading impressionen">
 	<div class="overlay">
-		<img src="img/img_Section_Impressionen.jpg" alt="Impressionen">
+		<img src="_img/img_Section_Impressionen.jpg" alt="Impressionen">
 	</div>
 
 	<figcaption>Impressionen</figcaption>
@@ -253,69 +253,69 @@
 			<ul class="large">
 				<!-- Thumbs -->
 				<li>
-					<img src="img/gallery/P1050951.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img src="_img/gallery/P1050951.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img src="img/gallery/P1050811.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img src="_img/gallery/P1050811.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img src="img/gallery/P1050829.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img src="_img/gallery/P1050829.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img src="img/gallery/P1050932.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img src="_img/gallery/P1050932.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img src="img/gallery/P1050855.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img src="_img/gallery/P1050855.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 
 				<!-- Bilder -->
 				<li>
-					<img src="img/gallery/P1050804.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img src="_img/gallery/P1050804.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050820.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050820.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050825.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050825.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050833.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050833.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050859.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050859.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050875.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050875.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050878.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050878.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050884.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050884.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050886.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050886.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050888.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050888.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050899.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050899.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050901.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050901.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050905.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050905.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050914.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050914.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050956.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050956.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 				<li>
-					<img data-lazy="img/gallery/P1050977.jpg" alt="Galeriebild 1" class="galleryImg">
+					<img data-lazy="_img/gallery/P1050977.jpg" alt="Galeriebild 1" class="galleryImg">
 				</li>
 			</ul>
 			<i class="next fas fa-arrow-circle-right"></i>
@@ -428,7 +428,7 @@
 	</div>
 </div>
 
-<script src="<?=BASE_URL?>js/index.js"></script>
+<script src="<?=BASE_URL?>_js/index.js"></script>
 
 </body>
 </html>

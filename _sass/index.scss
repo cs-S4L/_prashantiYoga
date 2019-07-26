@@ -1,14 +1,14 @@
-@import 'reset';
+@import 'includes/reset';
 
-@import 'vars';
+@import 'includes/vars';
 
-@import 'hamburger.scss';
+@import 'includes/hamburger.scss';
 
-@import 'slick.scss';
+@import 'includes/slick.scss';
 
-@import 'slick-theme.scss';
+@import 'includes/slick-theme.scss';
 
-@import 'font-awesome';
+@import 'includes/font-awesome';
 
 * {
 	box-sizing: border-box;
@@ -146,14 +146,14 @@ section {
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url("../img/img_heroimage_small.jpg");
+	background-image: url("../_img/img_heroimage_small.jpg");
 
 	@include respond-to($md) {
-		background-image: url("../img/img_heroimage.jpg");
+		background-image: url("../_img/img_heroimage.jpg");
 	}
 
 	// @include respond-to('1920px') {
-	// 	background-image: url("../img/img_heroimage_large.jpg");
+	// 	background-image: url("../_img/img_heroimage_large.jpg");
 	// }
 
     .img {
@@ -303,7 +303,7 @@ section {
 
 section {
 	&.text {
-		background: url("../img/shiva_yellow_transparent_small.png");
+		background: url("../_img/shiva_yellow_transparent_small.png");
 		background-position: center;
 		background-repeat: no-repeat;
 		position: relative;
@@ -443,24 +443,24 @@ section {
 
 		.thumb1 {
 			width: 50%;
-			background-image:  url('../img/gallery/thumbs/thumb1_.jpg');
+			background-image:  url('../_img/gallery/thumbs/thumb1_.jpg');
 			position: relative;
 		}
 
 		.thumb2 {
-			background-image: url('../img/gallery/thumbs/thumb2_.jpg');
+			background-image: url('../_img/gallery/thumbs/thumb2_.jpg');
 		}
 
 		.thumb3 {
-			background-image: url('../img/gallery/thumbs/thumb3_.jpg');
+			background-image: url('../_img/gallery/thumbs/thumb3_.jpg');
 		}
 
 		.thumb4 {
-			background-image: url('../img/gallery/thumbs/thumb4_.jpg');
+			background-image: url('../_img/gallery/thumbs/thumb4_.jpg');
 		}
 
 		.thumb5 {
-			background-image: url('../img/gallery/thumbs/thumb5_.jpg');
+			background-image: url('../_img/gallery/thumbs/thumb5_.jpg');
 		}
 
 		.thumb1:after,
