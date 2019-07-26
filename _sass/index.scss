@@ -10,21 +10,9 @@
 
 @import 'includes/font-awesome';
 
-* {
-	box-sizing: border-box;
-}
+@import 'includes/globals';
 
-html, body {
-	width: 100%;
-	color: $color-text-default;
-}
 
-body {
-	margin: 0 auto;
-	font-family: $font-family-default;
-	font-weight: $font-weight-normal;
-	font-size: $font-size-text;
-}
 
 h1 {
 	font-size: $font-size-heading-1;
@@ -71,22 +59,6 @@ a {
 	font-size: $font-size-text--big;
 	color: $color-link;
 	text-decoration: underline;
-}
-
-section {
-	width: 100%;
-	padding: $padding-big $page-side-padding;
-	margin: 40px auto;
-
-	@include respond-to($md) {
-		margin: 60px auto;
-	}
-
-	.section__inner {
-		max-width: $xlg;
-		width: 100%;
-		margin: 0 auto;
-	}
 }
 
 .row {

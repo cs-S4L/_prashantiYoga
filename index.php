@@ -69,6 +69,9 @@
 			<li data-target="kurse">Kurse</li>
 			<li data-target="kontakt">Kontakt</li>
 			<li data-target="impressionen">Impressionen</li>
+			<li><?= (isset($_SESSION) && isset($_SESSION['token_Login'])) 
+			? sprintf("<a href=\"%s/login/checkLogin.php?logout=1\">Logout</a>", BASE_URL)
+			: sprintf("<a href=\"%slogin\">Login</a>", BASE_URL)?>
 		</ul> 
 	</div>
 </div>

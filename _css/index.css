@@ -65,6 +65,9 @@ table {
 	Line-Heights
 **/
 /**
+ 	Border-radios
+ */
+/**
 	Mixins
 **/
 /*!
@@ -5970,6 +5973,38 @@ body {
   font-weight: normal;
   font-size: 14px; }
 
+section {
+  width: 100%;
+  padding: 40px 10px;
+  margin: 40px auto; }
+  @media only screen and (min-width: 720px) {
+    section {
+      margin: 60px auto; } }
+  section .section__inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; }
+
+label {
+  display: block;
+  font-size: 24px;
+  margin: 15px 0 10px; }
+
+input[type="text"] {
+  border: 1px solid #6e322a;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 10px; }
+
+input[type="submit"] {
+  display: block;
+  margin: 10px 0;
+  font-size: 24px;
+  border-color: #6e322a;
+  color: #6e322a;
+  border-radius: 6px;
+  padding: 5px; }
+
 h1 {
   font-size: 52px;
   font-family: "onelove", "sans-serif"; }
@@ -6007,18 +6042,6 @@ a {
   font-size: 16px;
   color: #E80C38;
   text-decoration: underline; }
-
-section {
-  width: 100%;
-  padding: 40px 10px;
-  margin: 40px auto; }
-  @media only screen and (min-width: 720px) {
-    section {
-      margin: 60px auto; } }
-  section .section__inner {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto; }
 
 .row {
   width: 100%;

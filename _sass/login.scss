@@ -1,0 +1,52 @@
+@import 'includes/reset';
+
+@import 'includes/vars';
+
+@import 'includes/font-awesome';
+
+@import 'includes/globals';
+
+section {
+	.section__inner {
+		display: flex;
+		width: 100%;
+	}
+}
+
+form {
+	display: inline-block;
+	margin: 0 auto;
+	border: 2px solid $color-brand-2;
+    border-radius: $border-radius--default;
+    padding: 20px 30px 30px;
+}
+
+label {
+}
+
+h3 {
+	font-size: $font-size-heading-3;
+	font-family: $font-family-default;
+}
+
+input[type="text"] {
+	width: 250px;
+}
+
+.errorMessage {
+	color: red;
+    margin: 10px 0 10px 3px;
+    max-width: 250px;
+    display: none;
+    line-height: $line-height-text;
+}
+
+form.invalid {
+	input[type="text"] {
+		border-color: red;
+	}
+
+	.errorMessage {
+		display: block;
+	}
+}

@@ -21,5 +21,20 @@
 </head>
 <body>
 
+	<section>
+		<div class="section__inner">
+			<form id="login" action="<?=BASE_URL?>login/checkLogin.php" method="POST" class="">
+				<h3>Login</h3>
+				<label for="username">Nutzername:</label>
+				<input id="username" name="username" type="text"><br>
+				<label for="password">Passwort:</label>
+				<input id="password" name="password" type="text">
+				<p class="errorMessage">Login fehlgeschlagen!</br>Versuche es erneut</p>
+				<input type="submit" name="submit">
+			</form>
+		</div>
+	</section>
+
+	<script src="<?=BASE_URL?>_js/login.js"></script>
 </body>
 </html>

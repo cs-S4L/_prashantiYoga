@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	color: $color-text-default;
+}
+
+body {
+	margin: 0 auto;
+	font-family: $font-family-default;
+	font-weight: $font-weight-normal;
+	font-size: $font-size-text;
+}
+
+section {
+	width: 100%;
+	padding: $padding-big $page-side-padding;
+	margin: 40px auto;
+
+	@include respond-to($md) {
+		margin: 60px auto;
+	}
+
+	.section__inner {
+		max-width: $xlg;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+label {
+	display: block;
+	font-size: 24px;
+	margin: 15px 0 10px;
+}
+
+input[type="text"] {
+	border: 1px solid $color-brand-1;
+	border-radius: $border-radius--input;
+	font-size: $font-size-text--big;
+	padding: 10px;
+}
+
+input[type="submit"] {
+	display: block;
+	margin: 10px 0;
+    font-size: $font-size-navi;
+    border-color: $color-brand-1;
+    color: $color-brand-1;
+    border-radius: $border-radius--input;
+    padding: 5px;
+}
