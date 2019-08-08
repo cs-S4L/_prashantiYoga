@@ -1,10 +1,16 @@
 <?php  
 	require "init.php";
-	$_SEO = [
-		'metaTitle' => 'Prashanti Yoga | Hatha Yoga mit Paulina Thomas in Aschaffenburg',
-		'metaDescription' => 'Hatha Yoga in Aschaffenburg mit Paulina Thomas, Yogalehrerin und Physiotherapeutin. Arbeite in kleinen Gruppen (6-8) an deinem inneren und äußeren Gleichgewicht.',
-		'metaKeywords' => 'Prashanti Yoga, Hatha Yoga, Paulina Thomas, Aschaffenburg, Monkey Cage'
-	];
+
+	$GLOBALS['Pagename'] = 'index';
+
+	$currentPage = new Page($GLOBALS['DB'], $GLOBALS['Pagename']);
+
+	// $content = new Content($GLOBALS['DB']);
+
+	// $content->addContentToDB($GLOBALS['Pagename'], 'aboutMe', 'textWithHeading', array('heading'=>'', 'text'=>''));
+	echo $m->render('Hello, {{planet}}!', array('planet' => 'World')); // "Hello, World!"
+	
+	die();
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +18,7 @@
 <head>
 	<meta charset="UTF-8">
 
-	<title>Prashanti Yoga | Hatha Yoga mit Paulina Thomas in Aschaffenburg</title>
+	<title><?=$currentPage->getTitle();?></title>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137016236-1"></script>
@@ -69,7 +75,7 @@
 			<li data-target="kurse">Kurse</li>
 			<li data-target="kontakt">Kontakt</li>
 			<li data-target="impressionen">Impressionen</li>
-			<li><?= (isset($_SESSION) && isset($_SESSION['token_Login'])) 
+			<li><?= ($GLOBALS['LoggedIn']) 
 			? sprintf("<a href=\"%s/login/checkLogin.php?logout=1\">Logout</a>", BASE_URL)
 			: sprintf("<a href=\"%slogin\">Login</a>", BASE_URL)?>
 		</ul> 
@@ -109,6 +115,8 @@
 
 <section class="text wasIstPY">
 	<div class="section__inner">
+		<h2></h2>
+
 		<p>Sanskrit: Para = höchst, shanti = Frieden. 
 
 			Der Begriff <span class="highlight">Prashanti</span> steht für den ungetrübten und höchsten <span class="highlight">inneren Frieden</span>, der durch nichts aus dem <span class="highlight">Gleichgewicht</span> gebracht werden kann. Das ist auch genau das, was ich selbst erfahren durfte und in meinen <span class="highlight">Yogastunden</span> vermitteln möchte.

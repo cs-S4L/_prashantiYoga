@@ -1,5 +1,11 @@
 <?php
 	require "../init.php";
+
+	if ($GLOBALS['LoggedIn']) {
+		$header = "Location: " . BASE_URL;
+		header($header);
+		die();
+	}
 ?>
 
 <!DOCTYPE html>

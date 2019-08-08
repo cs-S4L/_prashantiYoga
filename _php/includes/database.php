@@ -20,7 +20,7 @@ class Database {
 	// 	$this->conn->exec($sql);
 	// }
 
-	function insertIntoDatabase($table, $data) {
+	public function insertIntoDatabase($table, $data) {
 		$fields = "";
 		$params = "";
 
@@ -44,7 +44,7 @@ class Database {
 		$sql->execute();
 	}
 
-	function readFromDatabase($table, $where = null, $selection = '*') {
+	public function readFromDatabase($table, $where = null, $selection = '*') {
 		$statement = "";
 		if (is_null($where)) {
 			$statement = "SELECT $selection FROM $table";

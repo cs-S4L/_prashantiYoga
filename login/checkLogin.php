@@ -8,9 +8,16 @@
 		die();
 	}
 
-	include DIR__PHP . "login.php";
+	$login = $GLOBALS['Login'];
 
-	$login = new Login($_POST);
+	if (
+		isset($_POST) 
+		&& isset($_POST['username'])
+		&& isset($_POST['password'])
+	) {
+		echo $login->checkLogin($_POST['username'], $_POST['password']);
+	} else {
+		return 0;
+	}
 
-	echo $login->checkLogin();
 ?>

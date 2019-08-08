@@ -1,6 +1,6 @@
 <!-- SEO Stuff -->
-<meta name="title" content="<?=$_SEO['metaTitle']?>">
+<meta name="title" content="<?=$currentPage->getSeoTitle();?>">
 
-<meta name="Description" content="<?=$_SEO['metaDescription']?>">
+<meta name="Description" content="<?=$currentPage->getSeoDescription();?>">
 
-<meta name="Keywords" content="<?=$_SEO['metaDescription']?>">
+<meta name="Keywords" content="<?=$currentPage->getSeoKeywords();?>">

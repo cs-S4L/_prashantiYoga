@@ -56,13 +56,13 @@ class Login {
 			DBUsers::Password => hash(Login::HashAlgorithm, $password . $this->salt)
 		];
 
-		return $this->db->insertIntoDatabase('users', $data);
+		return $this->db->insertIntoDatabase(DBUsers::TableName, $data);
 	}
 
 	private function searchLoginInDB($username, $hash) {
 		return $this->db->readFromDatabase(
-			DBUsers::TableName,
-			DBUsers::Username." = '$username' AND ".DBUsers::Password." = '$hash'"
+			"users",
+			"username = '$username' AND password = '$hash'"
 		);
 	}
 
