@@ -44,7 +44,7 @@ class Database {
 		$sql->execute();
 	}
 
-	public function readFromDatabase($table, $where = null, $selection = '*') {
+	public function readFromDatabase($table, $where = null, $selection = '*', $fetchMode=PDO::FETCH_ASSOC) {
 		$statement = "";
 		if (is_null($where)) {
 			$statement = "SELECT $selection FROM $table";
@@ -56,7 +56,7 @@ class Database {
 
 		$sql->execute();
 
-		return $sql->fetchAll();
+		return $sql->fetchAll($fetchMode);
 	}
 }
 

@@ -3,14 +3,13 @@
 
 	$GLOBALS['Pagename'] = 'index';
 
-	$currentPage = new Page($GLOBALS['DB'], $GLOBALS['Pagename']);
+	$currentPage = new Page($GLOBALS['DB'],$GLOBALS['Content'], $GLOBALS['Pagename']);
 
 	// $content = new Content($GLOBALS['DB']);
 
 	// $content->addContentToDB($GLOBALS['Pagename'], 'aboutMe', 'textWithHeading', array('heading'=>'', 'text'=>''));
-	echo $m->render('Hello, {{planet}}!', array('planet' => 'World')); // "Hello, World!"
 	
-	die();
+	// die();
 ?>
 
 <!DOCTYPE html>
@@ -85,7 +84,9 @@
 <section id="uberMich" class="text uberMich first">
 	<div class="section__inner">
 		<!-- <h2>Uber mich</h2> -->
-		<h2>Herzlich Willkommen auf meiner Seite</h2>
+
+		<?= $currentPage->getRenderedField('aboutMe')?>
+		<!-- <h2>Herzlich Willkommen auf meiner Seite</h2>
 
 		<p>Ich heiße <span class="highlight">Paulina Thomas</span>, bin <?=calculateAge("06/11/1996");?> Jahre jung und freue mich sehr darüber, dass du den Weg hierher gefunden hast!
 
@@ -100,7 +101,7 @@
 			Der menschliche <span class="highlight">Körper</span> in seiner Funktion und Komplexität fasziniert mich schon lange. Ich entschied mich daher im Jahr 2015 für die Ausbildung zur staatlich anerkannten <span class="highlight">Physiotherapeutin</span>, welche ich 2018 erfolgreich abschloss. 
 
 			Dank der harmonierenden <span class="highlight">Kombination</span> aus medizinischem <span class="highlight">Fachwissen</span> und <span class="highlight">Yogaphilosophie</span> ist es mir möglich, sowohl auf körperliche, als auch auf seelische Bedürfnisse einzugehen.
-		</p>
+		</p> -->
 		
 	</div>
 </section>
@@ -115,7 +116,9 @@
 
 <section class="text wasIstPY">
 	<div class="section__inner">
-		<h2></h2>
+		<?= $currentPage->getRenderedField('aboutPrashantiYoga')?>
+		
+		<!-- <h2></h2>
 
 		<p>Sanskrit: Para = höchst, shanti = Frieden. 
 
@@ -132,7 +135,7 @@
 			<span class="highlight">Namasté</span> and spread <span class="highlight">positive vibes!</span>
 
 			Paulina
-		</p>
+		</p> -->
 	</div>
 </section>
 

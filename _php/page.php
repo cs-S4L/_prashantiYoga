@@ -3,18 +3,21 @@
 class Page {
 
 	private $db;
+	private $contentObject;
 
 	private $name;
 	private $title;
 	private $seoTitle;
 	private $seoDescription;
 	private $seoKeywords;
+	private $content;
 
 
-	public function __construct($db, $name=null) {
+	public function __construct($db, $content, $name=null) {
 		$this->db = $db;
+		$this->contentObject = $content;
 
-		if (!is_null($name)) {
+		if (! is_null($name)) {
 			$page = $this->loadPageFromDB($name);
 
 			$this->name = $page[0][DBPages::Name];
@@ -22,6 +25,8 @@ class Page {
 			$this->seoTitle = $page[0][DBPages::SeoTitle];
 			$this->seoDescription = $page[0][DBPages::SeoDescription];
 			$this->seoKeywords = $page[0][DBPages::SeoKeywords];
+
+			$this->content = $this->contentObject->getPageContent($name);
 		}
 	}
 
@@ -58,6 +63,10 @@ class Page {
 			DBPages::TableName,
 			DBPages::Name . " = '$name'"
 		);
+	}
+
+	public function getRenderedField($fieldName) {
+		$this->content[$fieldName]->renderTemplate();
 	}
 
 
