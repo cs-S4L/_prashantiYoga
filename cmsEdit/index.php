@@ -2,9 +2,11 @@
 
 	require "../init.php";
 
-	if (isset($_GET) && isset($_GET['fieldName'])) {
-		$fieldName = $_GET['fieldName'];
+	if (isset($_GET) && isset($_GET[DBCmsFields::Field])) {
+		$fieldName = $_GET[DBCmsFields::Field];
 		$currentField = $GLOBALS['Content']->getField($fieldName);
+	} else {
+		die('Fehler. Kein Feldname angeben.');
 	}
 
 ?>

@@ -1,16 +1,27 @@
 <?php 
 
 class Template {
+	public $field;
 
-	public function __construct($content) {
-		$contentArray = json_decode($content);
+	public function __construct($content, $field = null) {
+		if (empty($content)) {
+			die('Content empty in Templte');
+		}
+		
+		if (is_array($content)) {
+			$content = (object) $content;
+		}
 
 		try {
-			foreach($this->requiredFields as $field) {
-				$this->{$field} = $contentArray->{$field};
+			foreach($this->requiredFields as $fieldName) {
+				$this->{$fieldName} = $content->{$fieldName};
 			}
 		} catch (Exception $e) {
 			die('Template Invalid');
+		}
+
+		if (! is_null($fieldName)) {
+			$this->field = $field;
 		}
 	}
 
@@ -40,5 +51,23 @@ class Template {
 		} else {
 			die('Template Not Exist');
 		}	
+	}
+
+	public function validateFields() {
+		// foreach($this->requiredFields as $fieldName) {
+			// $this->{$fieldName} = htmlspecialchars($this->{$fieldName});
+		// }
+
+		return true;
+	}
+
+	public function createJsonString() {
+		$fieldArray = array();
+		// $jsonString = '';
+		foreach($this->requiredFields as $fieldName) {
+			$fieldArray[$fieldName] = $this->{$fieldName};
+		}
+
+		return json_encode($fieldArray);
 	}
 }

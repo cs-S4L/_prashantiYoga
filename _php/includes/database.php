@@ -16,10 +16,6 @@ class Database {
 		}
 	}
 
-	// function executeStatement($sql) {
-	// 	$this->conn->exec($sql);
-	// }
-
 	public function insertIntoDatabase($table, $data) {
 		$fields = "";
 		$params = "";
@@ -37,7 +33,6 @@ class Database {
 		);
 
 		foreach ($data as $key => &$value) {
-			echo "$key und $value <br>";
 			$sql->bindParam(":$key", $value);
 		}
 
@@ -58,6 +53,24 @@ class Database {
 
 		return $sql->fetchAll($fetchMode);
 	}
+
+	public function updateDatabase($table, $values, $where=null) {
+		$statement = "";
+
+		if (is_null($where)) {
+			$statement = "UPDATE $table SET $values;";
+		} else {
+			$statement = "UPDATE $table SET $values WHERE $where;";
+		}
+
+		$sql = $this->conn->prepare($statement);
+
+		return $sql->execute();
+// 		UPDATE table_name
+// SET column1 = value1, column2 = value2, ...
+// WHERE condition;
+	}
+
 }
 
 ?>

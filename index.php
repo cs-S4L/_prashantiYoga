@@ -7,7 +7,7 @@
 
 	// $content = new Content($GLOBALS['DB']);
 
-	// $content->addContentToDB($GLOBALS['Pagename'], 'aboutMe', 'textWithHeading', array('heading'=>'', 'text'=>''));
+	// $content->addContentToDB($GLOBALS['Pagename'], 'aboutPrashantiYoga', 'textWithHeading', array('heading'=>'', 'text'=>'Test text'));
 	
 	// die();
 ?>
