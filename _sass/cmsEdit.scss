@@ -1,0 +1,38 @@
+@import 'includes/reset';
+
+@import 'includes/vars';
+
+// @import 'includes/hamburger.scss';
+
+@import 'includes/font-awesome';
+
+@import 'includes/globals';
+
+body {
+	background: $color-white;
+}
+
+form {
+	display: block;
+    padding: 15px;
+
+    h3 {
+    	text-align: center;
+    	font-size: 34px;
+    	margin: 10px 0 30px;
+    }
+}
+
+input[type="text"] {
+	width: 620px;
+}
+
+textarea {
+	width: 620px;
+
+}
+
+
+
+
+

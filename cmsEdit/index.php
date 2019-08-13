@@ -19,10 +19,13 @@
 
 	<?php include(DIR__PARTIALS . 'head/metaFavicon.php') ?>
 	
-	<link rel="stylesheet" href="<?=BASE_URL?>_css/index.css">
+	<link rel="stylesheet" href="<?=BASE_URL?>_css/cmsEdit.css">
 </head>
 <body>
 
 	<?= $currentField->renderEditForm();?>
+
+	<script src="<?=BASE_URL?>_js/cmsEdit.js"></script>
+
 </body>
 </html>

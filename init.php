@@ -23,6 +23,7 @@ require DIR__PHP . "template.php";
 require DIR__PHP . "content.php";
 
 require DIR__PHP . "templates".DIRECTORY_SEPARATOR."TextWithHeading.php";
+require DIR__PHP . "templates".DIRECTORY_SEPARATOR."Location.php";
 
 // require DIR__RESSOURCES . "Mustache".DIRECTORY_SEPARATOR."Autoloader.php";
 

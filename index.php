@@ -7,7 +7,26 @@
 
 	// $content = new Content($GLOBALS['DB']);
 
-	// $content->addContentToDB($GLOBALS['Pagename'], 'aboutPrashantiYoga', 'textWithHeading', array('heading'=>'', 'text'=>'Test text'));
+	// $content->addContentToDB('index', 'aboutMe', 'textWithHeading', array('heading'=>'', 'text'=>'Ich heiße <span class="highlight">Paulina Thomas</span>, bin 23 Jahre jung und freue mich sehr darüber, dass du den Weg hierher gefunden hast!
+
+	// 		Großer <span class="highlight">Dank</span> an meine Mama, die mich 2013 im Alter von nur 16 Jahren zum ersten mal mit <span class="highlight">Yoga</span> in Berührung brachte.
+
+	// 		Schon im Jahr 2014/15 durfte ich dann die großartige Erfahrung machen, die 1- jährige Yogalehrerausbildung basierend auf der Tradition des Hathayoga in Aschaffenburg bei Andrea Brehm zu absolvieren. 
+	// 		Diese Entscheidung prägt meinen Yoga- und damit auch meinen Lebensweg von dort an fundamental. Ich durfte erfahren, was <span class="highlight">innerer Frieden</span> tatsächlich bedeutet und wahrnehmen, wie wunderbar es sich anfühlt, <span class="highlight">Gefühle</span> und <span class="highlight">Bedürfnisse</span> ganz <span class="highlight">bewusst</span> zu erleben.
+	// 		Seitdem hielt ich Yogastunden in einem ambulanten Rehabilitationszentrum.
+
+	// 		Meine generelle <span class="highlight">Liebe</span> zu Tieren habe ich schon in meiner frühen Kindheit entdeckt. Vor allem mit Pferden beschäftige ich mich in meiner Freizeit zeitlich, seelisch und emotional sehr intensiv. Daher habe ich mir auch das zum <span class="highlight">Herzensthema</span> gemacht und gebe Wochenendworkshops zum Thema „Yoga und Pferd“.
+
+	// 		Der menschliche <span class="highlight">Körper</span> in seiner Funktion und Komplexität fasziniert mich schon lange. Ich entschied mich daher im Jahr 2015 für die Ausbildung zur staatlich anerkannten <span class="highlight">Physiotherapeutin</span>, welche ich 2018 erfolgreich abschloss. 
+
+	// 		Dank der harmonierenden <span class="highlight">Kombination</span> aus medizinischem <span class="highlight">Fachwissen</span> und <span class="highlight">Yogaphilosophie</span> ist es mir möglich, sowohl auf körperliche, als auch auf seelische Bedürfnisse einzugehen.'));
+
+	// $content->addContentToDB('index', 'pricing', 'pricing', array(
+	// 	array('name' => 'Monatlich', 'hint' => 'laufzeit monatlich', 'price' => '72 euro'),
+	// 	array('name' => 'Schnupperkurs', 'hint' => 'laufzeit einmalig', 'price' => '12 euro'),
+	// 	array('name' => 'Einzelstunde', 'hint' => '', 'price' => 'nach Absprache'),
+		
+	// ));
 	
 	// die();
 ?>
@@ -40,6 +59,7 @@
 
 	<!-- Main -->
 	<link rel="stylesheet" href="<?=BASE_URL?>_css/index.css">
+
 </head>
 <body>
 
@@ -83,26 +103,7 @@
 <span class="highlight"></span>
 <section id="uberMich" class="text uberMich first">
 	<div class="section__inner">
-		<!-- <h2>Uber mich</h2> -->
-
 		<?= $currentPage->getRenderedField('aboutMe')?>
-		<!-- <h2>Herzlich Willkommen auf meiner Seite</h2>
-
-		<p>Ich heiße <span class="highlight">Paulina Thomas</span>, bin <?=calculateAge("06/11/1996");?> Jahre jung und freue mich sehr darüber, dass du den Weg hierher gefunden hast!
-
-			Großer <span class="highlight">Dank</span> an meine Mama, die mich 2013 im Alter von nur 16 Jahren zum ersten mal mit <span class="highlight">Yoga</span> in Berührung brachte.
-
-			Schon im Jahr 2014/15 durfte ich dann die großartige Erfahrung machen, die 1- jährige Yogalehrerausbildung basierend auf der Tradition des Hathayoga in Aschaffenburg bei Andrea Brehm zu absolvieren. 
-			Diese Entscheidung prägt meinen Yoga- und damit auch meinen Lebensweg von dort an fundamental. Ich durfte erfahren, was <span class="highlight">innerer Frieden</span> tatsächlich bedeutet und wahrnehmen, wie wunderbar es sich anfühlt, <span class="highlight">Gefühle</span> und <span class="highlight">Bedürfnisse</span> ganz <span class="highlight">bewusst</span> zu erleben.
-			Seitdem hielt ich Yogastunden in einem ambulanten Rehabilitationszentrum.
-
-			Meine generelle <span class="highlight">Liebe</span> zu Tieren habe ich schon in meiner frühen Kindheit entdeckt. Vor allem mit Pferden beschäftige ich mich in meiner Freizeit zeitlich, seelisch und emotional sehr intensiv. Daher habe ich mir auch das zum <span class="highlight">Herzensthema</span> gemacht und gebe Wochenendworkshops zum Thema „Yoga und Pferd“.
-
-			Der menschliche <span class="highlight">Körper</span> in seiner Funktion und Komplexität fasziniert mich schon lange. Ich entschied mich daher im Jahr 2015 für die Ausbildung zur staatlich anerkannten <span class="highlight">Physiotherapeutin</span>, welche ich 2018 erfolgreich abschloss. 
-
-			Dank der harmonierenden <span class="highlight">Kombination</span> aus medizinischem <span class="highlight">Fachwissen</span> und <span class="highlight">Yogaphilosophie</span> ist es mir möglich, sowohl auf körperliche, als auch auf seelische Bedürfnisse einzugehen.
-		</p> -->
-		
 	</div>
 </section>
 
@@ -117,25 +118,6 @@
 <section class="text wasIstPY">
 	<div class="section__inner">
 		<?= $currentPage->getRenderedField('aboutPrashantiYoga')?>
-		
-		<!-- <h2></h2>
-
-		<p>Sanskrit: Para = höchst, shanti = Frieden. 
-
-			Der Begriff <span class="highlight">Prashanti</span> steht für den ungetrübten und höchsten <span class="highlight">inneren Frieden</span>, der durch nichts aus dem <span class="highlight">Gleichgewicht</span> gebracht werden kann. Das ist auch genau das, was ich selbst erfahren durfte und in meinen <span class="highlight">Yogastunden</span> vermitteln möchte.
-
-			Durch das Auflösen aller <span class="highlight">Dualitäten</span>, wie hell-dunkel, männlich-weiblich, warm-kalt, positiv-negativ... arbeiten wir gemeinsam und mit Hilfe von <span class="highlight">Entspannung, Asanas</span> (Körperübungen), <span class="highlight">Pranayama</span> (Atemübungen), <span class="highlight">Meditation</span> und <span class="highlight">Mantramusik</span> am <span class="highlight">zur-Ruhe-kommen</span> deines Geistes.
-
-			Je tiefer das <span class="highlight">Bewusstsein</span> wird, desto stärker ist spürbar, wie der <span class="highlight">Körper</span> als Tempel unserer <span class="highlight">Seele</span> mit dieser zu einer <span class="highlight">Einheit</span> verschmilzt. 
-
-			Meine Aufgabe ist es dabei, dich auf deinem ganz <span class="highlight">persönlichen Yogaweg</span> zu <span class="highlight">begleiten</span> und zu <span class="highlight">unterstützen</span>, egal wo du dich gerade befindest.  
-
-			Sofern du dich angesprochen fühlst und genau das für dich und deine Yogapraxis suchst, freue ich mich sehr, wenn du dich bei mir meldest!
-
-			<span class="highlight">Namasté</span> and spread <span class="highlight">positive vibes!</span>
-
-			Paulina
-		</p> -->
 	</div>
 </section>
 
@@ -187,22 +169,8 @@
 
 		<div class="col-1 kursort">
 			<div class="inner">
-				<h3>Kursort</h3>
-
-				<div class="row col-1">
-					<div class="col-1">
-						<p>Weitblick Aschaffenburg
-							Kettelerstraße 4
-							63867 Johannesberg
-							<a href="https://weitblick-ab.de/seminarraum/" target="_blank">Homepage</a></p>
-					</div>
-					<div class="col-1">
-						<div class="iframeWrapper">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5126.255286247278!2d9.133419!3d50.02770400000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf93fc19ce75e0ab4!2sSeminar-Raum+Weitblick!5e0!3m2!1sde!2sde!4v1557334706825!5m2!1sde!2sde"frameborder="0" style="border:0" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-			</div>
+				<?= $currentPage->getRenderedField('location')?>
+			</div><!-- inner -->
 		</div>
 
 		<div id="kontakt" class="kontakt col-1">
@@ -227,7 +195,7 @@
 						+49 170 8216900
 					</a>
 				</div>
-			</div>
+			</div><!-- inner -->
 		</div>
 	</div>
 </section>
@@ -443,6 +411,19 @@
 </div>
 
 <script src="<?=BASE_URL?>_js/index.js"></script>
+
+<?php if ($GLOBALS['LoggedIn']) {?>
+<div class="cmsLightbox">
+	<iframe id="cmsEditIframe" src=""></iframe>
+</div>
+
+<script>
+	var baseUrl = "<?= BASE_URL?>";
+</script>
+
+<script src="<?=BASE_URL?>_js/cms.js"></script>
+
+<?php }?>
 
 </body>
 </html>

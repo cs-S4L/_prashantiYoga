@@ -43,7 +43,7 @@ input[type="text"] {
 	padding: 10px;
 }
 
-input[type="submit"] {
+input[type="submit"], input[type="button"] {
 	display: block;
 	margin: 10px 0;
     font-size: $font-size-navi;
@@ -51,4 +51,231 @@ input[type="submit"] {
     color: $color-brand-1;
     border-radius: $border-radius--input;
     padding: 5px;
+    cursor: pointer;
 }
+
+textarea {
+    border-color: $color-brand-1;
+	font-size: $font-size-text;
+	color: $color-black;
+    border-radius: $border-radius--input;
+    padding: 5px;
+}
+
+/**
+ * 	Grid
+ */
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+	.center {
+		align-content: center;
+		justify-content: center;
+	}
+
+	.col-1, .col-2, .col-3, .col-4 {
+		padding: $padding-col;
+	} 
+	
+	.col-1 {
+		width: 100%;
+	}
+
+	.col-2 {
+		width: 50%;
+	}
+
+	.col-3 {
+		width: 33.3%;
+	}
+
+	.col-4 {
+		width: 25%;
+	}
+
+	.col-1-md {
+		@include respond-to($md) {
+			width: 100%;
+		}
+	}
+
+	.col-2-md {
+		@include respond-to($md) {
+			width: 50%;
+		}	
+	}
+}
+
+/**
+ * 	Navi
+ */
+.navi {
+	width: 100%;
+	height: 50px;
+	padding: 10px $page-side-padding;
+	border : 1px solid $color-brand-1;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: $color-white;
+	z-index: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+
+	.inner {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+		max-width: $xlg;
+	}
+
+	.logo {
+		height: 40px;
+		position: relative;
+	}
+
+	.hamburger {
+		position: absolute;
+		top: 1px;
+		right: 5px;
+		width: 40px;
+		height: 40px;
+		padding: 0;
+		outline: none;
+
+		@include respond-to($md) {
+			display: none;
+		}
+
+		.hamburger-box {
+			width: 35px;
+			height: 30px;
+
+			.hamburger-inner,
+			.hamburger-inner::before,
+			.hamburger-inner::after {
+				background-color: $color-brand-1;
+				width: 35px;
+			}
+
+			.hamburger.is-active .hamburger-inner,
+			.hamburger.is-active .hamburger-inner::before,
+			.hamburger.is-active .hamburger-inner::after {
+				background-color: $color-brand-1;
+			}
+		}
+	} //hamburger
+
+	ul {
+		display: none;
+		position: absolute;
+		right: 0;
+		top: 102%;
+		padding: 10px;
+		border: 1px solid #6e322a;
+		border-radius: 5px;
+		width: 96%;
+		margin: 2%;
+		background: $color-white;	
+
+		@include respond-to($md) {
+			position: relative;
+			top: 0;
+			left: 0;
+			border: none;
+			background: transparent;
+			margin: 0;
+			padding: 0 15px;
+			display: flex;
+			justify-content: space-between;
+			max-width: $xlg;
+		}
+
+		li {
+			padding: 15px 0;
+			font-size: $font-size-navi;
+			color: $color-brand-1;
+
+			@include respond-to($md) {
+				display: inline-block;
+				padding: 0;
+			}
+		}		
+	} //ul
+} //Navi
+
+
+/**
+ * 	CMS Styles
+ */
+.cmsEditField {
+	position: relative;
+	transition: all 0.5s ease-out;
+	border: 1px solid transparent;
+	cursor: pointer;
+
+	&:hover {
+		border: 1px solid $color-brand-1;
+	}
+
+	&:after {
+		content: 'edit';
+		display: block;
+		position: absolute;
+		top:0;
+		right: 0;
+		background: $color-brand-1;
+		color: $color-white;
+		padding: 10px;
+		font-size: 18px;
+	}
+
+	// &__link {
+	// 	display: block;
+	// 	position: absolute;
+	// 	top:0;
+	// 	right: 0;
+	// 	background: $color-brand-1;
+	// 	color: $color-white;
+	// 	padding: 10px;
+	// 	font-size: 18px;
+	// 	text-decoration: none;
+
+	// 	&:hover {
+	// 		text-decoration: none;
+	// 	}
+	// }
+}
+
+.cmsLightbox {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba($color-black, 0.7);
+	padding: 25px;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
