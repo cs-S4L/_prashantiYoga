@@ -10,7 +10,7 @@ class Template {
 
 		try {
 			foreach($this->requiredFields as $fieldName) {
-				$this->{$fieldName} = $content->{$fieldName};
+				$this->{$fieldName} = htmlspecialchars_decode($content->{$fieldName});
 			}
 		} catch (Exception $e) {
 			die('Template Invalid');
@@ -49,14 +49,33 @@ class Template {
 		}	
 	}
 
+	/**
+	 * [validateFields description]
+	 * @return [type] [description]
+	 *
+	 * preg_replace von stackoverflow
+	 * https://stackoverflow.com/questions/5946114/how-to-replace-newline-or-r-n-with-br
+	 * last checked 13.08.2019 
+	 */
 	public function validateFields() {
-		// foreach($this->requiredFields as $fieldName) {
-			// $this->{$fieldName} = htmlspecialchars($this->{$fieldName});
-		// }
+		foreach($this->requiredFields as $fieldName) {
+			$this->{$fieldName} = htmlspecialchars($this->{$fieldName});
+
+			$this->{$fieldName} = preg_replace("/\r\n|\r|\n/",'<br/>',$this->{$fieldName});
+		}
 
 		return true;
 	}
 
+	/**
+	 * [createJsonString description]
+	 * @return [type] [description]
+	 *
+	 * str_replace nötig
+	 * wenn nur ein \ vorhanden interpretiert die DB diesen als escape \
+	 * deshalb muss ein weiterer Backslash den eigentlichen Backslash
+	 * escapen, damit er in der DB ankommt
+	 */
 	public function createJsonString() {
 		$fieldArray = array();
 
@@ -66,6 +85,12 @@ class Template {
 
 		$json = json_encode($fieldArray);
 
+		$json = str_replace('\\', '\\\\', $json);
+
 		return $json;
+	}
+
+	public function writeToForm($field) {
+		return str_replace('<br/>',"\r\n",$this->{$field});
 	}
 }

@@ -6,7 +6,7 @@ class Database {
 
 	public function __construct($host, $user, $password, $dbname, $port) {
 		try {
-			$this->conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
+			$this->conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);
     		// set the PDO error mode to exception
 			$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		}
@@ -58,9 +58,9 @@ class Database {
 		$statement = "";
 
 		if (is_null($where)) {
-			$statement = "UPDATE $table SET $values;";
+			$statement = 'UPDATE '.$table.' SET '.$values.';';
 		} else {
-			$statement = "UPDATE $table SET $values WHERE $where;";
+			$statement = 'UPDATE '.$table.' SET '.$values.' WHERE '.$where.';';
 		}
 
 		$sql = $this->conn->prepare($statement);

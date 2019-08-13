@@ -7,7 +7,7 @@
 
 	// $content = new Content($GLOBALS['DB']);
 
-	// $content->addContentToDB('index', 'aboutMe', 'textWithHeading', array('heading'=>'', 'text'=>'Ich heiße <span class="highlight">Paulina Thomas</span>, bin 23 Jahre jung und freue mich sehr darüber, dass du den Weg hierher gefunden hast!
+	// $content->addContentToDB('index', 'aboutPrashantiYoga', 'textWithHeading', array('heading'=>'', 'text'=>'Ich heiße <span class="highlight">Paulina Thomas</span>, bin 23 Jahre jung und freue mich sehr darüber, dass du den Weg hierher gefunden hast!
 
 	// 		Großer <span class="highlight">Dank</span> an meine Mama, die mich 2013 im Alter von nur 16 Jahren zum ersten mal mit <span class="highlight">Yoga</span> in Berührung brachte.
 

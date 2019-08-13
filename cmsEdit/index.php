@@ -13,6 +13,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+	
 	<title>CMS Edit <?=$fieldName?></title>
 
 	<?php include(DIR__PARTIALS . 'head/metaViewport.php') ?>

@@ -2,10 +2,10 @@
 	<h3>Editiere das Feld "<?= $this->{DBCmsFields::Field}?>"</h3>
 	
 	<label for="heading">Überschrift:</label>
-	<input type="text" name="heading" value="<?=$this->heading?>">
+	<input type="text" name="heading" value="<?=$this->writeToForm('heading')?>">
 
 	<label for="text">Text:</label>
-	<textarea name="text" rows="6"><?=$this->text?></textarea>
+	<textarea name="text" rows="6"><?=$this->writeToForm('text')?></textarea>
 
 	<input type="hidden" name="<?=DBCmsFields::Field?>" value="<?= $this->{DBCmsFields::Field}?>">
 	<input type="hidden" name="<?=DBCmsFields::TemplateName?>" value="<?= get_class($this)?>">

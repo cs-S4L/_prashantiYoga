@@ -29,14 +29,13 @@ class Content {
 			foreach ($contents as $content) {
 				try {
 					$contentObject = json_decode($content[DBCmsFields::Content]);
-
-					print_r($content);
-					die();
+					
 					$return[$content[DBCmsFields::Field]] = new $content[DBCmsFields::TemplateName]($contentObject, $content[DBCmsFields::Field]);
 				} catch (Exception $e) {
 					die("Error" . $e->getMessage() . "<br><br>Unknown Template");
 				}
 			}
+			// die();
 		}
 
 		return (empty($return)) ? null : $return;
@@ -64,9 +63,7 @@ class Content {
 
 		$json = $templateObject->createJsonString();
 
-		// $json = str_replace(' ', '\test', $json);
-
-		$values = DBCmsFields::Content . '= \''.$json.'\'';
+		$values = DBCmsFields::Content ."= '".$json."'";
 
 		$where = DBCmsFields::Field . "= '$fieldName'";
 
