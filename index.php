@@ -3,32 +3,9 @@
 
 	$GLOBALS['Pagename'] = 'index';
 
-	$currentPage = new Page($GLOBALS['DB'],$GLOBALS['Content'], $GLOBALS['Pagename']);
-
-	// $content = new Content($GLOBALS['DB']);
-
-	// $content->addContentToDB('index', 'aboutPrashantiYoga', 'textWithHeading', array('heading'=>'', 'text'=>'Ich heiße <span class="highlight">Paulina Thomas</span>, bin 23 Jahre jung und freue mich sehr darüber, dass du den Weg hierher gefunden hast!
-
-	// 		Großer <span class="highlight">Dank</span> an meine Mama, die mich 2013 im Alter von nur 16 Jahren zum ersten mal mit <span class="highlight">Yoga</span> in Berührung brachte.
-
-	// 		Schon im Jahr 2014/15 durfte ich dann die großartige Erfahrung machen, die 1- jährige Yogalehrerausbildung basierend auf der Tradition des Hathayoga in Aschaffenburg bei Andrea Brehm zu absolvieren. 
-	// 		Diese Entscheidung prägt meinen Yoga- und damit auch meinen Lebensweg von dort an fundamental. Ich durfte erfahren, was <span class="highlight">innerer Frieden</span> tatsächlich bedeutet und wahrnehmen, wie wunderbar es sich anfühlt, <span class="highlight">Gefühle</span> und <span class="highlight">Bedürfnisse</span> ganz <span class="highlight">bewusst</span> zu erleben.
-	// 		Seitdem hielt ich Yogastunden in einem ambulanten Rehabilitationszentrum.
-
-	// 		Meine generelle <span class="highlight">Liebe</span> zu Tieren habe ich schon in meiner frühen Kindheit entdeckt. Vor allem mit Pferden beschäftige ich mich in meiner Freizeit zeitlich, seelisch und emotional sehr intensiv. Daher habe ich mir auch das zum <span class="highlight">Herzensthema</span> gemacht und gebe Wochenendworkshops zum Thema „Yoga und Pferd“.
-
-	// 		Der menschliche <span class="highlight">Körper</span> in seiner Funktion und Komplexität fasziniert mich schon lange. Ich entschied mich daher im Jahr 2015 für die Ausbildung zur staatlich anerkannten <span class="highlight">Physiotherapeutin</span>, welche ich 2018 erfolgreich abschloss. 
-
-	// 		Dank der harmonierenden <span class="highlight">Kombination</span> aus medizinischem <span class="highlight">Fachwissen</span> und <span class="highlight">Yogaphilosophie</span> ist es mir möglich, sowohl auf körperliche, als auch auf seelische Bedürfnisse einzugehen.'));
-
-	// $content->addContentToDB('index', 'pricing', 'pricing', array(
-	// 	array('name' => 'Monatlich', 'hint' => 'laufzeit monatlich', 'price' => '72 euro'),
-	// 	array('name' => 'Schnupperkurs', 'hint' => 'laufzeit einmalig', 'price' => '12 euro'),
-	// 	array('name' => 'Einzelstunde', 'hint' => '', 'price' => 'nach Absprache'),
-		
-	// ));
+	// include('import.php');
 	
-	// die();
+	$currentPage = new Page($GLOBALS['DB'],$GLOBALS['Content'], $GLOBALS['Pagename']);
 ?>
 
 <!DOCTYPE html>
@@ -103,7 +80,7 @@
 <span class="highlight"></span>
 <section id="uberMich" class="text uberMich first">
 	<div class="section__inner">
-		<?= $currentPage->getRenderedField('aboutMe')?>
+		<?=$currentPage->getRenderedField('aboutMe')?>
 	</div>
 </section>
 
@@ -169,7 +146,7 @@
 
 		<div class="col-1 kursort">
 			<div class="inner">
-				<?= $currentPage->getRenderedField('location')?>
+				<?=$currentPage->getRenderedField('location')?>
 			</div><!-- inner -->
 		</div>
 

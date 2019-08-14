@@ -23,45 +23,65 @@ class Content {
 		$where = DBCmsFields::Page."= '$pageName'";
 		$contentObject = false;
 		
-		$contents = $this->db->readFromDatabase(DBCmsFields::TableName, $where);
+		$dbEntrys = $this->db->readFromDatabase(DBCmsFields::TableName, $where);
 
-		if (!empty($contents)) {
-			foreach ($contents as $content) {
+		if (!empty($dbEntrys)) {
+			foreach ($dbEntrys as $dbEntry) {
 				try {
-					$contentObject = json_decode($content[DBCmsFields::Content]);
+					$contentsArray = json_decode($dbEntry[DBCmsFields::Content]);
+					$templateObjectArray = array();
+
+					for ($i=0; $i < count($contentsArray); $i++) {
+						array_push(
+							$templateObjectArray, 
+							new $dbEntry[DBCmsFields::TemplateName]($contentsArray[$i], $dbEntry[DBCmsFields::Field], $i)
+						);
+					}
 					
-					$return[$content[DBCmsFields::Field]] = new $content[DBCmsFields::TemplateName]($contentObject, $content[DBCmsFields::Field]);
+					$return[$dbEntry[DBCmsFields::Field]] = $templateObjectArray;
+					$templateObjectArray = array();
 				} catch (Exception $e) {
 					die("Error" . $e->getMessage() . "<br><br>Unknown Template");
 				}
 			}
-			// die();
 		}
 
 		return (empty($return)) ? null : $return;
 	}
 
 	public function getField($fieldName) {
-		$return = null;
+		$return = array();
 		$where = DBCmsFields::Field . "= '$fieldName'";
 		$contentObject = false;
 
-		$field = $this->db->readFromDatabase(DBCmsFields::TableName, $where);
+		$dbEntry = $this->db->readFromDatabase(DBCmsFields::TableName, $where);
 
-		if (!empty($field)) {
-			$contentObject = json_decode($field[0][DBCmsFields::Content]);
-			$return = new $field[0][DBCmsFields::TemplateName]($contentObject, $field[0][DBCmsFields::Field]);
+		if (!empty($dbEntry)) {
+			$contentArray = json_decode($dbEntry[0][DBCmsFields::Content]);
+			$className = $dbEntry[0][DBCmsFields::TemplateName];
+			
+			for ($i=0; $i < count($contentArray); $i++) {
+				$return[] = new $className($contentArray[$i], $dbEntry[0][DBCmsFields::Field], $i);
+			}
 		}
 
 		return (empty($return)) ? null : $return;
 	}
 
-	public function updateField($fieldName, $templateObject) {
-		if (! $templateObject->validateFields()) {
-			return false;
+	public function updateField($fieldName, $input) {
+		if (is_array($input)) {
+			$contentArray = $input;
+		} else {
+			echo 'Test';
+			foreach ($input as $item) {
+				$contentArray = array();
+				array_push($contentArray, $item->getArray());
+			}
 		}
 
-		$json = $templateObject->createJsonString();
+		$json = json_encode($contentArray);
+
+		$json = str_replace('\\', '\\\\', $json);
 
 		$values = DBCmsFields::Content ."= '".$json."'";
 
@@ -73,4 +93,8 @@ class Content {
 			return true;
 		}
 	}
+
+	public function createArrayFromTemplates($templateArray) {
+
+	} 
 }

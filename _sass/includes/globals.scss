@@ -220,6 +220,7 @@ textarea {
 	transition: all 0.5s ease-out;
 	border: 1px solid transparent;
 	cursor: pointer;
+	min-height: 40px;
 
 	&:hover {
 		border: 1px solid $color-brand-1;
@@ -236,6 +237,18 @@ textarea {
 		padding: 10px;
 		font-size: 18px;
 	}
+
+	&.edit {
+		&:after {
+			content: 'edit';
+		}
+	}
+
+	&.add {
+		&:after {
+			content: 'add';
+		}
+	}	
 
 	// &__link {
 	// 	display: block;

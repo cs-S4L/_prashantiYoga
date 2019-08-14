@@ -4605,7 +4605,8 @@ textarea {
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   border: 1px solid transparent;
-  cursor: pointer; }
+  cursor: pointer;
+  min-height: 40px; }
   .cmsEditField:hover {
     border: 1px solid #6e322a; }
   .cmsEditField:after {
@@ -4618,6 +4619,10 @@ textarea {
     color: #ffffff;
     padding: 10px;
     font-size: 18px; }
+  .cmsEditField.edit:after {
+    content: 'edit'; }
+  .cmsEditField.add:after {
+    content: 'add'; }
 
 .cmsLightbox {
   display: none;

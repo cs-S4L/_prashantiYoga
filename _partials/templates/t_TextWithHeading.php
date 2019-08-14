@@ -1,5 +1,7 @@
 <?php if ($GLOBALS['LoggedIn']) {?>
-<div class="cmsEditField"  data-field="<?= $this->field?>">
+<div class="cmsEditField add" data-field="<?= $this->field?>" data-order="<?=$this->order?>" data-action="insert">
+</div>
+<div class="cmsEditField edit" data-field="<?= $this->field?>" data-order="<?=$this->order?>" data-action="edit">
 <?php }?>
 
 
@@ -11,5 +13,7 @@
 
 
 <?php if ($GLOBALS['LoggedIn']) {?>
+</div>
+<div class="cmsEditField add" data-field="<?= $this->field?>" data-order="<?=$this->order + 1?>" data-action="insert">
 </div>
 <?php } ?>

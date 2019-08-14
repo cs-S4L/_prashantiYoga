@@ -1,7 +1,10 @@
 $('.cmsEditField').click(function() {
 	$('.cmsLightbox').fadeIn();
 	var clickedField = $(this).attr('data-field');
-	$('#cmsEditIframe').attr('src', baseUrl + 'cmsEdit/?field=' + clickedField);
+	var clickedOrder = $(this).attr('data-order');
+	var clickedAction = $(this).attr('data-action');
+
+	$('#cmsEditIframe').attr('src', baseUrl + 'cmsEdit/?field='+clickedField+'&order='+clickedOrder+'&action='+clickedAction);
 });
 
 function closeIframe(action, form = null, method = null, url = null) {

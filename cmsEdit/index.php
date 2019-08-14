@@ -4,6 +4,8 @@
 
 	if (isset($_GET) && isset($_GET[DBCmsFields::Field])) {
 		$fieldName = $_GET[DBCmsFields::Field];
+		$order = $_GET['order'];
+		$action = $_GET['action'];
 		$currentField = $GLOBALS['Content']->getField($fieldName);
 	} else {
 		die('Fehler. Kein Feldname angeben.');
@@ -25,7 +27,7 @@
 </head>
 <body>
 
-	<?= $currentField->renderEditForm();?>
+	<?= $currentField[$order]->renderEditForm();?>
 
 	<script src="<?=BASE_URL?>_js/cmsEdit.js"></script>
 

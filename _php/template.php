@@ -2,8 +2,9 @@
 
 class Template {
 	public $field;
+	protected $order;
 
-	public function __construct($content, $field = null) {
+	public function __construct($content, $field = null, $order = null) {
 		if (is_array($content)) {
 			$content = (object) $content;
 		}
@@ -16,9 +17,8 @@ class Template {
 			die('Template Invalid');
 		}
 
-		if (! is_null($fieldName)) {
-			$this->field = $field;
-		}
+		$this->field = $field;
+		$this->order = $order;
 	}
 
 	protected function getTemplatePath() {
@@ -88,6 +88,16 @@ class Template {
 		$json = str_replace('\\', '\\\\', $json);
 
 		return $json;
+	}
+
+	public function getArray() {
+		$return = array();
+
+		foreach($this->requiredFields as $fieldName) {
+			$return[$fieldName] = $this->{$fieldName};
+		}
+		
+		return $return;
 	}
 
 	public function writeToForm($field) {
