@@ -11,4 +11,6 @@ class Location extends Template {
 	protected $adress;
 	protected $homepageUrl;
 	protected $mapsUrl;
+
+	protected $dynamicTemplateCount = false;
 }

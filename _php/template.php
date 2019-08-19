@@ -1,8 +1,15 @@
 <?php 
 
 class Template {
+
 	public $field;
 	protected $order;
+
+	protected $dynamicTemplateCount = true;
+
+	public static function createObject($className, $content, $field=null, $order=null) {
+		return new $className($content, $field, $order);
+	}
 
 	public function __construct($content, $field = null, $order = null) {
 		if (is_array($content)) {
@@ -33,7 +40,17 @@ class Template {
 		$file = $this->getTemplatePath();
 		
 		if (file_exists($file)) {
+			if ($this->dynamicTemplateCount) {
+				include(DIR__TEMPLATES.'templateEmptyFieldBefore.php');
+			}
+
+			include(DIR__TEMPLATES.'templateHead.php');
 			include $file;
+			include(DIR__TEMPLATES.'templateFooter.php');
+
+			if ($this->dynamicTemplateCount) {
+				include(DIR__TEMPLATES.'templateEmptyFieldAfter.php');
+			}
 		} else {
 			die('Template Not Exist');
 		}
@@ -41,60 +58,45 @@ class Template {
 
 	public function renderEditForm() {
 		$file = $this->getEditFormPath();
+		// include(DIR__PARTIALS . 'editForms' . DIRECTORY_SEPARATOR . 'defaultFields.php');
 		
 		if (file_exists($file)) {
+			include(DIR__EDITFORMS . 'formHead.php');
 			include $file;
+			include(DIR__EDITFORMS . 'formFooter.php');
 		} else {
 			die('Template Not Exist');
 		}	
 	}
 
 	/**
-	 * [validateFields description]
-	 * @return [type] [description]
-	 *
-	 * preg_replace von stackoverflow
-	 * https://stackoverflow.com/questions/5946114/how-to-replace-newline-or-r-n-with-br
-	 * last checked 13.08.2019 
+	 * script Tags entfernen
+	 * htmlSpecialchars
+	 * zeilenumbrüche in br umwandeln
+	 * 
+	 * @param  [type] $value [description]
+	 * @return [type]        [description]
 	 */
-	public function validateFields() {
-		foreach($this->requiredFields as $fieldName) {
-			$this->{$fieldName} = htmlspecialchars($this->{$fieldName});
+	public function validate($value) {
+		$value = str_replace('<script', '', $value);
+		$value = str_replace('</script', '', $value);
+		
+		$value = htmlspecialchars($value);
 
-			$this->{$fieldName} = preg_replace("/\r\n|\r|\n/",'<br/>',$this->{$fieldName});
-		}
+		$value = preg_replace("/\r\n|\r|\n/",'<br/>',$value);
 
-		return true;
+		return $value;
 	}
 
-	/**
-	 * [createJsonString description]
-	 * @return [type] [description]
-	 *
-	 * str_replace nötig
-	 * wenn nur ein \ vorhanden interpretiert die DB diesen als escape \
-	 * deshalb muss ein weiterer Backslash den eigentlichen Backslash
-	 * escapen, damit er in der DB ankommt
-	 */
-	public function createJsonString() {
-		$fieldArray = array();
-
-		foreach($this->requiredFields as $fieldName) {
-			$fieldArray[$fieldName] = $this->{$fieldName};
-		}
-
-		$json = json_encode($fieldArray);
-
-		$json = str_replace('\\', '\\\\', $json);
-
-		return $json;
-	}
-
-	public function getArray() {
+	public function getArray($validate = true) {
 		$return = array();
 
 		foreach($this->requiredFields as $fieldName) {
-			$return[$fieldName] = $this->{$fieldName};
+			if ($validate) {
+				$return[$fieldName] = $this->validate($this->{$fieldName});
+			} else {
+				$return[$fieldName] = $this->{$fieldName};
+			}
 		}
 		
 		return $return;
@@ -103,4 +105,5 @@ class Template {
 	public function writeToForm($field) {
 		return str_replace('<br/>',"\r\n",$this->{$field});
 	}
+
 }

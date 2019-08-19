@@ -9,4 +9,6 @@ class TextWithHeading extends Template {
 
 	protected $heading;
 	protected $text;
+
+	protected $dynamicTemplateCount = false;
 }

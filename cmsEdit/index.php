@@ -27,7 +27,7 @@
 </head>
 <body>
 
-	<?= $currentField[$order]->renderEditForm();?>
+	<?= $currentField->renderTemplateEdit($order);?>
 
 	<script src="<?=BASE_URL?>_js/cmsEdit.js"></script>
 

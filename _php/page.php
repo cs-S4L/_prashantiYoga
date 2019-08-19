@@ -66,9 +66,7 @@ class Page {
 	}
 
 	public function getRenderedField($fieldName) {
-		foreach($this->content[$fieldName] as $templateObject) {
-			$templateObject->renderTemplate();
-		}
+		$this->content[$fieldName]->renderField();
 	}
 
 

@@ -18,6 +18,30 @@ class Content {
 		return $this->db->insertIntoDatabase(DBCmsFields::TableName, $data);
 	}
 
+	private function getFieldFromDBEntry($dbEntry) {
+		try {
+			$contentsArray = json_decode($dbEntry[DBCmsFields::Content]);
+			$field = new Field($dbEntry[DBCmsFields::Field]);
+
+			for ($i=0; $i < count($contentsArray); $i++) {
+				$templateObject = Template::createObject(
+					$dbEntry[DBCmsFields::TemplateName],
+					$contentsArray[$i],
+					$dbEntry[DBCmsFields::Field],
+					$i
+				);
+				$field->addTemplate(
+					$templateObject
+				);
+			}
+			
+			return $field;
+			
+		} catch (Exception $e) {
+			die("Error" . $e->getMessage() . "<br><br>Unknown Template");
+		}
+	}
+
 	public function getPageContent($pageName) {
 		$return = array();
 		$where = DBCmsFields::Page."= '$pageName'";
@@ -27,22 +51,7 @@ class Content {
 
 		if (!empty($dbEntrys)) {
 			foreach ($dbEntrys as $dbEntry) {
-				try {
-					$contentsArray = json_decode($dbEntry[DBCmsFields::Content]);
-					$templateObjectArray = array();
-
-					for ($i=0; $i < count($contentsArray); $i++) {
-						array_push(
-							$templateObjectArray, 
-							new $dbEntry[DBCmsFields::TemplateName]($contentsArray[$i], $dbEntry[DBCmsFields::Field], $i)
-						);
-					}
-					
-					$return[$dbEntry[DBCmsFields::Field]] = $templateObjectArray;
-					$templateObjectArray = array();
-				} catch (Exception $e) {
-					die("Error" . $e->getMessage() . "<br><br>Unknown Template");
-				}
+				$return[$dbEntry[DBCmsFields::Field]] = $this->getFieldFromDBEntry($dbEntry);
 			}
 		}
 
@@ -57,35 +66,24 @@ class Content {
 		$dbEntry = $this->db->readFromDatabase(DBCmsFields::TableName, $where);
 
 		if (!empty($dbEntry)) {
-			$contentArray = json_decode($dbEntry[0][DBCmsFields::Content]);
-			$className = $dbEntry[0][DBCmsFields::TemplateName];
-			
-			for ($i=0; $i < count($contentArray); $i++) {
-				$return[] = new $className($contentArray[$i], $dbEntry[0][DBCmsFields::Field], $i);
-			}
+			$return = $this->getFieldFromDBEntry($dbEntry[0]);
 		}
 
 		return (empty($return)) ? null : $return;
 	}
 
-	public function updateField($fieldName, $input) {
-		if (is_array($input)) {
-			$contentArray = $input;
-		} else {
-			echo 'Test';
-			foreach ($input as $item) {
-				$contentArray = array();
-				array_push($contentArray, $item->getArray());
-			}
-		}
+	/**
+	 * [updateField description]
+	 * @param  [type] $fieldName [description]
+	 * @param  [array] $input     [description]
+	 * @return [type]            [description]
+	 */
+	public function updateField($field) {
+		$json = $field->createJson();
 
-		$json = json_encode($contentArray);
+		$values = DBCmsFields::Content ." = '".$json."'";
 
-		$json = str_replace('\\', '\\\\', $json);
-
-		$values = DBCmsFields::Content ."= '".$json."'";
-
-		$where = DBCmsFields::Field . "= '$fieldName'";
+		$where = DBCmsFields::Field . " = '$field->name'";
 
 		if (! $this->db->updateDatabase(DBCmsFields::TableName, $values, $where)) {
 			return false;
@@ -94,7 +92,4 @@ class Content {
 		}
 	}
 
-	public function createArrayFromTemplates($templateArray) {
-
-	} 
 }

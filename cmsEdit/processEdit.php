@@ -11,19 +11,25 @@
 
 		$currentField = $GLOBALS['Content']->getField($_POST[DBCmsFields::Field]);
 
-		$templateObject = new $_POST[DBCmsFields::TemplateName]($_POST, $_POST[DBCmsFields::Field], $_POST['order']);
+		$templateObject = Template::createObject(
+			$_POST[DBCmsFields::TemplateName],
+			$_POST, 
+			$_POST[DBCmsFields::Field], 
+			$_POST['order']
+		);
 
-		if (!$templateObject->validateFields()) {
-			die('invalid Template');
-		} 
+		// if (!$templateObject->validateFields()) {
+		// 	die('invalid Template');
+		// } 
 
 		switch ($_POST['action']) {
 			case 'insert':
-				$currentField = insertIntoNumericArray($currentField, $templateObject->getArray(), $_POST['order']);
+				$currentField->addTemplate($templateObject, $_POST['order']);
 			break;
 
 			case 'edit':
-				$currentField[$_POST['order']] = $templateObject->getArray();
+				$currentField->editTemplate($templateObject, $_POST['order']);
+
 			break;
 
 			default:
@@ -31,11 +37,11 @@
 			break;
 		}
 
-		if ($GLOBALS['Content']->updateField($_POST[DBCmsFields::Field], $currentField)) {
+		if ($GLOBALS['Content']->updateField($currentField)) {
 			echo 1;
 		} else {
 			echo 0;
 		}
 	} else {
-		die('Fehler. Kein Fehlerhafter POST.');
+		die('Fehler. Fehlerhafter POST.');
 	}

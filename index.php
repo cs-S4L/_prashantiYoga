@@ -39,7 +39,6 @@
 
 </head>
 <body>
-
 <div class="heroimage">
 	<div class="socialMedia">
 		<a href="https://www.instagram.com/prashanti_yoga_/" target="_blank">

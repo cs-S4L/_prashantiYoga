@@ -65,6 +65,9 @@ class Database {
 
 		$sql = $this->conn->prepare($statement);
 
+		// var_dump($sql);
+		// die();
+
 		return $sql->execute();
 	}
 
