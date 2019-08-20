@@ -54,22 +54,27 @@ class Template {
 
 
 
-
+	/**
+	 * @return string path to file of the template
+	 */
 	private function getTemplatePath() {
 		return DIR__PARTIALS . "templates". DIRECTORY_SEPARATOR .'t_'.get_class($this).".php";
 	}
 
+	/**
+	 * @return string path to file of the edit Form
+	 */
 	private function getEditFormPath() {
 		return DIR__PARTIALS . "editForms". DIRECTORY_SEPARATOR .'edit_'.get_class($this).".php";
 	}
 
 	/**
-	 * script Tags entfernen
-	 * htmlSpecialchars
-	 * zeilenumbrüche in br umwandeln
+	 * remove script Tags
+	 * escape htmlSpecialchars
+	 * convert line breaks
 	 * 
-	 * @param  [type] $value [description]
-	 * @return [type]        [description]
+	 * @param  string $value string to validate
+	 * @return string        validated String
 	 */
 	private function validate($value) {
 		if (is_array($value)) {
@@ -85,7 +90,9 @@ class Template {
 		return $value;
 	}
 
-
+	/**
+	 * renders the Template with the values in the Object
+	 */
 	public function renderTemplate() {
 		$file = $this->getTemplatePath();
 		
@@ -98,6 +105,7 @@ class Template {
 		}
 	}
 
+	/** renders a Form to edit the current Template Object */
 	public function renderEditForm() {
 		$file = $this->getEditFormPath();
 		
@@ -110,6 +118,11 @@ class Template {
 		}	
 	}
 
+	/**
+	 * returns Array with the Values in the current Object
+	 * @param  boolean $validate Boolean wether or not function should validate Values before writing them to the Array
+	 * @return Array            
+	 */
 	public function getArray($validate = true) {
 		$return = array();
 
@@ -124,6 +137,11 @@ class Template {
 		return $return;
 	}
 
+	/**
+	 * convert Values to write them to an edit Form
+	 * @param  string $field
+	 * @return string        
+	 */
 	public function writeToForm($field) {
 		return str_replace('<br/>',"\r\n",$this->{$field});
 	}

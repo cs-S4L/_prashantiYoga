@@ -7,6 +7,13 @@ class Content {
 		$this->db = $db;
 	}
 
+	/**
+	 * writes new content to the databse
+	 * @param [type] $page         [description]
+	 * @param [type] $field        [description]
+	 * @param [type] $templateName [description]
+	 * @param [type] $content      [description]
+	 */
 	public function addContentToDB($page, $field, $templateName, $content) {
 		$data = [
 			DBCmsFields::Page => $page,
@@ -18,6 +25,11 @@ class Content {
 		return $this->db->insertIntoDatabase(DBCmsFields::TableName, $data);
 	}
 
+	/**
+	 * creates a Field Object from a Database Entry
+	 * @param  Array $dbEntry
+	 * @return Object Field
+	 */
 	private function getFieldFromDBEntry($dbEntry) {
 		try {
 			$contentsArray = json_decode($dbEntry[DBCmsFields::Content]);
@@ -44,6 +56,11 @@ class Content {
 		}
 	}
 
+	/**
+	 * reads complete content of certain Page and creates an Array of Field Objects
+	 * @param  string $pageName [description]
+	 * @return array of Field Objects
+	 */
 	public function getPageContent($pageName) {
 		$return = array();
 		$where = DBCmsFields::Page."= '$pageName'";
@@ -60,6 +77,11 @@ class Content {
 		return (empty($return)) ? null : $return;
 	}
 
+	/**
+	 * reads a field from Database an creates a Field Object
+	 * @param  string $pageName [description]
+	 * @return Object Field
+	 */
 	public function getField($fieldName) {
 		$return = array();
 		$where = DBCmsFields::Field . "= '$fieldName'";
@@ -74,6 +96,11 @@ class Content {
 		return (empty($return)) ? null : $return;
 	}
 
+	/**
+	 * Edits a field Entry in the Database
+	 * @param  [type] $field [description]
+	 * @return [type]        [description]
+	 */
 	public function updateField($field) {
 		$json = $field->createJson();
 
@@ -92,6 +119,10 @@ class Content {
 		}
 	}
 
+	/**
+	 * add a new Image the database and save it to upload folder
+	 * @param $_FILE $file [description]
+	 */
 	public function addImage($file) {
 		if ($file['error'] === 4) {
 			return 'leer.';
@@ -126,6 +157,10 @@ class Content {
 		}
 	}
 
+	/**
+	 * save file to upload folder
+	 * @param  $_FILE $file [description]
+	 */
 	private function handleImageFile($file) {
 		$filename = $file['name'];
 		$filePath = DIR__IMGUPLOAD.DIRECTORY_SEPARATOR.$filename;
@@ -142,6 +177,10 @@ class Content {
 		}
 	}
 
+	/**
+	 * writes image to db
+	 * @param [type] $link [description]
+	 */
 	private function addImageToDB($link) {
 		$table = DBImages::TableName;
 
@@ -152,6 +191,10 @@ class Content {
 		$this->db->insertIntoDatabase($table, $data);
 	}
 
+	/**
+	 * reads all images from the Database
+	 * @return [type] [description]
+	 */
 	public function getAllImages() {
 		return $this->db->readFromDatabase(DBImages::TableName);
 	}

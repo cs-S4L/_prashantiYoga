@@ -21,6 +21,13 @@ class Field {
 		}
 	}
 
+	/**
+	 * inserts a new index into a numeric Array at a specific position
+	 * @param  [type] $arr    [description]
+	 * @param  [type] $insert [description]
+	 * @param  [type] $index  [description]
+	 * @return [type]         [description]
+	 */
 	private function insertIntoNumericArray($arr, $insert, $index) {
 		$return = array();
 		for ($i = 0; $i < count($arr); $i++) {
@@ -37,6 +44,11 @@ class Field {
 		return $return;
 	}
 
+	/**
+	 * 
+	 * @param Object Template $template
+	 * @param integer $index  	position at which template should be inserted (if null it's added to the end)
+	 */
 	public function addTemplate($template, $index=null) {
 		if (is_null($index)) {
 			$this->templates[] = $template;
@@ -45,14 +57,27 @@ class Field {
 		}
 	}
 
+	/**
+	 * 
+	 * @param  Object Template $template
+	 * @param  integer $index    position at which template should be edited
+	 */
 	public function editTemplate($template, $index) {
 		$this->templates[$index] = $template;
 	}
 
+	/**
+	 * 
+	 * @param  integer $index positon at which template should be removed
+	 */
 	public function removeTemplate($index) {
 		array_splice($this->templates, $index, 1);
 	}
 
+	/**
+	 * renders the templates in the Object
+	 * @return [type] [description]
+	 */
 	public function renderField() {
 		if (empty($this->templates)) {
 			$order = 0;
@@ -75,6 +100,12 @@ class Field {
 		}
 	}
 
+	/**
+	 * renders edit Form of a certain template in the Object
+	 * @param  [type]  $index [description]
+	 * @param  boolean $empty [description]
+	 * @return [type]         [description]
+	 */
 	public function renderTemplateEdit($index, $empty = false) {
 		if (!$empty) {
 			$this->templates[$index]->renderEditForm();
