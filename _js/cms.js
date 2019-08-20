@@ -1,10 +1,18 @@
 $('.cmsEditField').click(function() {
-	$('.cmsLightbox').fadeIn();
 	var clickedField = $(this).attr('data-field');
 	var clickedOrder = $(this).attr('data-order');
 	var clickedAction = $(this).attr('data-action');
+	var link = baseUrl + 'cmsEdit/?field='+clickedField+'&order='+clickedOrder+'&action='+clickedAction;
+	$('.cmsLightbox').fadeIn();
 
-	$('#cmsEditIframe').attr('src', baseUrl + 'cmsEdit/?field='+clickedField+'&order='+clickedOrder+'&action='+clickedAction);
+	$('#cmsEditIframe').attr('src', link);
+});
+
+$('.cmsImageUploadButton').click(function() {
+	var link = baseUrl + 'imgUpload/';
+	$('.cmsLightbox').fadeIn();
+
+	$('#cmsEditIframe').attr('src', link);
 });
 
 function closeIframe(action, form = null, method = null, url = null) {

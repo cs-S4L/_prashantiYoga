@@ -369,6 +369,8 @@
 <script src="<?=BASE_URL?>_js/index.js"></script>
 
 <?php if ($GLOBALS['LoggedIn']) {?>
+<button class="cmsImageUploadButton">Bilder hochladen</button>
+
 <div class="cmsLightbox">
 	<iframe id="cmsEditIframe" src=""></iframe>
 </div>

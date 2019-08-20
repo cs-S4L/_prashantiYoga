@@ -92,4 +92,66 @@ class Content {
 		}
 	}
 
+	public function addImage($file) {
+		if ($file['error'] === 4) {
+			return 'leer.';
+		}
+
+		$file['name'] = htmlspecialchars($file['name']);
+
+		if ($file["error"] === UPLOAD_ERR_FORM_SIZE
+			|| $file['size'] > MAX_IMAGE_SIZE) {
+			return 'Bild zu groß. Es ist eine maximale größe von '.MAX_IMAGE_SIZE/100000 . 'MB erlaubt';
+		}
+
+		$fileExtention = pathinfo($file['name'], PATHINFO_EXTENSION);
+		$mimeType = $file['type'];
+
+		if (array_key_exists($fileExtention, $GLOBALS["allowed_file_types"])
+			&& $mimeType === $GLOBALS["allowed_file_types"][$fileExtention]) {
+			$return = $this->handleImageFile($file);
+
+			if ($return !== 1) {
+				return $return;
+			}
+
+			$link = BASE_URL."_img/upload/".$file['name'];
+
+			$this->addImageToDB($link);
+
+			return 'Upload erfolgreich';
+
+		} else {
+			return 'Fehlerhafter Dateityp. Erlaubt sind JPG, JPEG oder PNG';
+		}
+
+		// print_r($file);
+	}
+
+	private function handleImageFile($file) {
+		$filename = $file['name'];
+		$filePath = DIR__IMGUPLOAD.DIRECTORY_SEPARATOR.$filename;
+
+		if (file_exists($filePath)) {
+			return 'Bild bereits vorhanden';
+		}
+
+		if (move_uploaded_file($file["tmp_name"], $filePath)) {
+		  chmod($filePath, 0644);
+		  return 1;
+		} else {
+		  return 'Fehler';
+		}
+	}
+
+	private function addImageToDB($link) {
+		$table = DBImages::TableName;
+
+		$data = array(
+			'link' => $link
+		);
+
+		$this->db->insertIntoDatabase($table, $data);
+	}
+ 
 }

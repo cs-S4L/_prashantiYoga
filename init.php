@@ -8,6 +8,8 @@ define("DIR__PARTIALS", DIR__ROOT . "_partials" . DIRECTORY_SEPARATOR);
 define("DIR__TEMPLATES", DIR__PARTIALS . "templates" . DIRECTORY_SEPARATOR);
 define("DIR__EDITFORMS", DIR__PARTIALS . "editForms" . DIRECTORY_SEPARATOR);
 
+define("DIR__IMGUPLOAD", DIR__ROOT . "_img".DIRECTORY_SEPARATOR."upload".DIRECTORY_SEPARATOR);
+
 require DIR__ROOT . "server.php";
 
 require DIR__PHP . "includes".DIRECTORY_SEPARATOR."config.php";
@@ -19,6 +21,7 @@ require DIR__PHP . "includes".DIRECTORY_SEPARATOR."validation.php";
 require DIR__PHP . "database".DIRECTORY_SEPARATOR."DBUsers.php";
 require DIR__PHP . "database".DIRECTORY_SEPARATOR."DBPages.php";
 require DIR__PHP . "database".DIRECTORY_SEPARATOR."DBCmsFields.php";
+require DIR__PHP . "database".DIRECTORY_SEPARATOR."DBImages.php";
 
 require DIR__PHP . "page.php";
 require DIR__PHP . "template.php";
