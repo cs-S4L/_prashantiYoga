@@ -153,5 +153,9 @@ class Content {
 
 		$this->db->insertIntoDatabase($table, $data);
 	}
+
+	public function getAllImages() {
+		return $this->db->readFromDatabase(DBImages::TableName);
+	}
  
 }

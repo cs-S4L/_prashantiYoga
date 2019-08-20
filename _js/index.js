@@ -35,7 +35,6 @@ function hideShowNavi() {
 }
 
 function initGallery(gallery) {
-	console.log(gallery);
 	let galleryImageLarge = $('.large', gallery);
 	let galleryImageThumbs = $('.thumbs', gallery);
 	let innerHtml = galleryImageLarge.html();
@@ -91,7 +90,6 @@ function initGallery(gallery) {
 } // initGallery
 
 function openGallery(gallery) {
-	console.log(gallery);
 	gallery.fadeIn();
 
 	initGallery(gallery);
@@ -102,7 +100,6 @@ function openGallery(gallery) {
 }
 
 function closeGallery(gallery) {
-	console.log(gallery);
 	gallery.fadeOut();
 	hideShowNavi();
 	$(window).bind('scroll', function() {

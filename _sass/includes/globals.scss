@@ -240,6 +240,7 @@ a {
 	border: 1px solid transparent;
 	cursor: pointer;
 	min-height: 40px;
+	width: 100%;
 
 	&:hover {
 		border: 1px solid $color-brand-1;
@@ -268,22 +269,6 @@ a {
 			content: 'add';
 		}
 	}	
-
-	// &__link {
-	// 	display: block;
-	// 	position: absolute;
-	// 	top:0;
-	// 	right: 0;
-	// 	background: $color-brand-1;
-	// 	color: $color-white;
-	// 	padding: 10px;
-	// 	font-size: 18px;
-	// 	text-decoration: none;
-
-	// 	&:hover {
-	// 		text-decoration: none;
-	// 	}
-	// }
 }
 
 .cmsLightbox {

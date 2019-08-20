@@ -97,7 +97,6 @@ function openGallery(gallery) {
 }
 
 function closeGallery(gallery) {
-	console.log(gallery);
 	gallery.fadeOut();
 	hideShowNavi();
 	$(window).bind('scroll', function() {

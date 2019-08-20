@@ -34,7 +34,12 @@ class Template {
 
 		try {
 			foreach($this->className::requiredFields as $fieldName) {
-				$this->{$fieldName} = htmlspecialchars_decode($content->{$fieldName});
+				if (is_array($content->{$fieldName})) {
+					$this->{$fieldName} = $content->{$fieldName};
+				} else {
+					$this->{$fieldName} = htmlspecialchars_decode($content->{$fieldName});
+				}
+
 				if (empty($this->{$fieldName})) {
 					$this->{$fieldName} = '';
 				}
@@ -88,6 +93,9 @@ class Template {
 	 * @return [type]        [description]
 	 */
 	public function validate($value) {
+		if (is_array($value)) {
+			$value = json_encode($value);
+		}
 		$value = str_replace('<script', '', $value);
 		$value = str_replace('</script', '', $value);
 		

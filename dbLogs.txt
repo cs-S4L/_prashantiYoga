@@ -47,3 +47,821 @@
 08/20/2019 09:16:50 am:      UPDATE cmsFields SET content = '[{"text":"before"},{"text":"*Kurse geeignet f\\u00fcr Anf\\u00e4nger und Fortgeschrittene&lt;br\\/&gt;*Maximale Teilnehmerzahl 8 Personen"}]' WHERE field = 'scheduleHints';
 08/20/2019 09:16:55 am:      UPDATE cmsFields SET content = '[{"text":"*Kurse geeignet f\\u00fcr Anf\\u00e4nger und Fortgeschrittene&lt;br\\/&gt;*Maximale Teilnehmerzahl 8 Personen"}]' WHERE field = 'scheduleHints';
 08/20/2019 09:26:52 am:      UPDATE cmsFields SET content = '[{"heading":"Herzlich Willkommen auf meiner Seite","text":"Ich hei\\u00dfe &lt;span class=&quot;highlight&quot;&gt;Paulina Thomas&lt;\\/span&gt;, bin 23 Jahre jung und freue mich sehr dar\\u00fcber, dass du den Weg hierher gefunden hast!<br\\/><br\\/>Gro\\u00dfer &lt;span class=&quot;highlight&quot;&gt;Dank&lt;\\/span&gt; an meine Mama, die mich 2013 im Alter von nur 16 Jahren zum ersten mal mit &lt;span class=&quot;highlight&quot;&gt;Yoga&lt;\\/span&gt; in Ber\\u00fchrung brachte.<br\\/><br\\/>Schon im Jahr 2014\\/15 durfte ich dann die gro\\u00dfartige Erfahrung machen, die 1- j\\u00e4hrige Yogalehrerausbildung basierend auf der Tradition des Hathayoga in Aschaffenburg bei Andrea Brehm zu absolvieren. <br\\/>Diese Entscheidung pr\\u00e4gt meinen Yoga- und damit auch meinen Lebensweg von dort an fundamental. Ich durfte erfahren, was &lt;span class=&quot;highlight&quot;&gt;innerer Frieden&lt;\\/span&gt; tats\\u00e4chlich bedeutet und wahrnehmen, wie wunderbar es sich anf\\u00fchlt, &lt;span class=&quot;highlight&quot;&gt;Gef\\u00fchle&lt;\\/span&gt; und &lt;span class=&quot;highlight&quot;&gt;Bed\\u00fcrfnisse&lt;\\/span&gt; ganz &lt;span class=&quot;highlight&quot;&gt;bewusst&lt;\\/span&gt; zu erleben.<br\\/>Seitdem hielt ich Yogastunden in einem ambulanten Rehabilitationszentrum.<br\\/><br\\/>Meine generelle &lt;span class=&quot;highlight&quot;&gt;Liebe&lt;\\/span&gt; zu Tieren habe ich schon in meiner fr\\u00fchen Kindheit entdeckt. Vor allem mit Pferden besch\\u00e4ftige ich mich in meiner Freizeit zeitlich, seelisch und emotional sehr intensiv. Daher habe ich mir auch das zum &lt;span class=&quot;highlight&quot;&gt;Herzensthema&lt;\\/span&gt; gemacht und gebe Wochenendworkshops zum Thema \\u201eYoga und Pferd\\u201c.<br\\/><br\\/>Der menschliche &lt;span class=&quot;highlight&quot;&gt;K\\u00f6rper&lt;\\/span&gt; in seiner Funktion und Komplexit\\u00e4t fasziniert mich schon lange. Ich entschied mich daher im Jahr 2015 f\\u00fcr die Ausbildung zur staatlich anerkannten &lt;span class=&quot;highlight&quot;&gt;Physiotherapeutin&lt;\\/span&gt;, welche ich 2018 erfolgreich abschloss. <br\\/><br\\/>Dank der harmonierenden &lt;span class=&quot;highlight&quot;&gt;Kombination&lt;\\/span&gt; aus medizinischem &lt;span class=&quot;highlight&quot;&gt;Fachwissen&lt;\\/span&gt; und &lt;span class=&quot;highlight&quot;&gt;Yogaphilosophie&lt;\\/span&gt; ist es mir m\\u00f6glich, sowohl auf k\\u00f6rperliche, als auch auf seelische Bed\\u00fcrfnisse einzugehen."}]' WHERE field = 'aboutMe';
+08/20/2019 04:14:29 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:14:29 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:14:29 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:14:31 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:14:31 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:14:31 pm:      SELECT * FROM images
+08/20/2019 04:15:36 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:15:36 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:15:36 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:15:38 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:16:05 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:16:12 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:16:12 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:16:12 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:16:20 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:17:13 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:17:13 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:17:13 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:17:24 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:17:24 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:17:24 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:17:25 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:17:35 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:17:35 pm:      
+08/20/2019 04:17:35 pm:      
+08/20/2019 04:18:03 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:18:03 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:18:03 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:18:14 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:18:30 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:19:12 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:19:12 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:19:12 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:19:20 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:19:27 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:19:31 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:19:36 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:19:36 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:19:36 pm:      SELECT * FROM images
+08/20/2019 04:20:01 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:20:01 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:20:01 pm:      SELECT * FROM images
+08/20/2019 04:20:04 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:20:04 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:20:04 pm:      SELECT * FROM images
+08/20/2019 04:21:39 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:21:39 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:21:39 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:21:44 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:21:44 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:21:44 pm:      SELECT * FROM images
+08/20/2019 04:22:10 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:22:10 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:22:10 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:22:11 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:22:11 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:22:11 pm:      SELECT * FROM images
+08/20/2019 04:22:15 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:22:15 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:22:15 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:22:17 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:22:17 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:22:17 pm:      SELECT * FROM images
+08/20/2019 04:22:39 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:22:39 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:22:39 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:22:40 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:22:40 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:22:40 pm:      SELECT * FROM images
+08/20/2019 04:24:01 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:24:01 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:24:01 pm:      SELECT * FROM images
+08/20/2019 04:24:06 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:24:06 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:24:06 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:24:07 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:24:07 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:24:07 pm:      SELECT * FROM images
+08/20/2019 04:24:51 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:24:51 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:24:51 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:24:53 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:24:53 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:24:53 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:24:54 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:24:54 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:24:54 pm:      SELECT * FROM images
+08/20/2019 04:26:13 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:26:13 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:26:13 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:26:14 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:26:14 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:26:14 pm:      SELECT * FROM images
+08/20/2019 04:27:03 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:27:03 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:27:03 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:27:04 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:27:04 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:27:04 pm:      SELECT * FROM images
+08/20/2019 04:28:30 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:28:30 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:28:30 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:28:32 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:28:32 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:28:32 pm:      SELECT * FROM images
+08/20/2019 04:33:37 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:33:37 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:33:37 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:33:39 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:33:39 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:33:39 pm:      SELECT * FROM images
+08/20/2019 04:34:19 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:34:19 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:34:19 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:34:21 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:34:21 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:34:21 pm:      SELECT * FROM images
+08/20/2019 04:35:53 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:35:53 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:35:53 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:35:55 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:35:55 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:35:55 pm:      SELECT * FROM images
+08/20/2019 04:36:10 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:36:10 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:36:10 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:36:14 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:36:14 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:36:14 pm:      SELECT * FROM images
+08/20/2019 04:46:00 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:46:00 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:46:00 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:46:00 pm:      SELECT * FROM images
+08/20/2019 04:48:05 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:48:05 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:48:05 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:48:17 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:48:44 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:48:44 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:48:44 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:48:44 pm:      SELECT * FROM images
+08/20/2019 04:48:50 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:48:50 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:48:50 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:48:50 pm:      SELECT * FROM images
+08/20/2019 04:53:17 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:53:17 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:53:17 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:53:17 pm:      SELECT * FROM images
+08/20/2019 04:55:16 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:55:16 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:55:16 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:55:16 pm:      SELECT * FROM images
+08/20/2019 04:55:16 pm:      SELECT * FROM images
+08/20/2019 04:55:22 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:55:22 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:55:22 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:55:22 pm:      SELECT * FROM images
+08/20/2019 04:55:27 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:55:27 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:55:27 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:55:27 pm:      SELECT * FROM images
+08/20/2019 04:58:23 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:58:23 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 04:58:23 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 04:58:23 pm:      SELECT * FROM images
+08/20/2019 04:58:23 pm:      SELECT * FROM images
+08/20/2019 04:58:29 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 04:58:29 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 04:58:29 pm:      SELECT * FROM images
+08/20/2019 04:58:29 pm:      SELECT * FROM images
+08/20/2019 05:01:32 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:01:32 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:01:32 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:01:32 pm:      SELECT * FROM images
+08/20/2019 05:01:32 pm:      SELECT * FROM images
+08/20/2019 05:01:35 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:01:35 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:01:35 pm:      SELECT * FROM images
+08/20/2019 05:01:35 pm:      SELECT * FROM images
+08/20/2019 05:01:46 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:01:46 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:01:46 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:01:46 pm:      SELECT * FROM images
+08/20/2019 05:01:46 pm:      SELECT * FROM images
+08/20/2019 05:02:21 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:02:21 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:02:21 pm:      SELECT * FROM images
+08/20/2019 05:02:21 pm:      SELECT * FROM images
+08/20/2019 05:05:03 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:05:03 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:05:03 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:05:03 pm:      SELECT * FROM images
+08/20/2019 05:05:03 pm:      SELECT * FROM images
+08/20/2019 05:05:04 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:05:04 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:05:04 pm:      SELECT * FROM images
+08/20/2019 05:05:04 pm:      SELECT * FROM images
+08/20/2019 05:07:12 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:07:12 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:07:12 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:07:12 pm:      SELECT * FROM images
+08/20/2019 05:07:12 pm:      SELECT * FROM images
+08/20/2019 05:07:13 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:07:13 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:07:13 pm:      SELECT * FROM images
+08/20/2019 05:07:13 pm:      SELECT * FROM images
+08/20/2019 05:07:20 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:07:20 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:07:20 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:07:20 pm:      SELECT * FROM images
+08/20/2019 05:07:20 pm:      SELECT * FROM images
+08/20/2019 05:07:22 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:07:22 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:07:22 pm:      SELECT * FROM images
+08/20/2019 05:07:22 pm:      SELECT * FROM images
+08/20/2019 05:07:34 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:07:34 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:07:34 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:07:34 pm:      SELECT * FROM images
+08/20/2019 05:07:34 pm:      SELECT * FROM images
+08/20/2019 05:07:35 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:07:35 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:07:35 pm:      SELECT * FROM images
+08/20/2019 05:07:35 pm:      SELECT * FROM images
+08/20/2019 05:08:14 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:08:14 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:08:14 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:08:14 pm:      SELECT * FROM images
+08/20/2019 05:08:14 pm:      SELECT * FROM images
+08/20/2019 05:08:19 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:08:19 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:08:19 pm:      SELECT * FROM images
+08/20/2019 05:08:19 pm:      SELECT * FROM images
+08/20/2019 05:08:50 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:08:50 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:08:50 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:08:50 pm:      SELECT * FROM images
+08/20/2019 05:08:50 pm:      SELECT * FROM images
+08/20/2019 05:08:51 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:08:51 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:08:51 pm:      SELECT * FROM images
+08/20/2019 05:08:51 pm:      SELECT * FROM images
+08/20/2019 05:09:31 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:09:31 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:09:31 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:09:31 pm:      SELECT * FROM images
+08/20/2019 05:09:31 pm:      SELECT * FROM images
+08/20/2019 05:09:33 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:09:33 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:09:33 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:09:33 pm:      SELECT * FROM images
+08/20/2019 05:09:33 pm:      SELECT * FROM images
+08/20/2019 05:09:35 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:09:35 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:09:35 pm:      SELECT * FROM images
+08/20/2019 05:09:35 pm:      SELECT * FROM images
+08/20/2019 05:10:46 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:10:46 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:10:46 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:10:46 pm:      SELECT * FROM images
+08/20/2019 05:10:46 pm:      SELECT * FROM images
+08/20/2019 05:10:49 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:10:49 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:10:49 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:10:49 pm:      SELECT * FROM images
+08/20/2019 05:10:49 pm:      SELECT * FROM images
+08/20/2019 05:10:51 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:10:51 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:10:51 pm:      SELECT * FROM images
+08/20/2019 05:10:51 pm:      SELECT * FROM images
+08/20/2019 05:26:57 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:26:57 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:26:57 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:26:57 pm:      SELECT * FROM images
+08/20/2019 05:26:57 pm:      SELECT * FROM images
+08/20/2019 05:27:00 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:27:00 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:27:00 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:27:00 pm:      SELECT * FROM images
+08/20/2019 05:27:00 pm:      SELECT * FROM images
+08/20/2019 05:27:05 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:27:05 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:27:05 pm:      SELECT * FROM images
+08/20/2019 05:27:05 pm:      SELECT * FROM images
+08/20/2019 05:28:06 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:28:06 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:28:06 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:28:06 pm:      SELECT * FROM images
+08/20/2019 05:28:06 pm:      SELECT * FROM images
+08/20/2019 05:28:08 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:28:08 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:28:08 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:28:08 pm:      SELECT * FROM images
+08/20/2019 05:28:08 pm:      SELECT * FROM images
+08/20/2019 05:28:10 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:28:10 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:28:10 pm:      SELECT * FROM images
+08/20/2019 05:28:10 pm:      SELECT * FROM images
+08/20/2019 05:28:19 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:28:19 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:28:19 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:28:19 pm:      SELECT * FROM images
+08/20/2019 05:28:19 pm:      SELECT * FROM images
+08/20/2019 05:28:21 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:28:21 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:28:21 pm:      SELECT * FROM images
+08/20/2019 05:28:21 pm:      SELECT * FROM images
+08/20/2019 05:28:55 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:28:55 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:28:55 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:28:55 pm:      SELECT * FROM images
+08/20/2019 05:28:55 pm:      SELECT * FROM images
+08/20/2019 05:28:57 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:28:57 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:28:57 pm:      SELECT * FROM images
+08/20/2019 05:28:57 pm:      SELECT * FROM images
+08/20/2019 05:29:24 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:29:24 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:29:24 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:29:24 pm:      SELECT * FROM images
+08/20/2019 05:29:24 pm:      SELECT * FROM images
+08/20/2019 05:29:26 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:29:26 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:29:26 pm:      SELECT * FROM images
+08/20/2019 05:29:26 pm:      SELECT * FROM images
+08/20/2019 05:30:09 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:30:09 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:30:09 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:30:09 pm:      SELECT * FROM images
+08/20/2019 05:30:09 pm:      SELECT * FROM images
+08/20/2019 05:30:18 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:30:18 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:30:18 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:30:18 pm:      SELECT * FROM images
+08/20/2019 05:30:18 pm:      SELECT * FROM images
+08/20/2019 05:30:24 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:30:24 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:30:24 pm:      SELECT * FROM images
+08/20/2019 05:30:24 pm:      SELECT * FROM images
+08/20/2019 05:31:12 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:31:12 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:31:12 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:31:12 pm:      SELECT * FROM images
+08/20/2019 05:31:12 pm:      SELECT * FROM images
+08/20/2019 05:31:16 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:31:16 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:31:16 pm:      SELECT * FROM images
+08/20/2019 05:31:16 pm:      SELECT * FROM images
+08/20/2019 05:33:25 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:33:25 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:33:25 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:33:25 pm:      SELECT * FROM images
+08/20/2019 05:33:25 pm:      SELECT * FROM images
+08/20/2019 05:33:27 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:33:27 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:33:27 pm:      SELECT * FROM images
+08/20/2019 05:33:27 pm:      SELECT * FROM images
+08/20/2019 05:33:38 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:33:38 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:33:38 pm:      SELECT * FROM images
+08/20/2019 05:33:38 pm:      SELECT * FROM images
+08/20/2019 05:33:38 pm:      SELECT * FROM images
+08/20/2019 05:33:38 pm:      UPDATE cmsFields SET content = '[{"imageIds":""},{"imageIds":"[&quot;3&quot;,&quot;4&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:34:48 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:34:48 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:34:48 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:34:48 pm:      SELECT * FROM images
+08/20/2019 05:34:48 pm:      SELECT * FROM images
+08/20/2019 05:34:48 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:34:48 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:34:48 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:34:48 pm:      SELECT * FROM images
+08/20/2019 05:34:48 pm:      SELECT * FROM images
+08/20/2019 05:34:55 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:34:55 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:34:55 pm:      SELECT * FROM images
+08/20/2019 05:34:55 pm:      SELECT * FROM images
+08/20/2019 05:35:02 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:35:02 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:35:02 pm:      SELECT * FROM images
+08/20/2019 05:35:02 pm:      SELECT * FROM images
+08/20/2019 05:35:02 pm:      SELECT * FROM images
+08/20/2019 05:35:02 pm:      UPDATE cmsFields SET content = '[{"imageIds":""},{"imageIds":"[&quot;3&quot;,&quot;4&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:35:50 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:35:50 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:35:50 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:35:58 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:37:14 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:37:33 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:37:33 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:37:33 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:37:33 pm:      SELECT * FROM images
+08/20/2019 05:37:33 pm:      SELECT * FROM images
+08/20/2019 05:38:07 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:38:07 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:38:07 pm:      SELECT * FROM images
+08/20/2019 05:38:07 pm:      SELECT * FROM images
+08/20/2019 05:38:44 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:38:44 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:38:44 pm:      SELECT * FROM images
+08/20/2019 05:38:44 pm:      SELECT * FROM images
+08/20/2019 05:38:44 pm:      SELECT * FROM images
+08/20/2019 05:41:56 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:41:56 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:41:56 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:41:56 pm:      SELECT * FROM images
+08/20/2019 05:41:56 pm:      SELECT * FROM images
+08/20/2019 05:41:58 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:41:58 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:41:58 pm:      SELECT * FROM images
+08/20/2019 05:41:58 pm:      SELECT * FROM images
+08/20/2019 05:42:01 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:42:01 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:42:01 pm:      SELECT * FROM images
+08/20/2019 05:42:01 pm:      SELECT * FROM images
+08/20/2019 05:42:01 pm:      SELECT * FROM images
+08/20/2019 05:42:29 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:42:29 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:42:29 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:42:29 pm:      SELECT * FROM images
+08/20/2019 05:42:29 pm:      SELECT * FROM images
+08/20/2019 05:42:48 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:42:48 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:42:48 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:42:48 pm:      SELECT * FROM images
+08/20/2019 05:42:48 pm:      SELECT * FROM images
+08/20/2019 05:42:50 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:42:50 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:42:50 pm:      SELECT * FROM images
+08/20/2019 05:42:50 pm:      SELECT * FROM images
+08/20/2019 05:43:01 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:43:01 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:43:01 pm:      SELECT * FROM images
+08/20/2019 05:43:01 pm:      SELECT * FROM images
+08/20/2019 05:43:01 pm:      SELECT * FROM images
+08/20/2019 05:43:49 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:43:49 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:43:49 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:43:49 pm:      SELECT * FROM images
+08/20/2019 05:43:49 pm:      SELECT * FROM images
+08/20/2019 05:43:58 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:43:58 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:43:58 pm:      SELECT * FROM images
+08/20/2019 05:43:58 pm:      SELECT * FROM images
+08/20/2019 05:44:04 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:44:04 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:44:04 pm:      SELECT * FROM images
+08/20/2019 05:44:04 pm:      SELECT * FROM images
+08/20/2019 05:44:04 pm:      SELECT * FROM images
+08/20/2019 05:44:04 pm:      UPDATE cmsFields SET content = '[{"imageIds":""},{"imageIds":""}]' WHERE field = 'indexGalleries';
+08/20/2019 05:44:39 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:44:39 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:44:39 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:44:39 pm:      SELECT * FROM images
+08/20/2019 05:44:39 pm:      SELECT * FROM images
+08/20/2019 05:44:39 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:44:39 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:44:39 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:44:39 pm:      SELECT * FROM images
+08/20/2019 05:44:39 pm:      SELECT * FROM images
+08/20/2019 05:45:19 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:45:19 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:45:19 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:45:19 pm:      SELECT * FROM images
+08/20/2019 05:45:19 pm:      SELECT * FROM images
+08/20/2019 05:45:19 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:45:19 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:45:19 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:45:19 pm:      SELECT * FROM images
+08/20/2019 05:45:19 pm:      SELECT * FROM images
+08/20/2019 05:45:31 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:45:31 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:45:31 pm:      SELECT * FROM images
+08/20/2019 05:45:31 pm:      SELECT * FROM images
+08/20/2019 05:45:38 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:45:38 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:45:38 pm:      SELECT * FROM images
+08/20/2019 05:45:38 pm:      SELECT * FROM images
+08/20/2019 05:45:38 pm:      SELECT * FROM images
+08/20/2019 05:45:38 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;3&quot;,&quot;4&quot;,&quot;5&quot;]"},{"imageIds":""}]' WHERE field = 'indexGalleries';
+08/20/2019 05:45:45 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:45:45 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:45:45 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:45:45 pm:      SELECT * FROM images
+08/20/2019 05:45:45 pm:      SELECT * FROM images
+08/20/2019 05:45:45 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:45:45 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:45:45 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:45:45 pm:      SELECT * FROM images
+08/20/2019 05:45:45 pm:      SELECT * FROM images
+08/20/2019 05:45:48 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:45:48 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:45:48 pm:      SELECT * FROM images
+08/20/2019 05:45:48 pm:      SELECT * FROM images
+08/20/2019 05:45:54 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:45:54 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:45:54 pm:      SELECT * FROM images
+08/20/2019 05:45:54 pm:      SELECT * FROM images
+08/20/2019 05:45:54 pm:      SELECT * FROM images
+08/20/2019 05:45:54 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;3&quot;,&quot;4&quot;,&quot;5&quot;]"},{"imageIds":"[&quot;6&quot;,&quot;8&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:45:56 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:45:56 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:45:56 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:45:56 pm:      SELECT * FROM images
+08/20/2019 05:45:56 pm:      SELECT * FROM images
+08/20/2019 05:46:26 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:46:26 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:46:26 pm:      SELECT * FROM images
+08/20/2019 05:46:26 pm:      SELECT * FROM images
+08/20/2019 05:46:37 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:46:37 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:46:37 pm:      SELECT * FROM images
+08/20/2019 05:46:37 pm:      SELECT * FROM images
+08/20/2019 05:46:37 pm:      SELECT * FROM images
+08/20/2019 05:46:37 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;3&quot;,&quot;4&quot;,&quot;5&quot;]"},{"imageIds":"[&quot;3&quot;,&quot;6&quot;,&quot;8&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:46:49 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:46:49 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:46:49 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:46:49 pm:      SELECT * FROM images
+08/20/2019 05:46:49 pm:      SELECT * FROM images
+08/20/2019 05:46:51 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:46:51 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:46:51 pm:      SELECT * FROM images
+08/20/2019 05:46:51 pm:      SELECT * FROM images
+08/20/2019 05:46:56 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:46:56 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:46:56 pm:      SELECT * FROM images
+08/20/2019 05:46:56 pm:      SELECT * FROM images
+08/20/2019 05:46:56 pm:      SELECT * FROM images
+08/20/2019 05:46:56 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;3&quot;,&quot;4&quot;,&quot;5&quot;]"},{"imageIds":"[&quot;6&quot;,&quot;8&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:46:56 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:46:56 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:46:56 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:46:56 pm:      SELECT * FROM images
+08/20/2019 05:46:56 pm:      SELECT * FROM images
+08/20/2019 05:47:01 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:47:01 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:47:01 pm:      SELECT * FROM images
+08/20/2019 05:47:01 pm:      SELECT * FROM images
+08/20/2019 05:47:05 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:47:05 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:47:05 pm:      SELECT * FROM images
+08/20/2019 05:47:05 pm:      SELECT * FROM images
+08/20/2019 05:47:05 pm:      SELECT * FROM images
+08/20/2019 05:47:05 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;3&quot;,&quot;4&quot;,&quot;5&quot;]"},{"imageIds":"[&quot;4&quot;,&quot;6&quot;,&quot;8&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:47:05 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:47:05 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:47:05 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:47:05 pm:      SELECT * FROM images
+08/20/2019 05:47:05 pm:      SELECT * FROM images
+08/20/2019 05:48:10 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:48:10 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:48:10 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:48:10 pm:      SELECT * FROM images
+08/20/2019 05:48:10 pm:      SELECT * FROM images
+08/20/2019 05:48:15 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:48:15 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:48:15 pm:      SELECT * FROM images
+08/20/2019 05:48:15 pm:      SELECT * FROM images
+08/20/2019 05:48:17 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:48:17 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:48:17 pm:      SELECT * FROM images
+08/20/2019 05:48:17 pm:      SELECT * FROM images
+08/20/2019 05:48:17 pm:      SELECT * FROM images
+08/20/2019 05:48:17 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;3&quot;,&quot;4&quot;,&quot;5&quot;]"},{"imageIds":"[&quot;3&quot;,&quot;4&quot;,&quot;6&quot;,&quot;8&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:48:17 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:48:17 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:48:17 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:48:17 pm:      SELECT * FROM images
+08/20/2019 05:48:17 pm:      SELECT * FROM images
+08/20/2019 05:48:22 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:48:22 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:48:22 pm:      SELECT * FROM images
+08/20/2019 05:48:22 pm:      SELECT * FROM images
+08/20/2019 05:48:26 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:48:26 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:48:26 pm:      SELECT * FROM images
+08/20/2019 05:48:26 pm:      SELECT * FROM images
+08/20/2019 05:48:26 pm:      SELECT * FROM images
+08/20/2019 05:48:26 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;3&quot;,&quot;4&quot;,&quot;5&quot;]"},{"imageIds":"[&quot;5&quot;,&quot;6&quot;,&quot;8&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:48:26 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:48:26 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:48:26 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:48:26 pm:      SELECT * FROM images
+08/20/2019 05:48:26 pm:      SELECT * FROM images
+08/20/2019 05:48:30 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:48:30 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:48:30 pm:      SELECT * FROM images
+08/20/2019 05:48:30 pm:      SELECT * FROM images
+08/20/2019 05:48:30 pm:      SELECT * FROM images
+08/20/2019 05:49:39 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:49:39 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:49:39 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:49:39 pm:      SELECT * FROM images
+08/20/2019 05:49:39 pm:      SELECT * FROM images
+08/20/2019 05:49:43 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:49:43 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:49:43 pm:      SELECT * FROM images
+08/20/2019 05:49:43 pm:      SELECT * FROM images
+08/20/2019 05:49:45 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:49:45 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:49:45 pm:      SELECT * FROM images
+08/20/2019 05:49:45 pm:      SELECT * FROM images
+08/20/2019 05:49:45 pm:      SELECT * FROM images
+08/20/2019 05:49:45 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;3&quot;,&quot;4&quot;,&quot;5&quot;]"},{"imageIds":"[&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;8&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:49:45 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:49:45 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:49:45 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:49:45 pm:      SELECT * FROM images
+08/20/2019 05:49:45 pm:      SELECT * FROM images
+08/20/2019 05:49:54 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:49:54 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:49:54 pm:      SELECT * FROM images
+08/20/2019 05:49:54 pm:      SELECT * FROM images
+08/20/2019 05:49:54 pm:      SELECT * FROM images
+08/20/2019 05:49:59 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:49:59 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:49:59 pm:      SELECT * FROM images
+08/20/2019 05:49:59 pm:      SELECT * FROM images
+08/20/2019 05:49:59 pm:      SELECT * FROM images
+08/20/2019 05:49:59 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;3&quot;,&quot;4&quot;,&quot;5&quot;]"},{"imageIds":"[&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;8&quot;]"},{"imageIds":"[&quot;7&quot;,&quot;8&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:49:59 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:49:59 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:49:59 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:49:59 pm:      SELECT * FROM images
+08/20/2019 05:49:59 pm:      SELECT * FROM images
+08/20/2019 05:49:59 pm:      SELECT * FROM images
+08/20/2019 05:50:05 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:50:05 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:50:05 pm:      SELECT * FROM images
+08/20/2019 05:50:05 pm:      SELECT * FROM images
+08/20/2019 05:50:05 pm:      SELECT * FROM images
+08/20/2019 05:50:15 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:50:15 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:50:15 pm:      SELECT * FROM images
+08/20/2019 05:50:15 pm:      SELECT * FROM images
+08/20/2019 05:50:15 pm:      SELECT * FROM images
+08/20/2019 05:50:15 pm:      SELECT * FROM images
+08/20/2019 05:50:15 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;3&quot;,&quot;4&quot;,&quot;5&quot;]"},{"imageIds":"[&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;8&quot;]"},{"imageIds":"[&quot;6&quot;,&quot;7&quot;,&quot;8&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:50:15 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:50:15 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:50:15 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:50:15 pm:      SELECT * FROM images
+08/20/2019 05:50:15 pm:      SELECT * FROM images
+08/20/2019 05:50:15 pm:      SELECT * FROM images
+08/20/2019 05:50:20 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:50:20 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:50:20 pm:      SELECT * FROM images
+08/20/2019 05:50:20 pm:      SELECT * FROM images
+08/20/2019 05:50:20 pm:      SELECT * FROM images
+08/20/2019 05:50:23 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:50:23 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:50:23 pm:      SELECT * FROM images
+08/20/2019 05:50:23 pm:      SELECT * FROM images
+08/20/2019 05:50:23 pm:      SELECT * FROM images
+08/20/2019 05:50:23 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;3&quot;,&quot;4&quot;,&quot;5&quot;]"},{"imageIds":"[&quot;6&quot;,&quot;7&quot;,&quot;8&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:50:23 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:50:23 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:50:23 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:50:23 pm:      SELECT * FROM images
+08/20/2019 05:50:23 pm:      SELECT * FROM images
+08/20/2019 05:50:26 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:50:26 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:50:26 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:50:26 pm:      SELECT * FROM images
+08/20/2019 05:50:26 pm:      SELECT * FROM images
+08/20/2019 05:50:44 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:50:44 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:50:44 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:50:44 pm:      SELECT * FROM images
+08/20/2019 05:50:44 pm:      SELECT * FROM images
+08/20/2019 05:51:31 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:51:31 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:51:31 pm:      SELECT * FROM images
+08/20/2019 05:51:31 pm:      SELECT * FROM images
+08/20/2019 05:51:51 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:51:51 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:51:51 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:51:51 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:51:51 pm:      SELECT * FROM images
+08/20/2019 05:51:51 pm:      SELECT * FROM images
+08/20/2019 05:51:55 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:51:55 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:51:55 pm:      SELECT * FROM images
+08/20/2019 05:51:55 pm:      SELECT * FROM images
+08/20/2019 05:51:55 pm:      SELECT * FROM images
+08/20/2019 05:52:01 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:52:01 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:52:01 pm:      SELECT * FROM images
+08/20/2019 05:52:01 pm:      SELECT * FROM images
+08/20/2019 05:52:01 pm:      SELECT * FROM images
+08/20/2019 05:52:01 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;3&quot;,&quot;4&quot;,&quot;5&quot;]"},{"imageIds":"[&quot;6&quot;,&quot;7&quot;,&quot;8&quot;]"},{"imageIds":"[&quot;8&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:52:01 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:52:01 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:52:01 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:52:01 pm:      SELECT * FROM images
+08/20/2019 05:52:01 pm:      SELECT * FROM images
+08/20/2019 05:52:01 pm:      SELECT * FROM images
+08/20/2019 05:52:09 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:52:09 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:52:09 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:52:09 pm:      SELECT * FROM images
+08/20/2019 05:52:09 pm:      SELECT * FROM images
+08/20/2019 05:52:09 pm:      SELECT * FROM images
+08/20/2019 05:52:35 pm:      SELECT * FROM users WHERE username = 'admin' AND password = '36ede0e216e3ece18d617fc7b6c9c6a22859c659864f845a87ae07ffd7173a57'
+08/20/2019 05:52:39 pm:      SELECT * FROM users WHERE username = 'admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:52:39 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:52:39 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:52:39 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:52:39 pm:      SELECT * FROM images
+08/20/2019 05:52:39 pm:      SELECT * FROM images
+08/20/2019 05:52:39 pm:      SELECT * FROM images
+08/20/2019 05:52:54 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:52:54 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:52:54 pm:      SELECT * FROM images
+08/20/2019 05:52:54 pm:      SELECT * FROM images
+08/20/2019 05:52:54 pm:      SELECT * FROM images
+08/20/2019 05:52:57 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:52:57 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:52:57 pm:      SELECT * FROM images
+08/20/2019 05:52:57 pm:      SELECT * FROM images
+08/20/2019 05:52:57 pm:      SELECT * FROM images
+08/20/2019 05:52:57 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;6&quot;,&quot;7&quot;,&quot;8&quot;]"},{"imageIds":"[&quot;8&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:52:57 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:52:57 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:52:57 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:52:57 pm:      SELECT * FROM images
+08/20/2019 05:52:57 pm:      SELECT * FROM images
+08/20/2019 05:52:59 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:52:59 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:52:59 pm:      SELECT * FROM images
+08/20/2019 05:52:59 pm:      SELECT * FROM images
+08/20/2019 05:53:02 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:53:02 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:53:02 pm:      SELECT * FROM images
+08/20/2019 05:53:02 pm:      SELECT * FROM images
+08/20/2019 05:53:02 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;8&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:53:02 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:53:02 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:53:02 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:53:02 pm:      SELECT * FROM images
+08/20/2019 05:53:06 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:53:06 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:53:06 pm:      SELECT * FROM images
+08/20/2019 05:53:09 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:53:09 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:53:09 pm:      SELECT * FROM images
+08/20/2019 05:53:09 pm:      UPDATE cmsFields SET content = '[]' WHERE field = 'indexGalleries';
+08/20/2019 05:53:09 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:53:09 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:53:09 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:53:15 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:53:15 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:53:15 pm:      SELECT * FROM images
+08/20/2019 05:53:21 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:53:21 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:53:21 pm:      SELECT * FROM images
+08/20/2019 05:53:21 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:53:21 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:53:21 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:53:21 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:53:21 pm:      SELECT * FROM images
+08/20/2019 05:53:29 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:53:29 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:53:29 pm:      SELECT * FROM images
+08/20/2019 05:56:13 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:56:13 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:56:13 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:56:13 pm:      SELECT * FROM images
+08/20/2019 05:56:15 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:56:15 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:56:15 pm:      SELECT * FROM images
+08/20/2019 05:56:18 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:56:18 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:56:18 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:56:18 pm:      SELECT * FROM images
+08/20/2019 05:56:20 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:56:20 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:56:20 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:56:20 pm:      SELECT * FROM images
+08/20/2019 05:56:21 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:56:21 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:56:21 pm:      SELECT * FROM images
+08/20/2019 05:57:07 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:57:07 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:57:07 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:57:07 pm:      SELECT * FROM images
+08/20/2019 05:57:10 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:57:10 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:57:10 pm:      SELECT * FROM images
+08/20/2019 05:57:22 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:57:59 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:58:04 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:58:04 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:58:04 pm:      SELECT * FROM images
+08/20/2019 05:58:12 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:58:12 pm:      SELECT * FROM cmsFields WHERE field= 'indexGalleries'
+08/20/2019 05:58:12 pm:      SELECT * FROM images
+08/20/2019 05:58:12 pm:      SELECT * FROM images
+08/20/2019 05:58:12 pm:      UPDATE cmsFields SET content = '[{"imageIds":"[&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;11&quot;,&quot;12&quot;]"}]' WHERE field = 'indexGalleries';
+08/20/2019 05:58:12 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:58:12 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:58:12 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:58:12 pm:      SELECT * FROM images
+08/20/2019 05:58:15 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 05:58:15 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:58:15 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:58:15 pm:      SELECT * FROM images
+08/20/2019 05:58:56 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 05:58:56 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 05:58:56 pm:      SELECT * FROM images
+08/20/2019 06:00:16 pm:      SELECT * FROM users WHERE username = 'admin' AND password = 'd7adad9f067c87236798fc14e1467edc69543fdb5c9a6f5fd95c69f2df9a86e0'
+08/20/2019 06:00:21 pm:      SELECT * FROM users WHERE username = 'admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 06:00:21 pm:      SELECT * FROM users WHERE username = 'Admin' AND password = '1c8726690c579327831fac898863bf5f758368c2552130fb85e8c3bdc91979af'
+08/20/2019 06:00:21 pm:      SELECT * FROM pages WHERE name = 'index'
+08/20/2019 06:00:21 pm:      SELECT * FROM cmsFields WHERE page= 'index'
+08/20/2019 06:00:21 pm:      SELECT * FROM images

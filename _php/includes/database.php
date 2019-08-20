@@ -32,8 +32,6 @@ class Database {
 			"INSERT INTO $table ($fields) VALUES ($params)"
 		);
 
-		// $this->logDatabaseAccess($statement):
-
 		foreach ($data as $key => &$value) {
 			$sql->bindParam(":$key", $value);
 		}
@@ -51,7 +49,7 @@ class Database {
 
 		$sql = $this->conn->prepare($statement);
 
-		// $this->logDatabaseAccess($statement):
+		$this->logDatabaseAccess($statement);
 
 		$sql->execute();
 

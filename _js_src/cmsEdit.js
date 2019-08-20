@@ -15,3 +15,27 @@ $('.cmsEdit').submit(function(e) {
 $('#abort').click(function(){
 	parent.closeIframe('abort');
 });
+
+$('.galleryEditor .item').click(function() {
+	$(this).toggleClass('selected');
+	setGalerieInput();
+});
+
+function setGalerieInput() {
+	var imageIds = [];
+	var galleryEditor = $('.galleryEditor');
+
+	$('.item', galleryEditor).each(function() {
+		if ($(this).hasClass('selected')) {
+			imageIds.push($(this).attr('data-id'));
+		}
+	});
+
+	$('#galerieValue').attr('value', JSON.stringify(imageIds));
+}
+
+$(document).ready(function() {
+	if ($('.galleryEditor')) {
+		setGalerieInput();
+	}
+})

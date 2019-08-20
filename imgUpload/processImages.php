@@ -35,8 +35,9 @@
 			echo $content->addImage($file);	
 			echo '<br>';	
 		}
-
 	?>
+    <input type="button" value="Abbrechen" onclick="parent.closeIframe('abort')">
+
 	<script src="<?=BASE_URL?>_js/cmsEdit.js"></script>
 
 </body>

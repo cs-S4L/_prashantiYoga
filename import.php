@@ -30,9 +30,15 @@ $content = new Content($GLOBALS['DB']);
 // 					Vormittagskurse bei entsprechender Nachfrage möglich'),
 // ));
 
-$content->addContentToDB('index', 'scheduleHints', 'text', array(
-	array('text' => '*Kurse geeignet für Anfänger und Fortgeschrittene
-*Maximale Teilnehmerzahl 8 Personen'),
+// $content->addContentToDB('index', 'scheduleHints', 'text', array(
+// 	array('text' => '*Kurse geeignet für Anfänger und Fortgeschrittene
+// *Maximale Teilnehmerzahl 8 Personen'),
+// ));
+
+$content->addContentToDB('index', 'indexGalleries', 'gallery', array(
+	array('imageIds' => array('4', '5', '6')),
+	array('imageIds' => array('3', '7', '8')),
 ));
+
 
 die();

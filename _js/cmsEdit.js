@@ -32,7 +32,9 @@ function hideShowNavi() {
 	}
 }
 
-function initGallery() {
+function initGallery(gallery) {
+	let galleryImageLarge = $('.large', gallery);
+	let galleryImageThumbs = $('.thumbs', gallery);
 	let innerHtml = galleryImageLarge.html();
 
 	galleryImageThumbs.append(innerHtml);
@@ -85,19 +87,18 @@ function initGallery() {
 	});
 } // initGallery
 
-function openGallery() {
+function openGallery(gallery) {
 	gallery.fadeIn();
 
-	initGallery();
+	initGallery(gallery);
 
 	navElement.slideUp(navAnimationDuration);
 	navElement.removeClass('active');
 	$(window).unbind("scroll");
 }
 
-function closeGallery() {
-	let gallery = $('.gallery');
-
+function closeGallery(gallery) {
+	console.log(gallery);
 	gallery.fadeOut();
 	hideShowNavi();
 	$(window).bind('scroll', function() {
@@ -144,3 +145,27 @@ $('.cmsEdit').submit(function(e) {
 $('#abort').click(function(){
 	parent.closeIframe('abort');
 });
+
+$('.galleryEditor .item').click(function() {
+	$(this).toggleClass('selected');
+	setGalerieInput();
+});
+
+function setGalerieInput() {
+	var imageIds = [];
+	var galleryEditor = $('.galleryEditor');
+
+	$('.item', galleryEditor).each(function() {
+		if ($(this).hasClass('selected')) {
+			imageIds.push($(this).attr('data-id'));
+		}
+	});
+
+	$('#galerieValue').attr('value', JSON.stringify(imageIds));
+}
+
+$(document).ready(function() {
+	if ($('.galleryEditor')) {
+		setGalerieInput();
+	}
+})

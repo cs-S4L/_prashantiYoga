@@ -4619,7 +4619,8 @@ a {
   transition: all 0.5s ease-out;
   border: 1px solid transparent;
   cursor: pointer;
-  min-height: 40px; }
+  min-height: 40px;
+  width: 100%; }
   .cmsEditField:hover {
     border: 1px solid #6e322a; }
   .cmsEditField:after {
