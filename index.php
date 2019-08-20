@@ -3,8 +3,6 @@
 
 	$GLOBALS['Pagename'] = 'index';
 
-	// include('import.php');
-	
 	$currentPage = new Page($GLOBALS['DB'],$GLOBALS['Content'], $GLOBALS['Pagename']);
 ?>
 
