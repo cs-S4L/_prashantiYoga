@@ -4701,7 +4701,8 @@ textarea {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 25%; }
+    width: 25%;
+    cursor: pointer; }
     @media only screen and (min-width: 720px) {
       .galleryEditor .item {
         width: 16.5%;

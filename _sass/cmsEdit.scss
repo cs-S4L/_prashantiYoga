@@ -46,6 +46,7 @@ textarea {
         display: flex;
         justify-content: center;
         width: 25%;
+        cursor: pointer;
 
         @include respond-to($md) {
             width: 16.5%;
