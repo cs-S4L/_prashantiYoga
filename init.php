@@ -14,6 +14,7 @@ require DIR__PHP . "includes".DIRECTORY_SEPARATOR."config.php";
 require DIR__PHP . "includes".DIRECTORY_SEPARATOR."helperFunctions.php";
 require DIR__PHP . "includes".DIRECTORY_SEPARATOR."database.php";
 require DIR__PHP . "includes".DIRECTORY_SEPARATOR."login.php";
+require DIR__PHP . "includes".DIRECTORY_SEPARATOR."validation.php";
 
 require DIR__PHP . "database".DIRECTORY_SEPARATOR."DBUsers.php";
 require DIR__PHP . "database".DIRECTORY_SEPARATOR."DBPages.php";

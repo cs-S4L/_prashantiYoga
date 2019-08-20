@@ -4431,6 +4431,11 @@ section {
   @media only screen and (min-width: 720px) {
     section {
       margin: 60px auto; } }
+  section.noMarginBottom {
+    margin: 40px auto 0; }
+    @media only screen and (min-width: 720px) {
+      section.noMarginBottom {
+        margin: 60px auto 0; } }
   section .section__inner {
     max-width: 1200px;
     width: 100%;
@@ -4463,6 +4468,11 @@ textarea {
   color: #000000;
   border-radius: 6px;
   padding: 5px; }
+
+a {
+  font-size: 16px;
+  color: #E80C38;
+  text-decoration: underline; }
 
 /**
  * 	Grid
@@ -4650,6 +4660,10 @@ form {
   border: 2px solid #fde492;
   border-radius: 14px;
   padding: 20px 30px 30px; }
+  form.hidden {
+    display: none; }
+  form .linkWrapper {
+    margin-top: 15px; }
 
 h3 {
   font-size: 20px;
@@ -4668,5 +4682,11 @@ input[type="text"] {
 form.invalid input[type="text"] {
   border-color: red; }
 
-form.invalid .errorMessage {
+form.invalid .errorMessage.invalid {
+  display: block; }
+
+form.inactiveUser input[type="text"] {
+  border-color: red; }
+
+form.inactiveUser .errorMessage.inactiveUser {
   display: block; }

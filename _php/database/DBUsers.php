@@ -6,6 +6,8 @@ class DBUsers {
 
 	const ID = "id";
 	const Username = "username";
+	const Name = "name";
+	const Mail = "mail";
 	const Password = "password";
 
 }

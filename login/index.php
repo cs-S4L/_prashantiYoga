@@ -27,7 +27,7 @@
 </head>
 <body>
 
-	<section>
+	<section class="noMarginBottom">
 		<div class="section__inner">
 			<form id="login" action="<?=BASE_URL?>login/checkLogin.php" method="POST" class="">
 				<h3>Login</h3>
@@ -35,7 +35,36 @@
 				<input id="username" name="username" type="text"><br>
 				<label for="password">Passwort:</label>
 				<input id="password" name="password" type="text">
-				<p class="errorMessage">Login fehlgeschlagen!</br>Versuche es erneut</p>
+				<p class="errorMessage invalid">Login fehlgeschlagen!</br>Versuche es erneut</p>
+				<p class="errorMessage inactiveUser">Der eingegebene Benutzername ist nicht aktiviert!</p>
+				<input type="submit" name="submit">
+				<div class="linkWrapper">
+					<a href="#">Registrieren</a>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section>
+		<div class="section__inner">
+			<form id="register" action="<?=BASE_URL?>login/register.php" method="POST" class="hidden">
+				<h3>Registrieren</h3>
+				<label for="username">Nutzername:</label>
+				<input id="username" name="username" type="text"><br>
+
+				<label for="name">Name:</label>
+				<input id="name" name="name" type="text"><br>
+
+				<label for="password">Passwort:</label>
+				<input id="password" name="password" type="text">
+
+				<label for="password2">Passwort wiederholen:</label>
+				<input id="password2" name="password2" type="text">
+
+				<label for="mail">Mail:</label>
+				<input id="password" name="mail" type="text">
+				
+				<p class="errorMessage invalid">Fehler aufgetreten</p>
 				<input type="submit" name="submit">
 			</form>
 		</div>

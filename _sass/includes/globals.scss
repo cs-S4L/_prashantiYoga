@@ -23,6 +23,14 @@ section {
 		margin: 60px auto;
 	}
 
+	&.noMarginBottom {
+		margin: 40px auto 0;
+
+		@include respond-to($md) {
+			margin: 60px auto 0;
+		}
+	}
+
 	.section__inner {
 		max-width: $xlg;
 		width: 100%;
@@ -60,6 +68,12 @@ textarea {
 	color: $color-black;
     border-radius: $border-radius--input;
     padding: 5px;
+}
+
+a {
+	font-size: $font-size-text--big;
+	color: $color-link;
+	text-decoration: underline;
 }
 
 /**

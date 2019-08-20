@@ -19,9 +19,14 @@ form {
 	border: 2px solid $color-brand-2;
     border-radius: $border-radius--default;
     padding: 20px 30px 30px;
-}
 
-label {
+    &.hidden {
+    	display: none;
+    }
+
+    .linkWrapper {
+    	margin-top: 15px;
+    }
 }
 
 h3 {
@@ -46,7 +51,17 @@ form.invalid {
 		border-color: red;
 	}
 
-	.errorMessage {
+	.errorMessage.invalid {
 		display: block;
 	}
+}
+
+form.inactiveUser {
+	input[type="text"] {
+		border-color: red;
+	}
+
+	.errorMessage.inactiveUser {
+		display: block;
+	}	
 }
