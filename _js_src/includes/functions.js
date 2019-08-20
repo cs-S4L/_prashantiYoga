@@ -29,7 +29,9 @@ function hideShowNavi() {
 	}
 }
 
-function initGallery() {
+function initGallery(gallery) {
+	let galleryImageLarge = $('.large', gallery);
+	let galleryImageThumbs = $('.thumbs', gallery);
 	let innerHtml = galleryImageLarge.html();
 
 	galleryImageThumbs.append(innerHtml);
@@ -82,19 +84,18 @@ function initGallery() {
 	});
 } // initGallery
 
-function openGallery() {
+function openGallery(gallery) {
 	gallery.fadeIn();
 
-	initGallery();
+	initGallery(gallery);
 
 	navElement.slideUp(navAnimationDuration);
 	navElement.removeClass('active');
 	$(window).unbind("scroll");
 }
 
-function closeGallery() {
-	let gallery = $('.gallery');
-
+function closeGallery(gallery) {
+	console.log(gallery);
 	gallery.fadeOut();
 	hideShowNavi();
 	$(window).bind('scroll', function() {

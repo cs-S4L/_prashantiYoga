@@ -13,9 +13,7 @@
 // Vars
 var navElement = $('.navi');
 var navAnimationDuration = 300;
-let gallery = $('.gallery');
-let galleryImageLarge = $('.large', gallery);
-let galleryImageThumbs = $('.thumbs', gallery);
+// let gallery = $('.gallery');
 let disclaimerCookie;
 
 
@@ -51,11 +49,16 @@ $(window).bind('scroll', function() {
 
 // Gallery Code
 $('.openGallery').click(function() {
-	openGallery();
+	var galleryId = $(this).attr('data-gallery');
+	var gallery = $('#'+galleryId);
+
+	openGallery(gallery);
 });
 
 $('.gallery .close').click(function () {
-	closeGallery();
+	var gallery = $(this).parent();
+
+	closeGallery(gallery);
 });
 
 

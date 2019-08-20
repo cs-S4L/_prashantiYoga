@@ -6401,36 +6401,20 @@ section.info .kontakt .kontaktArt {
   text-align: center;
   padding-top: 25px; }
 
-section.impressionen .thumb1, section.impressionen .thumb2, section.impressionen .thumb3, section.impressionen .thumb4, section.impressionen .thumb5 {
+section.impressionen .thumbnail {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
-
-section.impressionen .thumb2, section.impressionen .thumb3, section.impressionen .thumb4, section.impressionen .thumb5 {
-  width: 100%; }
-
-section.impressionen .thumb1 {
-  width: 50%;
-  background-image: url("../_img/gallery/thumbs/thumb1_.jpg");
+  background-size: cover;
+  width: 100%;
   position: relative; }
+  section.impressionen .thumbnail img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto; }
 
-section.impressionen .thumb2 {
-  background-image: url("../_img/gallery/thumbs/thumb2_.jpg"); }
-
-section.impressionen .thumb3 {
-  background-image: url("../_img/gallery/thumbs/thumb3_.jpg"); }
-
-section.impressionen .thumb4 {
-  background-image: url("../_img/gallery/thumbs/thumb4_.jpg"); }
-
-section.impressionen .thumb5 {
-  background-image: url("../_img/gallery/thumbs/thumb5_.jpg"); }
-
-section.impressionen .thumb1:after,
-section.impressionen .thumb2:after,
-section.impressionen .thumb3:after,
-section.impressionen .thumb4:after,
-section.impressionen .thumb5:after {
+section.impressionen .thumbnail:after {
   content: "";
   display: block;
   padding-bottom: 100%; }

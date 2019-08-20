@@ -167,106 +167,89 @@
 <section class="impressionen">
 	<div class="section__inner">
 		<div class="row">
-			<div class="thumb1">
+			<div class="col-2">
+				<div class="thumbnail" style="background-image: url('_img/gallery/P1050804.jpg');">
+					<!-- <img src="_img/gallery/thumbs/thumb1_.jpg"> -->
+				</div>
+				
+				<p class="openGallery" data-gallery="first">mehr...</p>
+			</div>
 				<!-- <i class="far fa-plus-square"></i> -->
-			</div>
 
-			<div class="col-4">
-				<div class="thumb2"></div>
-				<div class="thumb3"></div>
-			</div>
-			<div class="col-4">
-				<div class="thumb4"></div>
-				<div class="thumb5"></div>
-			</div>
+			<div id="first" class="gallery">
+				<i class="fas fa-times close"></i>
+				<div class="wrapper-large">
+					<i class="prev fas fa-arrow-circle-left"></i>
+					<ul class="large">
+						<!-- Thumbs -->
+						<li>
+							<img src="_img/gallery/P1050804.jpg" alt="Galeriebild 1 test" class="galleryImg">
+						</li>
+						<li>
+							<img src="_img/gallery/P1050804.jpg" alt="Galeriebild 1 test2" class="galleryImg">
+						</li>
+						<li>
+							<img src="_img/gallery/P1050804.jpg" alt="Galeriebild 1 test3" class="galleryImg">
+						</li>
+					</ul>
+					<i class="next fas fa-arrow-circle-right"></i>
+				</div>
 
-			<p class="openGallery">mehr...</p>
+				<div class="wrapper-thumbs">
+					<i class="prev fas fa-arrow-circle-left"></i>
+					<ul class="thumbs">
+
+					</ul>
+					<i class="next fas fa-arrow-circle-right"></i>
+				</div>
+			</div> <!-- gallery -->
+
+			<div class="col-2">
+				<div class="thumbnail" style="background-image: url('_img/gallery/P1050811.jpg');">
+					<!-- <img src="_img/gallery/thumbs/thumb1_.jpg"> -->
+				</div>
+				
+				<p class="openGallery" data-gallery="second">mehr...</p>
+			</div>
+				<!-- <i class="far fa-plus-square"></i> -->
+
+			<div id="second" class="gallery">
+				<i class="fas fa-times close"></i>
+				<div class="wrapper-large">
+					<i class="prev fas fa-arrow-circle-left"></i>
+					<ul class="large">
+						<!-- Thumbs -->
+						<li>
+							<img src="_img/gallery/P1050811.jpg" alt="Galeriebild 1" class="galleryImg">
+						</li>
+						<li>
+							<img src="_img/gallery/P1050811.jpg" alt="Galeriebild 1" class="galleryImg">
+						</li>
+						<li>
+							<img src="_img/gallery/P1050811.jpg" alt="Galeriebild 1" class="galleryImg">
+						</li>
+						<li>
+							<img src="_img/gallery/P1050811.jpg" alt="Galeriebild 1" class="galleryImg">
+						</li>
+						<li>
+							<img src="_img/gallery/P1050811.jpg" alt="Galeriebild 1" class="galleryImg">
+						</li>
+					</ul>
+					<i class="next fas fa-arrow-circle-right"></i>
+				</div>
+
+				<div class="wrapper-thumbs">
+					<i class="prev fas fa-arrow-circle-left"></i>
+					<ul class="thumbs">
+
+					</ul>
+					<i class="next fas fa-arrow-circle-right"></i>
+				</div>
+			</div> <!-- gallery -->
+
 		</div>
 	</div>
 
-	<div class="gallery">
-		<i class="fas fa-times close"></i>
-		<div class="wrapper-large">
-			<i class="prev fas fa-arrow-circle-left"></i>
-			<ul class="large">
-				<!-- Thumbs -->
-				<li>
-					<img src="_img/gallery/P1050951.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img src="_img/gallery/P1050811.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img src="_img/gallery/P1050829.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img src="_img/gallery/P1050932.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img src="_img/gallery/P1050855.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-
-				<!-- Bilder -->
-				<li>
-					<img src="_img/gallery/P1050804.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050820.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050825.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050833.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050859.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050875.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050878.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050884.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050886.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050888.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050899.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050901.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050905.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050914.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050956.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-				<li>
-					<img data-lazy="_img/gallery/P1050977.jpg" alt="Galeriebild 1" class="galleryImg">
-				</li>
-			</ul>
-			<i class="next fas fa-arrow-circle-right"></i>
-		</div>
-
-		<div class="wrapper-thumbs">
-			<i class="prev fas fa-arrow-circle-left"></i>
-			<ul class="thumbs">
-
-			</ul>
-			<i class="next fas fa-arrow-circle-right"></i>
-		</div>
-	</div>
 </section>
 
 
