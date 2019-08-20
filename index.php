@@ -70,9 +70,9 @@
 			<li data-target="kurse">Kurse</li>
 			<li data-target="kontakt">Kontakt</li>
 			<li data-target="impressionen">Impressionen</li>
-			<li><?= ($GLOBALS['LoggedIn']) 
-			? sprintf("<a href=\"%s/login/checkLogin.php?logout=1\">Logout</a>", BASE_URL)
-			: sprintf("<a href=\"%slogin\">Login</a>", BASE_URL)?>
+			<?php if ($GLOBALS['LoggedIn']) {?>
+			<li><?= sprintf("<a href=\"%s/login/checkLogin.php?logout=1\">Logout</a>", BASE_URL)?></li>
+			<?php } ?> 
 		</ul> 
 	</div>
 </div>
