@@ -72,12 +72,6 @@ class Content {
 		return (empty($return)) ? null : $return;
 	}
 
-	/**
-	 * [updateField description]
-	 * @param  [type] $fieldName [description]
-	 * @param  [array] $input     [description]
-	 * @return [type]            [description]
-	 */
 	public function updateField($field) {
 		$json = $field->createJson();
 
@@ -124,8 +118,6 @@ class Content {
 		} else {
 			return 'Fehlerhafter Dateityp. Erlaubt sind JPG, JPEG oder PNG';
 		}
-
-		// print_r($file);
 	}
 
 	private function handleImageFile($file) {

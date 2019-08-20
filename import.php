@@ -35,10 +35,10 @@ $content = new Content($GLOBALS['DB']);
 // *Maximale Teilnehmerzahl 8 Personen'),
 // ));
 
-$content->addContentToDB('index', 'indexGalleries', 'gallery', array(
-	array('imageIds' => array('4', '5', '6')),
-	array('imageIds' => array('3', '7', '8')),
-));
+// $content->addContentToDB('index', 'indexGalleries', 'gallery', array(
+// 	array('imageIds' => array('4', '5', '6')),
+// 	array('imageIds' => array('3', '7', '8')),
+// ));
 
 
 die();

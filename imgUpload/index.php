@@ -1,8 +1,7 @@
 <?php
-
 	require "../init.php";
-
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>

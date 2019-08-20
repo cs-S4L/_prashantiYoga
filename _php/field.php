@@ -6,7 +6,7 @@ class Field {
 
 	/**
 	 * Array of Template Objects
-	 * @var [type]
+	 * @var Array
 	 */
 	public $templates;
 
@@ -88,7 +88,7 @@ class Field {
 	 * create Array from Fieldclass
 	 * return json and escape backslashes
 	 * 
-	 * @return [type] [description]
+	 * @return string json string representation of object
 	 */
 	public function createJson() {
 		$fieldArray = array();

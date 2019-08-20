@@ -138,15 +138,5 @@ class Validation {
 			return 'valid';
 		}
 	}
-
-	public function getGender() {
-		if (!empty($this->gender_m)) {
-			return 'm';
-		} else if (!empty($this->gender_w)) {
-			return 'w';
-		} else {
-			return '';
-		}
-	}
 }
 ?>

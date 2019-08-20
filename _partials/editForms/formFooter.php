@@ -4,7 +4,6 @@
 <input type="hidden" name="action" value="<?= $_GET['action']?>">
 
 <input id="submit" type="submit" name="submit" value="Feld ändern">
-<!-- <button id="submit" type='submit' name='submit'>Feld ändern</button> -->
 <input id="abort" type="button" name="abort" value="Abbrechen">
 
 </form>

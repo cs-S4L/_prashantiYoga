@@ -1,5 +1,4 @@
 <?php
-
 	require "../init.php";
 
 	if (isset($_GET) && isset($_GET[DBCmsFields::Field])) {
@@ -10,7 +9,6 @@
 	} else {
 		die('Fehler. Kein Feldname angeben.');
 	}
-
 ?>
 <!DOCTYPE html>
 <html>

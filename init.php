@@ -13,7 +13,6 @@ define("DIR__IMGUPLOAD", DIR__ROOT . "_img".DIRECTORY_SEPARATOR."upload".DIRECTO
 require DIR__ROOT . "server.php";
 
 require DIR__PHP . "includes".DIRECTORY_SEPARATOR."config.php";
-require DIR__PHP . "includes".DIRECTORY_SEPARATOR."helperFunctions.php";
 require DIR__PHP . "includes".DIRECTORY_SEPARATOR."database.php";
 require DIR__PHP . "includes".DIRECTORY_SEPARATOR."login.php";
 require DIR__PHP . "includes".DIRECTORY_SEPARATOR."validation.php";

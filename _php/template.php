@@ -52,13 +52,39 @@ class Template {
 		$this->order = $order;
 	}
 
-	protected function getTemplatePath() {
+
+
+
+	private function getTemplatePath() {
 		return DIR__PARTIALS . "templates". DIRECTORY_SEPARATOR .'t_'.get_class($this).".php";
 	}
 
-	protected function getEditFormPath() {
+	private function getEditFormPath() {
 		return DIR__PARTIALS . "editForms". DIRECTORY_SEPARATOR .'edit_'.get_class($this).".php";
 	}
+
+	/**
+	 * script Tags entfernen
+	 * htmlSpecialchars
+	 * zeilenumbrüche in br umwandeln
+	 * 
+	 * @param  [type] $value [description]
+	 * @return [type]        [description]
+	 */
+	private function validate($value) {
+		if (is_array($value)) {
+			$value = json_encode($value);
+		}
+		$value = str_replace('<script', '', $value);
+		$value = str_replace('</script', '', $value);
+		
+		$value = htmlspecialchars($value);
+
+		$value = preg_replace("/\r\n|\r|\n/",'<br/>',$value);
+
+		return $value;
+	}
+
 
 	public function renderTemplate() {
 		$file = $this->getTemplatePath();
@@ -82,28 +108,6 @@ class Template {
 		} else {
 			die('Template Not Exist');
 		}	
-	}
-
-	/**
-	 * script Tags entfernen
-	 * htmlSpecialchars
-	 * zeilenumbrüche in br umwandeln
-	 * 
-	 * @param  [type] $value [description]
-	 * @return [type]        [description]
-	 */
-	public function validate($value) {
-		if (is_array($value)) {
-			$value = json_encode($value);
-		}
-		$value = str_replace('<script', '', $value);
-		$value = str_replace('</script', '', $value);
-		
-		$value = htmlspecialchars($value);
-
-		$value = preg_replace("/\r\n|\r|\n/",'<br/>',$value);
-
-		return $value;
 	}
 
 	public function getArray($validate = true) {

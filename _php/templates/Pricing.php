@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 class Pricing extends Template {
 
 	const requiredFields = array(

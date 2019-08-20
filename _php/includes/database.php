@@ -49,7 +49,7 @@ class Database {
 
 		$sql = $this->conn->prepare($statement);
 
-		$this->logDatabaseAccess($statement);
+		// $this->logDatabaseAccess($statement);
 
 		$sql->execute();
 
@@ -67,7 +67,7 @@ class Database {
 
 		$sql = $this->conn->prepare($statement);
 
-		$this->logDatabaseAccess($statement);
+		// $this->logDatabaseAccess($statement);
 
 		return $sql->execute();
 	}

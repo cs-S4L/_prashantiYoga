@@ -68,6 +68,4 @@ class Page {
 	public function getRenderedField($fieldName) {
 		$this->content[$fieldName]->renderField();
 	}
-
-
 }
