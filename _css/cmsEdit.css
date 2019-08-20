@@ -4446,7 +4446,7 @@ label {
   font-size: 24px;
   margin: 15px 0 10px; }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
   border: 1px solid #6e322a;
   border-radius: 6px;
   font-size: 16px;

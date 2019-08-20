@@ -64,6 +64,7 @@ $('#register').submit(function(e) {
         data: form.serialize(), // serializes the form's elements.
         success: function(data)
         {
+          console.log(data);
           var dataObj = JSON.parse(data);
             if (dataObj.status == 1) {
               alert('Registrierung erfolgreich');

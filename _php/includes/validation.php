@@ -14,18 +14,18 @@ class Validation {
 	private $form = null;
 	private $requiredFields = array(
 		"username" => "Geben Sie einen Nutzername ein.",
-		"name" => "Geben Sie ihren Vornamen ein",
-		"mail" => "Bitte geben Sie eine gültige E-Mail-Adresse mit maximal 50 Zeichen ein. Bitte geben Sie eine gültige E-Mail-Adresse ein",
+		"name" => "Geben Sie ihren Vornamen ein.",
+		"mail" => "Bitte geben Sie eine gültige E-Mail-Adresse mit maximal 50 Zeichen ein. Bitte geben Sie eine gültige E-Mail-Adresse ein.",
 	);
 
 	private $regex = array(
 		"mail" => array(
 			"regex" => "/.{2,}@.{2,}\..+/",
-			"error" => "Ihre Mailadresse muss mindestens ein @ und ein . enthalten",
+			"error" => "Ihre Mailadresse muss mindestens ein @ und ein . enthalten.",
 		),
 		"phone" => array(
 			"regex" => "/\d{4,}/",
-			"error" => "Ihre Telefonnummer muss mindestens vier Stellen lang sein",
+			"error" => "Ihre Telefonnummer muss mindestens vier Stellen lang sein.",
 		),
 	);
 
@@ -40,7 +40,7 @@ class Validation {
 		$this->name = $this->test_input("name");
 		$this->mail = $this->test_input("mail");
 		$this->password = $this->test_input("password");
-		$this->wipassword2sh = $this->test_input("password2");
+		$this->password2 = $this->test_input("password2");
 
 		$this->formValid = true;
 
@@ -81,8 +81,14 @@ class Validation {
 
 	public function checkPassword() {
 		if ($this->password != $this->password2) {
-			$this->errorMessages['password'] = 'Die Passwörter stimmen nicht überein';
+			$this->errorMessages['password'] = 'Die Passwörter stimmen nicht überein.';
 			$this->formValid = false;
+			return false;
+		}
+		if (strlen($this->password) < 8) {
+			$this->errorMessages['password'] = 'Das Passwort muss mindestens 8 Zeichen lang sein.';
+			$this->formValid = false;
+			return false;
 		}
 	}
 

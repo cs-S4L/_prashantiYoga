@@ -87,10 +87,6 @@ class Login {
 	}
 
 	public function addUser($username, $password, $mail='', $name='') {
-		if (strlen($password) < 8) {
-			return false;
-		}
-
 		$data = [
 			DBUsers::Username => $username,
 			DBUsers::Mail => $mail,

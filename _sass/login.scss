@@ -34,7 +34,7 @@ h3 {
 	font-family: $font-family-default;
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
 	width: 250px;
 }
 
@@ -47,7 +47,7 @@ input[type="text"] {
 }
 
 form.invalid {
-	input[type="text"] {
+	input[type="text"], input[type="password"] {
 		border-color: red;
 	}
 
@@ -57,7 +57,7 @@ form.invalid {
 }
 
 form.inactiveUser {
-	input[type="text"] {
+	input[type="text"], input[type="password"] {
 		border-color: red;
 	}
 

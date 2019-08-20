@@ -4446,7 +4446,7 @@ label {
   font-size: 24px;
   margin: 15px 0 10px; }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
   border: 1px solid #6e322a;
   border-radius: 6px;
   font-size: 16px;
@@ -4669,7 +4669,7 @@ h3 {
   font-size: 20px;
   font-family: "Open Sans", sans-serif; }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
   width: 250px; }
 
 .errorMessage {
@@ -4679,13 +4679,13 @@ input[type="text"] {
   display: none;
   line-height: 27px; }
 
-form.invalid input[type="text"] {
+form.invalid input[type="text"], form.invalid input[type="password"] {
   border-color: red; }
 
 form.invalid .errorMessage.invalid {
   display: block; }
 
-form.inactiveUser input[type="text"] {
+form.inactiveUser input[type="text"], form.inactiveUser input[type="password"] {
   border-color: red; }
 
 form.inactiveUser .errorMessage.inactiveUser {

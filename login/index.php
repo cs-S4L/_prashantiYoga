@@ -34,7 +34,7 @@
 				<label for="username">Nutzername:</label>
 				<input id="username" name="username" type="text"><br>
 				<label for="password">Passwort:</label>
-				<input id="password" name="password" type="text">
+				<input id="password" name="password" type="password">
 				<p class="errorMessage invalid">Login fehlgeschlagen!</br>Versuche es erneut</p>
 				<p class="errorMessage inactiveUser">Der eingegebene Benutzername ist nicht aktiviert!</p>
 				<input type="submit" name="submit">
@@ -56,10 +56,10 @@
 				<input id="name" name="name" type="text"><br>
 
 				<label for="password">Passwort:</label>
-				<input id="password" name="password" type="text">
+				<input id="password" name="password" type="password">
 
 				<label for="password2">Passwort wiederholen:</label>
-				<input id="password2" name="password2" type="text">
+				<input id="password2" name="password2" type="password">
 
 				<label for="mail">Mail:</label>
 				<input id="password" name="mail" type="text">

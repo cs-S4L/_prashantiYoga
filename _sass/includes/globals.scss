@@ -44,7 +44,7 @@ label {
 	margin: 15px 0 10px;
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
 	border: 1px solid $color-brand-1;
 	border-radius: $border-radius--input;
 	font-size: $font-size-text--big;
