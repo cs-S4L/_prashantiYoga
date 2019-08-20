@@ -3,7 +3,7 @@
 	<div class="col-1">
 		<p><?= $this->adress?>
 			<?php if (!empty($this->homepageUrl)) {?>
-			<br><a href="Test">Homepage</a>
+			<br><a href="<?=$this->homepageUrl?>">Homepage</a>
 			<?php } ?>
 		</p>
 	</div>
