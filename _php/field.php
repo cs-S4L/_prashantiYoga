@@ -98,7 +98,7 @@ class Field {
 
 		$json = json_encode($fieldArray);
 
-		$json = str_replace('\\', '\\\\', $json);
+		// $json = str_replace('\\', '\\\\', $json);
 
 		return $json;
 	}

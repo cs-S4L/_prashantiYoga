@@ -23,16 +23,18 @@ class Content {
 			$contentsArray = json_decode($dbEntry[DBCmsFields::Content]);
 			$field = new Field($dbEntry[DBCmsFields::Field], $dbEntry[DBCmsFields::TemplateName]);
 
-			for ($i=0; $i < count($contentsArray); $i++) {
-				$templateObject = Template::createObject(
-					$dbEntry[DBCmsFields::TemplateName],
-					$contentsArray[$i],
-					$dbEntry[DBCmsFields::Field],
-					$i
-				);
-				$field->addTemplate(
-					$templateObject
-				);
+			if (is_array($contentsArray)) {
+				for ($i=0; $i < count($contentsArray); $i++) {
+					$templateObject = Template::createObject(
+						$dbEntry[DBCmsFields::TemplateName],
+						$contentsArray[$i],
+						$dbEntry[DBCmsFields::Field],
+						$i
+					);
+					$field->addTemplate(
+						$templateObject
+					);
+				}
 			}
 			
 			return $field;
@@ -75,9 +77,13 @@ class Content {
 	public function updateField($field) {
 		$json = $field->createJson();
 
-		$values = DBCmsFields::Content ." = '".$json."'";
+		$values = array(
+			DBCmsFields::Content => $json
+		);
 
-		$where = DBCmsFields::Field . " = '$field->name'";
+		$where = array(
+			DBCmsFields::Field => $field->name
+		);
 
 		if (! $this->db->updateDatabase(DBCmsFields::TableName, $values, $where)) {
 			return false;

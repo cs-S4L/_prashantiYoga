@@ -58,16 +58,37 @@ class Database {
 
 	public function updateDatabase($table, $values, $where=null) {
 		$statement = "";
+		$hasWhere = !is_null($where);
 
-		if (is_null($where)) {
-			$statement = 'UPDATE '.$table.' SET '.$values.';';
+        $set = '';
+        foreach($values as $key => $value) {
+        	$set .= "$key = :$key";
+        }
+
+        if ($hasWhere) {
+        	$whereString = '';
+        	foreach($where as $key => $value) {
+        		$whereString .= "$key = :$key";
+        	}
+        }
+
+		if ($hasWhere) {
+			$statement = "UPDATE $table SET $set WHERE $whereString";
 		} else {
-			$statement = 'UPDATE '.$table.' SET '.$values.' WHERE '.$where.';';
+			$statement = "UPDATE $table SET $set";
 		}
 
 		$sql = $this->conn->prepare($statement);
 
-		// $this->logDatabaseAccess($statement);
+		foreach($values as $key => $value) {
+			$sql->bindValue(":$key", $value);
+		}
+
+		if ($hasWhere) {
+			foreach($where as $key => $value) {
+				$sql->bindValue(":$key", $value);
+			}
+		}
 
 		return $sql->execute();
 	}
