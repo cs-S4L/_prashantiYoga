@@ -6314,20 +6314,33 @@ section.info .text-wrapper {
   display: flex; }
   section.info .text-wrapper p {
     width: 50%; }
+  section.info .text-wrapper.divider {
+    position: relative;
+    padding: 0 0 40px; }
+    section.info .text-wrapper.divider:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      background: #fde492;
+      width: 60%;
+      height: 2px;
+      margin: 0 auto; }
+    section.info .text-wrapper.divider:last-child:after {
+      display: none; }
 
 section.info h3 {
   color: #6e322a;
   text-align: center;
-  text-decoration: underline; }
+  text-decoration: underline;
+  padding: 0 0 20px; }
 
 section.info p span {
   font-size: 14px; }
-
-section.info .divider {
-  background: #fde492;
-  width: 60%;
-  height: 2px;
-  margin: 0 auto; }
 
 section.info .kurszeiten, section.info .preise, section.info .kursort, section.info .kontakt {
   display: -webkit-box;

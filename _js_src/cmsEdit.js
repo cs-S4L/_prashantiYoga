@@ -2,7 +2,7 @@
 //@codekit-prepend includes/jquery.backstretch.min.js
 //@codekit-prepend includes/functions.js
 
-$('#cmsEdit').submit(function(e) {
+$('.cmsEdit').submit(function(e) {
 	var form = $(this);
 	var url = form.attr('action');
 	var method = form.attr('method');

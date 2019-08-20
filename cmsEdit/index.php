@@ -27,7 +27,7 @@
 </head>
 <body>
 
-	<?= $currentField->renderTemplateEdit($order);?>
+	<?= $currentField->renderTemplateEdit($order, ($action == 'insert') ? true : false);?>
 
 	<script src="<?=BASE_URL?>_js/cmsEdit.js"></script>
 

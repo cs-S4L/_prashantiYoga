@@ -11,26 +11,33 @@
 
 		$currentField = $GLOBALS['Content']->getField($_POST[DBCmsFields::Field]);
 
-		$templateObject = Template::createObject(
-			$_POST[DBCmsFields::TemplateName],
-			$_POST, 
-			$_POST[DBCmsFields::Field], 
-			$_POST['order']
-		);
-
-		// if (!$templateObject->validateFields()) {
-		// 	die('invalid Template');
-		// } 
-
 		switch ($_POST['action']) {
 			case 'insert':
+				$templateObject = Template::createObject(
+					$_POST[DBCmsFields::TemplateName],
+					$_POST, 
+					$_POST[DBCmsFields::Field], 
+					$_POST['order']
+				);
+
 				$currentField->addTemplate($templateObject, $_POST['order']);
 			break;
 
 			case 'edit':
-				$currentField->editTemplate($templateObject, $_POST['order']);
+				$templateObject = Template::createObject(
+					$_POST[DBCmsFields::TemplateName],
+					$_POST, 
+					$_POST[DBCmsFields::Field], 
+					$_POST['order']
+				);
 
+				$currentField->editTemplate($templateObject, $_POST['order']);
 			break;
+
+			case 'delete':
+				$currentField->removeTemplate($_POST['order']);
+			break;
+
 
 			default:
 				echo 0;

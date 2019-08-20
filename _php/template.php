@@ -2,12 +2,26 @@
 
 class Template {
 
-	public $field;
-	protected $order;
+	const EMPTY = 'empty';
 
-	protected $dynamicTemplateCount = true;
+	public $field;
+	public $order;
+	public $dynamicTemplateCount = true;
+
+	protected $className;
+
 
 	public static function createObject($className, $content, $field=null, $order=null) {
+		return new $className($content, $field, $order);
+	}
+
+	public static function createEmptyObject($className, $field = null, $order=null) {
+		$content = array();
+
+		foreach ($className::requiredFields as $fieldName) {
+			$content[$fieldName] = '';
+		}
+
 		return new $className($content, $field, $order);
 	}
 
@@ -16,9 +30,14 @@ class Template {
 			$content = (object) $content;
 		}
 
+		$this->className = get_class($this);
+
 		try {
-			foreach($this->requiredFields as $fieldName) {
+			foreach($this->className::requiredFields as $fieldName) {
 				$this->{$fieldName} = htmlspecialchars_decode($content->{$fieldName});
+				if (empty($this->{$fieldName})) {
+					$this->{$fieldName} = '';
+				}
 			}
 		} catch (Exception $e) {
 			die('Template Invalid');
@@ -40,17 +59,9 @@ class Template {
 		$file = $this->getTemplatePath();
 		
 		if (file_exists($file)) {
-			if ($this->dynamicTemplateCount) {
-				include(DIR__TEMPLATES.'templateEmptyFieldBefore.php');
-			}
-
 			include(DIR__TEMPLATES.'templateHead.php');
 			include $file;
 			include(DIR__TEMPLATES.'templateFooter.php');
-
-			if ($this->dynamicTemplateCount) {
-				include(DIR__TEMPLATES.'templateEmptyFieldAfter.php');
-			}
 		} else {
 			die('Template Not Exist');
 		}
@@ -58,7 +69,6 @@ class Template {
 
 	public function renderEditForm() {
 		$file = $this->getEditFormPath();
-		// include(DIR__PARTIALS . 'editForms' . DIRECTORY_SEPARATOR . 'defaultFields.php');
 		
 		if (file_exists($file)) {
 			include(DIR__EDITFORMS . 'formHead.php');
@@ -91,7 +101,7 @@ class Template {
 	public function getArray($validate = true) {
 		$return = array();
 
-		foreach($this->requiredFields as $fieldName) {
+		foreach($this->className::requiredFields as $fieldName) {
 			if ($validate) {
 				$return[$fieldName] = $this->validate($this->{$fieldName});
 			} else {

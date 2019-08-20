@@ -26,6 +26,9 @@ require DIR__PHP . "field.php";
 
 require DIR__PHP . "templates".DIRECTORY_SEPARATOR."TextWithHeading.php";
 require DIR__PHP . "templates".DIRECTORY_SEPARATOR."Location.php";
+require DIR__PHP . "templates".DIRECTORY_SEPARATOR."Schedule.php";
+require DIR__PHP . "templates".DIRECTORY_SEPARATOR."Pricing.php";
+require DIR__PHP . "templates".DIRECTORY_SEPARATOR."Text.php";
 
 // require DIR__RESSOURCES . "Mustache".DIRECTORY_SEPARATOR."Autoloader.php";
 

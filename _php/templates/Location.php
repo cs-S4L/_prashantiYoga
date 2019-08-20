@@ -2,15 +2,16 @@
 
 class Location extends Template {
 
-	protected $requiredFields = array(
+	const requiredFields = array(
 		'adress',
 		'homepageUrl',
 		'mapsUrl'
 	);
 
+	public $dynamicTemplateCount = false;
+	
 	protected $adress;
 	protected $homepageUrl;
 	protected $mapsUrl;
 
-	protected $dynamicTemplateCount = false;
 }

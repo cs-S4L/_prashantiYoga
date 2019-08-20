@@ -1,11 +1,13 @@
 <?php 
 class Pricing extends Template {
 
-	protected $requiredFields = array(
+	const requiredFields = array(
 		'name',
 		'hint',
 		'price'
 	);
+
+	public $dynamicTemplateCount = true;
 
 	protected $name;
 	protected $hint;

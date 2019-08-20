@@ -110,36 +110,16 @@
 		<div class="col-1 col-2-md kurszeiten">
 			<div class="inner">
 				<h3>Kurszeiten</h3>
-				<div class="text-wrapper">
-					<p>Donnerstags*:</p>
-					<p>18:30 - 20:00 Uhr
-					Vormittagskurse bei entsprechender Nachfrage möglich</p>
-				</div>
-				<p>*Kurse geeignet für Anfänger und Fortgeschrittene</p>
-				<p>*Maximale Teilnehmerzahl 8 Personen</p>
+				<?= $currentPage->getRenderedField('schedule')?>
+				<?=$currentPage->getRenderedField('scheduleHints')?>
 			</div>
 		</div>
 
 		<div class="col-1 col-2-md preise">
 			<div class="inner">
 				<h3>Preise</h3>
-
-				<div class="text-wrapper">
-					<p>Monatlich 
-					<span>(Laufzeit 3 Monate, 4 Einheiten monatlich):</span></p>
-					<p>72€ / Monat</p>
-				</div>
-				<div class="divider"></div>
-				<div class="text-wrapper">
-					<p>Schnupperkurs
-					<span>(Einmalig)</span></p>
-					<p>12€</p>
-				</div>
-				<div class="divider"></div>
-				<div class="text-wrapper">
-					<p>Einzel-/ Privatstunden</p>
-					<p>Nach Absprache</p>
-				</div>
+				<?=$currentPage->getRenderedField('pricing')?>
+				
 			</div>
 		</div>
 

@@ -21,7 +21,7 @@ class Content {
 	private function getFieldFromDBEntry($dbEntry) {
 		try {
 			$contentsArray = json_decode($dbEntry[DBCmsFields::Content]);
-			$field = new Field($dbEntry[DBCmsFields::Field]);
+			$field = new Field($dbEntry[DBCmsFields::Field], $dbEntry[DBCmsFields::TemplateName]);
 
 			for ($i=0; $i < count($contentsArray); $i++) {
 				$templateObject = Template::createObject(

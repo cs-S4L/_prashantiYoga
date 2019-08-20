@@ -32,6 +32,8 @@ class Database {
 			"INSERT INTO $table ($fields) VALUES ($params)"
 		);
 
+		// $this->logDatabaseAccess($statement):
+
 		foreach ($data as $key => &$value) {
 			$sql->bindParam(":$key", $value);
 		}
@@ -49,6 +51,8 @@ class Database {
 
 		$sql = $this->conn->prepare($statement);
 
+		// $this->logDatabaseAccess($statement):
+
 		$sql->execute();
 
 		return $sql->fetchAll($fetchMode);
@@ -65,10 +69,22 @@ class Database {
 
 		$sql = $this->conn->prepare($statement);
 
-		// var_dump($sql);
-		// die();
+		$this->logDatabaseAccess($statement);
 
 		return $sql->execute();
+	}
+
+	private function logDatabaseAccess($statement) {
+		if (SERVER_ENVIRONMENT == 'LIVE') {
+			return;
+		}
+
+		$log = date('m/d/Y h:i:s a', time()).':      '.$statement;
+
+		//copied from stackoverflow.com
+		//https://stackoverflow.com/questions/24972424/create-or-write-append-in-text-file
+ 		$myfile = file_put_contents(DIR__ROOT.'dbLogs.txt', $log.PHP_EOL , FILE_APPEND | LOCK_EX);
+
 	}
 
 }

@@ -2,13 +2,14 @@
 
 class TextWithHeading extends Template {
 
-	protected $requiredFields = array(
+	const requiredFields = array(
 		'heading',
 		'text'
 	);
 
+	public $dynamicTemplateCount = false;
+	
 	protected $heading;
 	protected $text;
 
-	protected $dynamicTemplateCount = false;
 }

@@ -15,6 +15,7 @@ function closeIframe(action, form = null, method = null, url = null) {
 			break;
 
 		case 'submit':
+      	case 'delete':
 			$('.cmsLightbox').fadeOut();
 			if (form && method && url) {
 				$.ajax({
@@ -34,7 +35,8 @@ function closeIframe(action, form = null, method = null, url = null) {
 			} else {
 				alert('Error. Missing Data from Form');
 			}
-	      	break;
+	    break;
+
 	    default:
 	    	alert('Error. Unknown action');
 	}

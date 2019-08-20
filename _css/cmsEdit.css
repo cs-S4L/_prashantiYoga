@@ -4644,6 +4644,8 @@ body {
 form {
   display: block;
   padding: 15px; }
+  form.clear {
+    padding: 0 15px; }
   form h3 {
     text-align: center;
     font-size: 34px;
