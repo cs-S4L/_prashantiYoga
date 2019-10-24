@@ -156,11 +156,11 @@
 		<div class="col-1 col-2-md preise">
 			<div class="inner">
 				<h3>Preise</h3>
-
+				 
 				<div class="text-wrapper">
-					<p>Monatlich 
-					<span>(Laufzeit 3 Monate, 4 Einheiten monatlich):</span></p>
-					<p>72€ / Monat</p>
+					<p>Kursreihe 
+					<span>(10 Einheiten à 90 Min., verbindliche Anmeldung)</span></p>
+					<p>180€</p>
 				</div>
 				<div class="divider"></div>
 				<div class="text-wrapper">
@@ -170,7 +170,8 @@
 				</div>
 				<div class="divider"></div>
 				<div class="text-wrapper">
-					<p>Einzel-/ Privatstunden</p>
+					<p>Einzel-/ Privatstunden,
+					Gruppenstunden</p>
 					<p>Nach Absprache</p>
 				</div>
 			</div>
@@ -434,6 +435,31 @@
 </div>
 
 <script src="js/index.js"></script>
+
+<!-- <script>
+
+// Functions
+function scrollTo2(element, offset = 0, time = 500, pos=0) {
+	$('html, body').animate(
+		{
+			scrollTop: pos,
+		},
+		// 120*1000,
+		time,
+		'linear'
+	)
+}
+
+var el = $('.footer');
+console.log(el);
+setTimeout(() => {
+	scrollTo2(el, 0, 120*1000, 6400);
+	setTimeout(() => {
+		scrollTo2(el, 0, 100);
+		console.log('test');
+	}, 5000);
+}, 33*1000);
+</script> -->
 
 </body>
 </html>
