@@ -1,5 +1,5 @@
-<?php  
-	include "php/helperFunctions.php";
+<?php
+include "php/helperFunctions.php";
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@
 	<meta charset="UTF-8">
 	<title>Prashanti Yoga | Hatha Yoga mit Paulina Thomas in Aschaffenburg</title>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Global site ta0204g (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137016236-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -34,7 +34,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-	
+
 	<!-- Open Sans Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
@@ -52,7 +52,7 @@
 			<i class="fab fa-facebook-square"></i>
 		</a>
 	</div>
-	
+
 	<h1>
 		Prashanti Yoga
 	</h1>
@@ -74,7 +74,7 @@
 			<li data-target="kurse">Kurse</li>
 			<li data-target="kontakt">Kontakt</li>
 			<li data-target="impressionen">Impressionen</li>
-		</ul> 
+		</ul>
 	</div>
 </div>
 <span class="highlight"></span>
@@ -87,17 +87,17 @@
 
 			Großer <span class="highlight">Dank</span> an meine Mama, die mich 2013 im Alter von nur 16 Jahren zum ersten mal mit <span class="highlight">Yoga</span> in Berührung brachte.
 
-			Schon im Jahr 2014/15 durfte ich dann die großartige Erfahrung machen, die 1- jährige Yogalehrerausbildung basierend auf der Tradition des Hathayoga in Aschaffenburg bei Andrea Brehm zu absolvieren. 
+			Schon im Jahr 2014/15 durfte ich dann die großartige Erfahrung machen, die 1- jährige Yogalehrerausbildung basierend auf der Tradition des Hathayoga in Aschaffenburg bei Andrea Brehm zu absolvieren.
 			Diese Entscheidung prägt meinen Yoga- und damit auch meinen Lebensweg von dort an fundamental. Ich durfte erfahren, was <span class="highlight">innerer Frieden</span> tatsächlich bedeutet und wahrnehmen, wie wunderbar es sich anfühlt, <span class="highlight">Gefühle</span> und <span class="highlight">Bedürfnisse</span> ganz <span class="highlight">bewusst</span> zu erleben.
 			Seitdem hielt ich Yogastunden in einem ambulanten Rehabilitationszentrum.
 
 			Meine generelle <span class="highlight">Liebe</span> zu Tieren habe ich schon in meiner frühen Kindheit entdeckt. Vor allem mit Pferden beschäftige ich mich in meiner Freizeit zeitlich, seelisch und emotional sehr intensiv. Daher habe ich mir auch das zum <span class="highlight">Herzensthema</span> gemacht und gebe Wochenendworkshops zum Thema „Yoga und Pferd“.
 
-			Der menschliche <span class="highlight">Körper</span> in seiner Funktion und Komplexität fasziniert mich schon lange. Ich entschied mich daher im Jahr 2015 für die Ausbildung zur staatlich anerkannten <span class="highlight">Physiotherapeutin</span>, welche ich 2018 erfolgreich abschloss. 
+			Der menschliche <span class="highlight">Körper</span> in seiner Funktion und Komplexität fasziniert mich schon lange. Ich entschied mich daher im Jahr 2015 für die Ausbildung zur staatlich anerkannten <span class="highlight">Physiotherapeutin</span>, welche ich 2018 erfolgreich abschloss.
 
 			Dank der harmonierenden <span class="highlight">Kombination</span> aus medizinischem <span class="highlight">Fachwissen</span> und <span class="highlight">Yogaphilosophie</span> ist es mir möglich, sowohl auf körperliche, als auch auf seelische Bedürfnisse einzugehen.
 		</p>
-		
+
 	</div>
 </section>
 
@@ -111,15 +111,15 @@
 
 <section class="text wasIstPY">
 	<div class="section__inner">
-		<p>Sanskrit: Para = höchst, shanti = Frieden. 
+		<p>Sanskrit: Para = höchst, shanti = Frieden.
 
 			Der Begriff <span class="highlight">Prashanti</span> steht für den ungetrübten und höchsten <span class="highlight">inneren Frieden</span>, der durch nichts aus dem <span class="highlight">Gleichgewicht</span> gebracht werden kann. Das ist auch genau das, was ich selbst erfahren durfte und in meinen <span class="highlight">Yogastunden</span> vermitteln möchte.
 
 			Durch das Auflösen aller <span class="highlight">Dualitäten</span>, wie hell-dunkel, männlich-weiblich, warm-kalt, positiv-negativ... arbeiten wir gemeinsam und mit Hilfe von <span class="highlight">Entspannung, Asanas</span> (Körperübungen), <span class="highlight">Pranayama</span> (Atemübungen), <span class="highlight">Meditation</span> und <span class="highlight">Mantramusik</span> am <span class="highlight">zur-Ruhe-kommen</span> deines Geistes.
 
-			Je tiefer das <span class="highlight">Bewusstsein</span> wird, desto stärker ist spürbar, wie der <span class="highlight">Körper</span> als Tempel unserer <span class="highlight">Seele</span> mit dieser zu einer <span class="highlight">Einheit</span> verschmilzt. 
+			Je tiefer das <span class="highlight">Bewusstsein</span> wird, desto stärker ist spürbar, wie der <span class="highlight">Körper</span> als Tempel unserer <span class="highlight">Seele</span> mit dieser zu einer <span class="highlight">Einheit</span> verschmilzt.
 
-			Meine Aufgabe ist es dabei, dich auf deinem ganz <span class="highlight">persönlichen Yogaweg</span> zu <span class="highlight">begleiten</span> und zu <span class="highlight">unterstützen</span>, egal wo du dich gerade befindest.  
+			Meine Aufgabe ist es dabei, dich auf deinem ganz <span class="highlight">persönlichen Yogaweg</span> zu <span class="highlight">begleiten</span> und zu <span class="highlight">unterstützen</span>, egal wo du dich gerade befindest.
 
 			Sofern du dich angesprochen fühlst und genau das für dich und deine Yogapraxis suchst, freue ich mich sehr, wenn du dich bei mir meldest!
 
@@ -143,22 +143,23 @@
 		<div class="col-1 col-2-md kurszeiten">
 			<div class="inner">
 				<h3>Kurszeiten</h3>
-				<div class="text-wrapper">
+				<!-- <div class="text-wrapper">
 					<p>Donnerstags*:</p>
 					<p>18:30 - 20:00 Uhr
 					Vormittagskurse bei entsprechender Nachfrage möglich</p>
 				</div>
 				<p>*Kurse geeignet für Anfänger und Fortgeschrittene</p>
-				<p>*Maximale Teilnehmerzahl 8 Personen</p>
+				<p>*Maximale Teilnehmerzahl 8 Personen</p> -->
+				<p style="text-align: center; padding: 20px 0 10px">Aktuell finden keine Kurse statt.</p>
 			</div>
 		</div>
 
 		<div class="col-1 col-2-md preise">
 			<div class="inner">
 				<h3>Preise</h3>
-				 
+
 				<div class="text-wrapper">
-					<p>Kursreihe 
+					<p>Kursreihe
 					<span>(10 Einheiten à 90 Min., verbindliche Anmeldung)</span></p>
 					<p>180€</p>
 				</div>
@@ -177,7 +178,7 @@
 			</div>
 		</div>
 
-		<div class="col-1 kursort">
+		<!-- <div class="col-1 kursort">
 			<div class="inner">
 				<h3>Kursort</h3>
 
@@ -195,7 +196,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div id="kontakt" class="kontakt col-1">
 			<div class="inner row ">
