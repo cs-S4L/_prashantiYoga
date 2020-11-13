@@ -83,21 +83,20 @@ include "php/helperFunctions.php";
 		<!-- <h2>Uber mich</h2> -->
 		<h2>Herzlich Willkommen auf meiner Seite</h2>
 
-		<p>Ich heiße <span class="highlight">Paulina Thomas</span>, bin <?=calculateAge("06/11/1996");?> Jahre jung und freue mich sehr darüber, dass du den Weg hierher gefunden hast!
+		<p>Ich bin <span class="highlight">Paulina</span>, Physiotherapeutin und Yogalehrerin und freue mich sehr darüber, dass du auf meiner Website bist!
 
-			Großer <span class="highlight">Dank</span> an meine Mama, die mich 2013 im Alter von nur 16 Jahren zum ersten mal mit <span class="highlight">Yoga</span> in Berührung brachte.
+           Großer <span class="highlight">Dank</span> zunächst an meine Mama, die mich 2013 im Alter von 16 Jahren zum ersten mal mit <span class="highlight">Yoga</span> - über „Yoga trifft Kunst“ Workshops - in Berührung brachte.
 
-			Schon im Jahr 2014/15 durfte ich dann die großartige Erfahrung machen, die 1- jährige Yogalehrerausbildung basierend auf der Tradition des Hathayoga in Aschaffenburg bei Andrea Brehm zu absolvieren.
-			Diese Entscheidung prägt meinen Yoga- und damit auch meinen Lebensweg von dort an fundamental. Ich durfte erfahren, was <span class="highlight">innerer Frieden</span> tatsächlich bedeutet und wahrnehmen, wie wunderbar es sich anfühlt, <span class="highlight">Gefühle</span> und <span class="highlight">Bedürfnisse</span> ganz <span class="highlight">bewusst</span> zu erleben.
-			Seitdem hielt ich Yogastunden in einem ambulanten Rehabilitationszentrum.
+           Im Jahr 2014/15 entschloss ich mich dann die 1-jährige Yogalehrerausbildung basierend auf der Tradition des Hatha Yoga in Aschaffenburg bei Andrea Brehm zu absolvieren.
+           Diese Entscheidung prägt meinen Yoga- und und Lebensweg von dort an fundamental. Ich durfte erfahren, was <span class="highlight">innerer Frieden</span> bedeutet und wie gut es tut, seine <span class="highlight">Gefühle</span> und <span class="highlight">Bedürfnisse</span> bewusst wahrzunehmen.
 
-			Meine generelle <span class="highlight">Liebe</span> zu Tieren habe ich schon in meiner frühen Kindheit entdeckt. Vor allem mit Pferden beschäftige ich mich in meiner Freizeit zeitlich, seelisch und emotional sehr intensiv. Daher habe ich mir auch das zum <span class="highlight">Herzensthema</span> gemacht und gebe Wochenendworkshops zum Thema „Yoga und Pferd“.
+           Der menschliche <span class="highlight">Körper</span> in seiner Funktion und Komplexität fasziniert mich schon lange. Ich entschied mich daher im Jahr 2015 für die Ausbildung zur staatlich anerkannten <span class="highlight"> Physiotherapeutin</span>, welche ich 2018 erfolgreich abschloss. Seitdem bin ich in einer ambulanten Praxis tätig.
 
-			Der menschliche <span class="highlight">Körper</span> in seiner Funktion und Komplexität fasziniert mich schon lange. Ich entschied mich daher im Jahr 2015 für die Ausbildung zur staatlich anerkannten <span class="highlight">Physiotherapeutin</span>, welche ich 2018 erfolgreich abschloss.
+           Dank der harmonierenden <span class="highlight">Kombination</span> aus medizinischem <span class="highlight">Fachwissen</span> und <span class="highlight">Yogaphilosophie</span> ist es mir möglich sowohl auf körperliche, als auch auf seelische Bedürfnisse einzugehen.
 
-			Dank der harmonierenden <span class="highlight">Kombination</span> aus medizinischem <span class="highlight">Fachwissen</span> und <span class="highlight">Yogaphilosophie</span> ist es mir möglich, sowohl auf körperliche, als auch auf seelische Bedürfnisse einzugehen.
+           Darüber hinaus habe ich die Verbundenheit und <span class="highlight">Liebe zu Tieren</span>Liebe zu Tieren schon in meiner frühen Kindheit entdeckt.
+           Da ich mich in meiner Freizeit vor allem mit Pferden ausgiebig beschäftige, habe ich mir dieses Hobby zum <span class="highlight">Herzensthema</span> gemacht und halte gelegentlich zusammen mit einer Reitpädagogin und langjährigen Freundin Wochenend-Workshops zum Thema „Yoga und Pferd“.
 		</p>
-
 	</div>
 </section>
 
@@ -113,17 +112,18 @@ include "php/helperFunctions.php";
 	<div class="section__inner">
 		<p>Sanskrit: Para = höchst, shanti = Frieden.
 
-			Der Begriff <span class="highlight">Prashanti</span> steht für den ungetrübten und höchsten <span class="highlight">inneren Frieden</span>, der durch nichts aus dem <span class="highlight">Gleichgewicht</span> gebracht werden kann. Das ist auch genau das, was ich selbst erfahren durfte und in meinen <span class="highlight">Yogastunden</span> vermitteln möchte.
+            Der Begriff <span class="highlight">Prashanti</span> steht für den ungetrübten und höchsten <span class="highlight">inneren Frieden</span>inneren Frieden, der durch nichts aus dem <span class="highlight">Gleichgewicht</span> gebracht werden kann.
+            Das ist, was ich in meiner Ausbildungszeit selbst wahrnehmen durfte und in meinen <span class="highlight">Yogastunden</span> mitunter vermitteln möchte.
 
-			Durch das Auflösen aller <span class="highlight">Dualitäten</span>, wie hell-dunkel, männlich-weiblich, warm-kalt, positiv-negativ... arbeiten wir gemeinsam und mit Hilfe von <span class="highlight">Entspannung, Asanas</span> (Körperübungen), <span class="highlight">Pranayama</span> (Atemübungen), <span class="highlight">Meditation</span> und <span class="highlight">Mantramusik</span> am <span class="highlight">zur-Ruhe-kommen</span> deines Geistes.
+            Gemeinsam und mit Hilfe von <span class="highlight">Entspannung, Asanas</span> (Körperübungen), <span class="highlight">Pranayama</span> (Atemübungen), <span class="highlight">Meditation</span> und <span class="highlight">Mantramusik</span> arbeiten wir am <span class="highlight">zur-Ruhe-kommen</span> deines Geistes.
 
-			Je tiefer das <span class="highlight">Bewusstsein</span> wird, desto stärker ist spürbar, wie der <span class="highlight">Körper</span> als Tempel unserer <span class="highlight">Seele</span> mit dieser zu einer <span class="highlight">Einheit</span> verschmilzt.
+            Je tiefer das <span class="highlight">Bewusstsein</span> wird, desto klarer wird spürbar, wie der <span class="highlight">Körper</span> - als Tempel unserer <span class="highlight">Seele</span> - mit dieser zu einer <span class="highlight">Einheit</span> verschmilzt.
 
-			Meine Aufgabe ist es dabei, dich auf deinem ganz <span class="highlight">persönlichen Yogaweg</span> zu <span class="highlight">begleiten</span> und zu <span class="highlight">unterstützen</span>, egal wo du dich gerade befindest.
+            Meine Aufgabe ist es dich dort abzuholen, wo du dich gerade befindest und auf deinem <span class="highlight">ganz persönlichen (Yoga-) Weg</span>  zu <span class="highlight">begleiten</span>begleiten und zu <span class="highlight">unterstützen</span>.
 
-			Sofern du dich angesprochen fühlst und genau das für dich und deine Yogapraxis suchst, freue ich mich sehr, wenn du dich bei mir meldest!
+            Wenn du dich jetzt angesprochen fühlst und genau das für dich und deine Yogapraxis suchst freue ich mich, wenn du dich bei mir meldest!
 
-			<span class="highlight">Namasté</span> and spread <span class="highlight">positive vibes!</span>
+            <span class="highlight">Namasté</span> and spread <span class="highlight">positive vibes</span>
 
 			Paulina
 		</p>
