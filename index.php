@@ -6,7 +6,7 @@ include "php/helperFunctions.php";
 <html lang="de">
 <head>
 	<meta charset="UTF-8">
-	<title>Prashanti Yoga | Hatha Yoga mit Paulina Thomas in Aschaffenburg</title>
+	<title>Prashanti Yoga | Hatha Yoga mit Paulina Thomas in Obergünzburg</title>
 
 	<!-- Global site ta0204g (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137016236-1"></script>
@@ -21,11 +21,11 @@ include "php/helperFunctions.php";
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<!-- SEO Stuff -->
-	<meta name="title" content="Prashanti Yoga | Hatha Yoga mit Paulina Thomas in Aschaffenburg">
+	<meta name="title" content="Prashanti Yoga | Hatha Yoga und Massagen mit Paulina Thomas in Obergünzburg">
 
-	<meta name="Description" content="Hatha Yoga in Aschaffenburg mit Paulina Thomas, Yogalehrerin und Physiotherapeutin. Arbeite in kleinen Gruppen (6-8) an deinem inneren und äußeren Gleichgewicht.">
+	<meta name="Description" content="Hatha Yoga in Obergünzburg mit Paulina Thomas, Yogalehrerin und Physiotherapeutin. Arbeite in kleinen Gruppen (6-8) an deinem inneren und äußeren Gleichgewicht.">
 
-	<meta name="Keywords" content="Prashanti Yoga, Hatha Yoga, Paulina Thomas, Aschaffenburg, Monkey Cage">
+	<meta name="Keywords" content="Prashanti Yoga, Hatha Yoga, Paulina Thomas, Obergünzburg">
 
 	<!-- Fav Icon Stuff -->
 	<link rel="shortcut icon" href="favicon.ico">
@@ -94,8 +94,8 @@ include "php/helperFunctions.php";
 
            Dank der harmonierenden <span class="highlight">Kombination</span> aus medizinischem <span class="highlight">Fachwissen</span> und <span class="highlight">Yogaphilosophie</span> ist es mir möglich sowohl auf körperliche, als auch auf seelische Bedürfnisse einzugehen.
 
-           Darüber hinaus habe ich die Verbundenheit und <span class="highlight">Liebe zu Tieren</span>Liebe zu Tieren schon in meiner frühen Kindheit entdeckt.
-           Da ich mich in meiner Freizeit vor allem mit Pferden ausgiebig beschäftige, habe ich mir dieses Hobby zum <span class="highlight">Herzensthema</span> gemacht und halte gelegentlich zusammen mit einer Reitpädagogin und langjährigen Freundin Wochenend-Workshops zum Thema „Yoga und Pferd“.
+           Darüber hinaus habe ich die Verbundenheit und <span class="highlight">Liebe zu Tieren</span> schon in meiner frühen Kindheit entdeckt.
+           Da ich mich in meiner Freizeit vor allem mit Pferden ausgiebig beschäftige, habe ich mir dieses Hobby zum <span class="highlight">Herzensthema</span> gemacht und halte gelegentlich zusammen mit einer Reittherapeutin und langjährigen Freundin Wochenend-Workshops zum Thema „Yoga und Pferd“.
 		</p>
 	</div>
 </section>
@@ -112,14 +112,14 @@ include "php/helperFunctions.php";
 	<div class="section__inner">
 		<p>Sanskrit: Para = höchst, shanti = Frieden.
 
-            Der Begriff <span class="highlight">Prashanti</span> steht für den ungetrübten und höchsten <span class="highlight">inneren Frieden</span>inneren Frieden, der durch nichts aus dem <span class="highlight">Gleichgewicht</span> gebracht werden kann.
+            Der Begriff <span class="highlight">Prashanti</span> steht für den ungetrübten und höchsten <span class="highlight">inneren Frieden</span>, der durch nichts aus dem <span class="highlight">Gleichgewicht</span> gebracht werden kann.
             Das ist, was ich in meiner Ausbildungszeit selbst wahrnehmen durfte und in meinen <span class="highlight">Yogastunden</span> mitunter vermitteln möchte.
 
             Gemeinsam und mit Hilfe von <span class="highlight">Entspannung, Asanas</span> (Körperübungen), <span class="highlight">Pranayama</span> (Atemübungen), <span class="highlight">Meditation</span> und <span class="highlight">Mantramusik</span> arbeiten wir am <span class="highlight">zur-Ruhe-kommen</span> deines Geistes.
 
             Je tiefer das <span class="highlight">Bewusstsein</span> wird, desto klarer wird spürbar, wie der <span class="highlight">Körper</span> - als Tempel unserer <span class="highlight">Seele</span> - mit dieser zu einer <span class="highlight">Einheit</span> verschmilzt.
 
-            Meine Aufgabe ist es dich dort abzuholen, wo du dich gerade befindest und auf deinem <span class="highlight">ganz persönlichen (Yoga-) Weg</span>  zu <span class="highlight">begleiten</span>begleiten und zu <span class="highlight">unterstützen</span>.
+            Meine Aufgabe ist es dich dort abzuholen, wo du dich gerade befindest und auf deinem <span class="highlight">ganz persönlichen (Yoga-) Weg</span>  zu <span class="highlight">begleiten</span> und zu <span class="highlight">unterstützen</span>.
 
             Wenn du dich jetzt angesprochen fühlst und genau das für dich und deine Yogapraxis suchst freue ich mich, wenn du dich bei mir meldest!
 
@@ -142,61 +142,79 @@ include "php/helperFunctions.php";
 	<div class="section__inner row">
 		<div class="col-1 col-2-md kurszeiten">
 			<div class="inner">
-				<h3>Kurszeiten</h3>
-				<!-- <div class="text-wrapper">
-					<p>Donnerstags*:</p>
-					<p>18:30 - 20:00 Uhr
-					Vormittagskurse bei entsprechender Nachfrage möglich</p>
+				<h3>Kurse</h3>
+				<div class="text-wrapper">
+					<p>Donnerstag:
+					Freitag:</p>
+					<p>Auf Anfrage
+					Auf Anfrage</p>
 				</div>
-				<p>*Kurse geeignet für Anfänger und Fortgeschrittene</p>
-				<p>*Maximale Teilnehmerzahl 8 Personen</p> -->
-				<p style="text-align: center; padding: 20px 0 10px">Aktuell finden keine Kurse statt.</p>
+				<p>Einzelstunden inkl. Preis nach Absprache</p>
 			</div>
 		</div>
 
 		<div class="col-1 col-2-md preise">
 			<div class="inner">
-				<h3>Preise</h3>
+				<h3>Angebote</h3>
 
 				<div class="text-wrapper">
-					<p>Kursreihe
-					<span>(10 Einheiten à 90 Min., verbindliche Anmeldung)</span></p>
-					<p>180€</p>
-				</div>
+                    <p>Schnupper Yogastunde
+
+                    10er Karte
+                    <span>(1 Yogastunde à 90 Min)</span></p>
+                    <p>10€
+
+                    160€</p>
+                </div>
 				<div class="divider"></div>
 				<div class="text-wrapper">
-					<p>Schnupperkurs
-					<span>(Einmalig)</span></p>
-					<p>12€</p>
+					<p>Rückenmassage
+					<span>20 Min / 30 Min / 40 Min</span>
+
+					Aroma Massage
+                        Teilkörper 30 Min
+                        Ganzkörper 60 Min
+
+                    Kopfmassage 15 Min</p>
+
+					<p>20€ / 30€ / 40€
+
+
+
+					35€
+                    65€
+
+                    15€</p>
 				</div>
-				<div class="divider"></div>
-				<div class="text-wrapper">
-					<p>Einzel-/ Privatstunden,
-					Gruppenstunden</p>
-					<p>Nach Absprache</p>
-				</div>
+                <p>Massagetermine nach Absprache</p>
 			</div>
 		</div>
 
-		<!-- <div class="col-1 kursort">
+		<div class="col-1 kursort">
 			<div class="inner">
 				<h3>Kursort</h3>
 
 				<div class="row col-1">
 					<div class="col-1">
-						<p>Weitblick Aschaffenburg
-							Kettelerstraße 4
-							63867 Johannesberg
-							<a href="https://weitblick-ab.de/seminarraum/" target="_blank">Homepage</a></p>
+						<p>Hans-vom-Stein Straße 27
+                        87634 Obergünzburg
 					</div>
 					<div class="col-1">
 						<div class="iframeWrapper">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5126.255286247278!2d9.133419!3d50.02770400000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf93fc19ce75e0ab4!2sSeminar-Raum+Weitblick!5e0!3m2!1sde!2sde!4v1557334706825!5m2!1sde!2sde"frameborder="0" style="border:0" allowfullscreen></iframe>
+							<iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2677.212028709183!2d10.42084441582729!3d47.85485677878812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479c73e7d6c18627%3A0x89239fb4f8459838!2sHans-vom-Stein-Stra%C3%9Fe%2027%2C%2087634%20Oberg%C3%BCnzburg!5e0!3m2!1sde!2sde!4v1605549743023!5m2!1sde!2sde"
+                                width="600"
+                                height="450"
+                                frameborder="0"
+                                style="border:0;"
+                                allowfullscreen=""
+                                aria-hidden="false"
+                                tabindex="0"></iframe>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
 		<div id="kontakt" class="kontakt col-1">
 			<div class="inner row ">
@@ -217,7 +235,7 @@ include "php/helperFunctions.php";
 				<div class="col-1 col-2-md kontaktArt">
 					<a href="tel:+491708216900" class="col-1"><i class="fas fa-phone"></i>
 
-						+49 170 8216900
+						+49 170 821 6900
 					</a>
 				</div>
 			</div>
@@ -358,7 +376,7 @@ include "php/helperFunctions.php";
 				63864 Glattbach</p>
 
 				<h2>Kontakt</h2>
-				<p>Telefon: +49 170 8216900
+				<p>Telefon: +49 170 821 6900
 				E-Mail: <a href="mailto:prashantiyoga@gmx.de">prashantiyoga@gmx.de</a></p>
 
 				<h2>Gestaltung und technische Umsetzung von:</h2>
@@ -400,7 +418,7 @@ include "php/helperFunctions.php";
 					Enzlinger Berg 25
 				63864 Glattbach</p>
 
-				<p>Telefon: +49 170 8216900
+				<p>Telefon: +49 170 821 6900
 				E-Mail: prashantiyoga@gmx.de</p>
 				<p>Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person, die allein oder gemeinsam mit anderen &uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, E-Mail-Adressen o. &Auml;.) entscheidet.</p>
 				<h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3> <p>Viele Datenverarbeitungsvorg&auml;nge sind nur mit Ihrer ausdr&uuml;cklichen Einwilligung m&ouml;glich. Sie k&ouml;nnen eine bereits erteilte Einwilligung jederzeit widerrufen. Dazu reicht eine formlose Mitteilung per E-Mail an uns. Die Rechtm&auml;&szlig;igkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unber&uuml;hrt.</p>
